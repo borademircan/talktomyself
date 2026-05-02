@@ -19,6 +19,7 @@ export class GoogleTtsEngine {
 
       const response = await fetch(import.meta.env.BASE_URL + 'api/google-tts/v1/text:synthesize', {
         method: 'POST',
+        credentials: 'same-origin',
         headers: {
           'Content-Type': 'application/json'
         },

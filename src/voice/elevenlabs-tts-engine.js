@@ -37,8 +37,9 @@ export class ElevenLabsTtsEngine {
 
       console.log(`[TTS] Fetching from ElevenLabs... API Key length: ${this.apiKey.length}, starts with: ${this.apiKey.substring(0, 5)}`);
       // Use local proxy to avoid 401 Unauthorized caused by Origin/CORS restrictions
-      const response = await fetch(`/api/elevenlabs/v1/text-to-speech/${this.voiceId}`, {
+      const response = await fetch(import.meta.env.BASE_URL + `api/elevenlabs/v1/text-to-speech/${this.voiceId}`, {
         method: 'POST',
+        credentials: 'same-origin',
         headers: {
           'xi-api-key': this.apiKey.trim(), // added trim() just in case
           'Content-Type': 'application/json'
