@@ -422,7 +422,7 @@ export default defineConfig(({ mode }) => {
     plugins: [localPersistencePlugin()],
     server: {
       port: 3000,
-      open: true,
+      open: 'https://www.selinmodel.com/talktomyself/',
       allowedHosts: ['www.selinmodel.com', 'selinmodel.com'],
       watch: {
         ignored: ['**/src/data-new/*.json', '**/src/data/*.json']
