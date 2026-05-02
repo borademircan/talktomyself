@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ceren-2024-07-w5-c1",
+    "start_time": "29.07.2024, 17:35:41",
+    "end_time": "29.07.2024, 17:38:21",
+    "message_count": 5,
+    "messages": [
+      {
+        "timestamp": "29.07.2024, 17:35:41",
+        "from": "Bora",
+        "message": "https://maps.app.goo.gl/hqqTjsTi3csA6GU7A?g_st=iw"
+      },
+      {
+        "timestamp": "29.07.2024, 17:35:54",
+        "from": "Bora",
+        "message": "https://maps.app.goo.gl/uL6E73kbwCBSQKAk8?g_st=iw"
+      },
+      {
+        "timestamp": "29.07.2024, 17:36:13",
+        "from": "Bora",
+        "message": "https://maps.app.goo.gl/7TGQ2GF7JjEoaa4g7?g_st=iw"
+      },
+      {
+        "timestamp": "29.07.2024, 17:37:35",
+        "from": "Bora",
+        "message": "https://maps.app.goo.gl/qn8YqhoVZpoU1niw5?g_st=iw"
+      },
+      {
+        "timestamp": "29.07.2024, 17:38:21",
+        "from": "Bora",
+        "message": "https://maps.app.goo.gl/CuMHEqznfwAwkj2Q6?g_st=iw"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2024-07-w5-c2",
+    "start_time": "30.07.2024, 00:06:49",
+    "end_time": "30.07.2024, 00:06:49",
+    "message_count": 1,
+    "messages": [
+      {
+        "timestamp": "30.07.2024, 00:06:49",
+        "from": "Ceren",
+        "message": "https://maps.app.goo.gl/gkRnhCdTYmvjAZKf8?g_st=iw"
+      }
+    ]
+  }
+]

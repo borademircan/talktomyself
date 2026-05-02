@@ -1,0 +1,161 @@
+[
+  {
+    "id": "ceren-2025-11-w5-c1",
+    "start_time": "29.11.2025, 10:33:45",
+    "end_time": "29.11.2025, 11:34:19",
+    "message_count": 8,
+    "messages": [
+      {
+        "timestamp": "29.11.2025, 10:33:45",
+        "from": "Bora",
+        "message": "günaydın canım"
+      },
+      {
+        "timestamp": "29.11.2025, 10:47:39",
+        "from": "Ceren",
+        "message": "Günaydın canım"
+      },
+      {
+        "timestamp": "29.11.2025, 10:52:01",
+        "from": "Bora",
+        "message": "ne zaman uyandın bebek?"
+      },
+      {
+        "timestamp": "29.11.2025, 10:52:34",
+        "from": "Ceren",
+        "message": "Yeni uyandım"
+      },
+      {
+        "timestamp": "29.11.2025, 10:57:53",
+        "from": "Bora",
+        "message": "ben de"
+      },
+      {
+        "timestamp": "29.11.2025, 10:59:09",
+        "from": "Bora",
+        "message": "napcaksınız bugün?"
+      },
+      {
+        "timestamp": "29.11.2025, 11:18:10",
+        "from": "Ceren",
+        "message": "Birazdan dışarı çıkacağız"
+      },
+      {
+        "timestamp": "29.11.2025, 11:34:19",
+        "from": "Bora",
+        "message": "Belki ben de çıkarım, yürüyüş falan yaparım"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2025-11-w5-c2",
+    "start_time": "29.11.2025, 21:59:06",
+    "end_time": "29.11.2025, 22:13:44",
+    "message_count": 9,
+    "messages": [
+      {
+        "timestamp": "29.11.2025, 21:59:06",
+        "from": "Bora",
+        "message": "You deleted this message.\n[29.11.2025, 22:06:29] Bora:"
+      },
+      {
+        "timestamp": "29.11.2025, 22:06:33",
+        "from": "Bora",
+        "message": "böyle şeyler aldım"
+      },
+      {
+        "timestamp": "29.11.2025, 22:08:02",
+        "from": "Ceren",
+        "message": "Çok iyi olmuş"
+      },
+      {
+        "timestamp": "29.11.2025, 22:08:23",
+        "from": "Bora",
+        "message": "bu dolabın içine"
+      },
+      {
+        "timestamp": "29.11.2025, 22:08:45",
+        "from": "Bora",
+        "message": "bu. banyo kapı arkası, ya da yeni aldığımın yerine"
+      },
+      {
+        "timestamp": "29.11.2025, 22:09:03",
+        "from": "Bora",
+        "message": "bundan iki tane aldım, kapıda iki tane sığıyor"
+      },
+      {
+        "timestamp": "29.11.2025, 22:09:30",
+        "from": "Bora",
+        "message": "bunu da girişteki paltolar montlar için aldım, çünkü dar olduğu için askı sorun oluyor"
+      },
+      {
+        "timestamp": "29.11.2025, 22:10:20",
+        "from": "Bora",
+        "message": "ucuz ve etkili çözümler olacak umuyorum"
+      },
+      {
+        "timestamp": "29.11.2025, 22:13:44",
+        "from": "Ceren",
+        "message": "Evet evet kesinlikle öyle"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2025-11-w5-c3",
+    "start_time": "30.11.2025, 11:03:03",
+    "end_time": "30.11.2025, 13:43:20",
+    "message_count": 10,
+    "messages": [
+      {
+        "timestamp": "30.11.2025, 11:03:03",
+        "from": "Bora",
+        "message": "günaydınn"
+      },
+      {
+        "timestamp": "30.11.2025, 12:20:38",
+        "from": "Ceren",
+        "message": "Günaydın canım"
+      },
+      {
+        "timestamp": "30.11.2025, 12:43:31",
+        "from": "Bora",
+        "message": "erkencisin"
+      },
+      {
+        "timestamp": "30.11.2025, 12:48:49",
+        "from": "Ceren",
+        "message": "Evet baya"
+      },
+      {
+        "timestamp": "30.11.2025, 13:05:28",
+        "from": "Bora",
+        "message": "bugün plan ne?"
+      },
+      {
+        "timestamp": "30.11.2025, 13:35:32",
+        "from": "Ceren",
+        "message": "Kıyafetlerime bakacağız. Şimdilik plan bu."
+      },
+      {
+        "timestamp": "30.11.2025, 13:41:33",
+        "from": "Bora",
+        "message": "iyiymiş  ben de dün her şeyi indirdim yeniden düzenledim"
+      },
+      {
+        "timestamp": "30.11.2025, 13:41:52",
+        "from": "Bora",
+        "message": "şu organizerlar gelsin bir daha yapacağım"
+      },
+      {
+        "timestamp": "30.11.2025, 13:42:45",
+        "from": "Ceren",
+        "message": "Sığmayınca sanırım bir kaç kere yapmak zorunda kaldın"
+      },
+      {
+        "timestamp": "30.11.2025, 13:43:20",
+        "from": "Bora",
+        "message": "daha önce yapmıştım, dağıldı ortalık"
+      }
+    ]
+  }
+]

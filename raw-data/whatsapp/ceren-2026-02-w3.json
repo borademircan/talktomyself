@@ -1,0 +1,3217 @@
+[
+  {
+    "id": "ceren-2026-02-w3-c1",
+    "start_time": "15.02.2026, 00:18:17",
+    "end_time": "15.02.2026, 00:18:17",
+    "message_count": 1,
+    "messages": [
+      {
+        "timestamp": "15.02.2026, 00:18:17",
+        "from": "Ceren",
+        "message": "Voice call. 2 min"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c2",
+    "start_time": "15.02.2026, 10:51:10",
+    "end_time": "15.02.2026, 12:04:52",
+    "message_count": 5,
+    "messages": [
+      {
+        "timestamp": "15.02.2026, 10:51:10",
+        "from": "Bora",
+        "message": "günaydın. Işık teyzem konuşmak istiyordu herhalde, ben müsaitim, ne zaman isterseniz konuşalım"
+      },
+      {
+        "timestamp": "15.02.2026, 10:51:30",
+        "from": "Ceren",
+        "message": "Tünaydın tamam söylerim"
+      },
+      {
+        "timestamp": "15.02.2026, 11:09:43",
+        "from": "Ceren",
+        "message": "Voice call. 31 min"
+      },
+      {
+        "timestamp": "15.02.2026, 12:04:42",
+        "from": "Ceren",
+        "message": "Güzel olmuş, ellerine sağlık."
+      },
+      {
+        "timestamp": "15.02.2026, 12:04:52",
+        "from": "Bora",
+        "message": "teşekkürler"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c3",
+    "start_time": "15.02.2026, 14:37:57",
+    "end_time": "15.02.2026, 17:53:51",
+    "message_count": 7,
+    "messages": [
+      {
+        "timestamp": "15.02.2026, 14:37:57",
+        "from": "Ceren",
+        "message": "Missed voice call. Click to call back"
+      },
+      {
+        "timestamp": "15.02.2026, 14:38:22",
+        "from": "Ceren",
+        "message": "Missed voice call. Click to call back"
+      },
+      {
+        "timestamp": "15.02.2026, 15:15:45",
+        "from": "Ceren",
+        "message": "10dk geç kalkacakmış uçak"
+      },
+      {
+        "timestamp": "15.02.2026, 15:17:02",
+        "from": "Bora",
+        "message": "Voice call. 53 sec"
+      },
+      {
+        "timestamp": "15.02.2026, 16:44:53",
+        "from": "Ceren",
+        "message": "İndi şimdi uçak"
+      },
+      {
+        "timestamp": "15.02.2026, 16:45:13",
+        "from": "Bora",
+        "message": "hoşgeldin, geçmiş olsun"
+      },
+      {
+        "timestamp": "15.02.2026, 17:53:51",
+        "from": "Ceren",
+        "message": "Voice call. 9 min"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c4",
+    "start_time": "15.02.2026, 21:02:49",
+    "end_time": "15.02.2026, 23:07:17",
+    "message_count": 45,
+    "messages": [
+      {
+        "timestamp": "15.02.2026, 21:02:49",
+        "from": "Bora",
+        "message": "Ben çıkıyorum canım"
+      },
+      {
+        "timestamp": "15.02.2026, 21:03:27",
+        "from": "Ceren",
+        "message": "Nereye canım?"
+      },
+      {
+        "timestamp": "15.02.2026, 21:04:43",
+        "from": "Bora",
+        "message": "Öyle yürücem"
+      },
+      {
+        "timestamp": "15.02.2026, 21:05:00",
+        "from": "Ceren",
+        "message": "Süper"
+      },
+      {
+        "timestamp": "15.02.2026, 21:05:16",
+        "from": "Bora",
+        "message": "Diğer telin de interneti bitmiş"
+      },
+      {
+        "timestamp": "15.02.2026, 21:05:24",
+        "from": "Ceren",
+        "message": "Aaa"
+      },
+      {
+        "timestamp": "15.02.2026, 21:05:38",
+        "from": "Ceren",
+        "message": "Onu ne zaman kullandın ki"
+      },
+      {
+        "timestamp": "15.02.2026, 21:05:59",
+        "from": "Bora",
+        "message": "270 gb internet vardı güya"
+      },
+      {
+        "timestamp": "15.02.2026, 21:06:11",
+        "from": "Bora",
+        "message": "Süresi bitti herhalde"
+      },
+      {
+        "timestamp": "15.02.2026, 21:06:42",
+        "from": "Ceren",
+        "message": "Olabilir"
+      },
+      {
+        "timestamp": "15.02.2026, 21:07:05",
+        "from": "Ceren",
+        "message": "Yazıyorsun ama online gözükmüyorusun bu arada"
+      },
+      {
+        "timestamp": "15.02.2026, 21:07:14",
+        "from": "Ceren",
+        "message": "O nasıl oluyor anlamadım"
+      },
+      {
+        "timestamp": "15.02.2026, 21:07:47",
+        "from": "Bora",
+        "message": "Seninki de öyle"
+      },
+      {
+        "timestamp": "15.02.2026, 21:08:12",
+        "from": "Ceren",
+        "message": "İlginç"
+      },
+      {
+        "timestamp": "15.02.2026, 21:08:33",
+        "from": "Ceren",
+        "message": "İyi gezmeler"
+      },
+      {
+        "timestamp": "15.02.2026, 21:09:06",
+        "from": "Bora",
+        "message": "Teşekkürler"
+      },
+      {
+        "timestamp": "15.02.2026, 21:12:19",
+        "from": "Bora",
+        "message": "İyi bir 15 euroluk paket aldım açıldı"
+      },
+      {
+        "timestamp": "15.02.2026, 21:12:35",
+        "from": "Ceren",
+        "message": "Ohh iyi bari"
+      },
+      {
+        "timestamp": "15.02.2026, 21:35:35",
+        "from": "Bora",
+        "message": "Bir parka geldim, grup var salsa yapıyorlar :)"
+      },
+      {
+        "timestamp": "15.02.2026, 21:36:02",
+        "from": "Ceren",
+        "message": "Yaaa ne güzeeel"
+      },
+      {
+        "timestamp": "15.02.2026, 21:41:10",
+        "from": "Ceren",
+        "message": "Off harika bir yere gelmişsin"
+      },
+      {
+        "timestamp": "15.02.2026, 21:41:34",
+        "from": "Bora",
+        "message": "Onun haricinde boş ama"
+      },
+      {
+        "timestamp": "15.02.2026, 21:41:56",
+        "from": "Ceren",
+        "message": "Hava soğuk sanırsam"
+      },
+      {
+        "timestamp": "15.02.2026, 21:42:09",
+        "from": "Bora",
+        "message": "Hiç de değil aslında"
+      },
+      {
+        "timestamp": "15.02.2026, 21:42:17",
+        "from": "Bora",
+        "message": "Kalın geldi üstüm"
+      },
+      {
+        "timestamp": "15.02.2026, 21:42:24",
+        "from": "Bora",
+        "message": "Çok kalın da giyinmedim"
+      },
+      {
+        "timestamp": "15.02.2026, 21:42:37",
+        "from": "Bora",
+        "message": "İçimde bir bluz üstümde mont"
+      },
+      {
+        "timestamp": "15.02.2026, 21:42:57",
+        "from": "Ceren",
+        "message": "Ben de İstde ve burada paltomu bugün hiç giymedim"
+      },
+      {
+        "timestamp": "15.02.2026, 21:43:22",
+        "from": "Bora",
+        "message": "Belki çıkarırım ben de"
+      },
+      {
+        "timestamp": "15.02.2026, 21:43:52",
+        "from": "Ceren",
+        "message": "Sadece bluz varsa ince gelebilir ama dikkat et"
+      },
+      {
+        "timestamp": "15.02.2026, 22:22:28",
+        "from": "Bora",
+        "message": "Ben geldim eve canım"
+      },
+      {
+        "timestamp": "15.02.2026, 22:29:40",
+        "from": "Ceren",
+        "message": "Hoş geldin canım"
+      },
+      {
+        "timestamp": "15.02.2026, 22:47:42",
+        "from": "Bora",
+        "message": "sen napıyorsun?"
+      },
+      {
+        "timestamp": "15.02.2026, 22:49:21",
+        "from": "Ceren",
+        "message": "Uykum geldi gelmedi arasında uzanıyorum"
+      },
+      {
+        "timestamp": "15.02.2026, 22:59:34",
+        "from": "Bora",
+        "message": "iyi geceler o zaman"
+      },
+      {
+        "timestamp": "15.02.2026, 23:04:41",
+        "from": "Ceren",
+        "message": "Mesajlar geç geliyor sanırsam bir gariplik var."
+      },
+      {
+        "timestamp": "15.02.2026, 23:05:12",
+        "from": "Bora",
+        "message": "yok içerdeydim, duş aldım da saçıma havlu takıyordum"
+      },
+      {
+        "timestamp": "15.02.2026, 23:05:32",
+        "from": "Ceren",
+        "message": "Ohhh misss"
+      },
+      {
+        "timestamp": "15.02.2026, 23:06:06",
+        "from": "Ceren",
+        "message": "Yok ya sadece seninle değil"
+      },
+      {
+        "timestamp": "15.02.2026, 23:06:10",
+        "from": "Ceren",
+        "message": "Annem de yazmış"
+      },
+      {
+        "timestamp": "15.02.2026, 23:06:19",
+        "from": "Ceren",
+        "message": "2 sa sonra düştü falan"
+      },
+      {
+        "timestamp": "15.02.2026, 23:06:32",
+        "from": "Bora",
+        "message": "bilemiyorum"
+      },
+      {
+        "timestamp": "15.02.2026, 23:06:36",
+        "from": "Ceren",
+        "message": "Zaten online da gözükmüyor"
+      },
+      {
+        "timestamp": "15.02.2026, 23:07:09",
+        "from": "Ceren",
+        "message": "İyi geceler"
+      },
+      {
+        "timestamp": "15.02.2026, 23:07:17",
+        "from": "Bora",
+        "message": "iyi geceler"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c5",
+    "start_time": "16.02.2026, 12:44:21",
+    "end_time": "16.02.2026, 15:56:13",
+    "message_count": 24,
+    "messages": [
+      {
+        "timestamp": "16.02.2026, 12:44:21",
+        "from": "Ceren",
+        "message": "Günaydın"
+      },
+      {
+        "timestamp": "16.02.2026, 13:08:06",
+        "from": "Bora",
+        "message": "günaydın"
+      },
+      {
+        "timestamp": "16.02.2026, 13:14:58",
+        "from": "Ceren",
+        "message": "Yeni mi uyandım sen de?"
+      },
+      {
+        "timestamp": "16.02.2026, 13:19:39",
+        "from": "Bora",
+        "message": "yok ben toplantıdayım"
+      },
+      {
+        "timestamp": "16.02.2026, 13:30:07",
+        "from": "Ceren",
+        "message": "Kadın ile mi görüştün?"
+      },
+      {
+        "timestamp": "16.02.2026, 13:30:17",
+        "from": "Ceren",
+        "message": "Müsait olunca arar mısın?"
+      },
+      {
+        "timestamp": "16.02.2026, 13:31:07",
+        "from": "Bora",
+        "message": "Group call. 2 invited"
+      },
+      {
+        "timestamp": "16.02.2026, 14:14:11",
+        "from": "Bora",
+        "message": "79 yaşında Glioblastoma (Grade 4) tanılı hasta için İstanbulda multidisipliner takip planlıyoruz. Cerrahi + RT + TMZ tamamlandı, immünoterapi başlanacak.\nEşlik eden durumlar:\n\tKronik böbrek hastalığı\n\tKalp yüklenmesi (yüksek NT-proBNP)\n\tEsansiyel trombositoz\n\tAnemi\n\tDiyabet\n\tSteroid kullanımı\nİmmünoterapiye bağlı ödem riski nedeniyle tahlil takibi gerekiyor.\nBu nedenle:\n Nöroonkolog (ana koordinasyon)\n Opsiyonel: Onkoloji hastası takibi yapabilen deneyimli Dahiliye uzmanı\nşeklinde tahlilleri takip edebilecek doktorlar arıyoruz."
+      },
+      {
+        "timestamp": "16.02.2026, 15:48:55",
+        "from": "Bora",
+        "message": "Çarşamba pilatese gidiyorum"
+      },
+      {
+        "timestamp": "16.02.2026, 15:49:48",
+        "from": "Ceren",
+        "message": "Reformar mı?"
+      },
+      {
+        "timestamp": "16.02.2026, 15:49:56",
+        "from": "Bora",
+        "message": "evet"
+      },
+      {
+        "timestamp": "16.02.2026, 15:49:59",
+        "from": "Ceren",
+        "message": "Missed voice call. Click to call back"
+      },
+      {
+        "timestamp": "16.02.2026, 15:50:07",
+        "from": "Bora",
+        "message": "toplantıdayım"
+      },
+      {
+        "timestamp": "16.02.2026, 15:50:19",
+        "from": "Bora",
+        "message": "https://www.google.com/maps/place/StudiO2+Pilates+Barcelona/@41.3840544,2.1829639,18z/data=!4m6!3m5!1s0x12a4a35638940843:0x91ce7e2886f2d218!8m2!3d41.384484!4d2.1820553!16s%2Fg%2F11vr0nhdmp!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "timestamp": "16.02.2026, 15:50:22",
+        "from": "Ceren",
+        "message": "Ne bileyim yazınca randevu"
+      },
+      {
+        "timestamp": "16.02.2026, 15:50:29",
+        "from": "Ceren",
+        "message": "Aradım ben de"
+      },
+      {
+        "timestamp": "16.02.2026, 15:51:08",
+        "from": "Ceren",
+        "message": "İyi yapmışsın"
+      },
+      {
+        "timestamp": "16.02.2026, 15:51:19",
+        "from": "Ceren",
+        "message": "Hiç bahsetmedin öncesinde"
+      },
+      {
+        "timestamp": "16.02.2026, 15:51:45",
+        "from": "Bora",
+        "message": "yeni buldum"
+      },
+      {
+        "timestamp": "16.02.2026, 15:52:19",
+        "from": "Ceren",
+        "message": "İyi de araştırmışsın"
+      },
+      {
+        "timestamp": "16.02.2026, 15:52:47",
+        "from": "Ceren",
+        "message": "Müsait olunca ararsın konuşuruz"
+      },
+      {
+        "timestamp": "16.02.2026, 15:53:24",
+        "from": "Bora",
+        "message": "bu ne demek anlamadım, ok ararım"
+      },
+      {
+        "timestamp": "16.02.2026, 15:55:29",
+        "from": "Ceren",
+        "message": "Böyle bir düşüncen olduğundan hiç bahsetmemiştin anlamında"
+      },
+      {
+        "timestamp": "16.02.2026, 15:56:13",
+        "from": "Bora",
+        "message": "dün baktım form doldurdum, bugün cevap geldi"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c6",
+    "start_time": "16.02.2026, 21:12:02",
+    "end_time": "16.02.2026, 21:18:24",
+    "message_count": 3,
+    "messages": [
+      {
+        "timestamp": "16.02.2026, 21:12:02",
+        "from": "Ceren",
+        "message": "Missed voice call. Click to call back"
+      },
+      {
+        "timestamp": "16.02.2026, 21:13:52",
+        "from": "Ceren",
+        "message": "Missed voice call. Click to call back"
+      },
+      {
+        "timestamp": "16.02.2026, 21:18:24",
+        "from": "Ceren",
+        "message": "Missed voice call. Click to call back"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c7",
+    "start_time": "16.02.2026, 23:46:41",
+    "end_time": "16.02.2026, 23:48:03",
+    "message_count": 2,
+    "messages": [
+      {
+        "timestamp": "16.02.2026, 23:46:41",
+        "from": "Ceren",
+        "message": "İyi geceler bebek"
+      },
+      {
+        "timestamp": "16.02.2026, 23:48:03",
+        "from": "Bora",
+        "message": "iyi geceler"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c8",
+    "start_time": "17.02.2026, 11:06:32",
+    "end_time": "17.02.2026, 11:08:04",
+    "message_count": 2,
+    "messages": [
+      {
+        "timestamp": "17.02.2026, 11:06:32",
+        "from": "Ceren",
+        "message": "Günaydın bebek"
+      },
+      {
+        "timestamp": "17.02.2026, 11:08:04",
+        "from": "Bora",
+        "message": "günaydın, toplantıdayım"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c9",
+    "start_time": "17.02.2026, 15:18:03",
+    "end_time": "17.02.2026, 15:24:04",
+    "message_count": 8,
+    "messages": [
+      {
+        "timestamp": "17.02.2026, 15:18:03",
+        "from": "Ceren",
+        "message": "Sevgiliiiiimmmm"
+      },
+      {
+        "timestamp": "17.02.2026, 15:18:23",
+        "from": "Ceren",
+        "message": "Nomad grubuna baaaakkk"
+      },
+      {
+        "timestamp": "17.02.2026, 15:19:02",
+        "from": "Bora",
+        "message": "baktım evet gelmiş"
+      },
+      {
+        "timestamp": "17.02.2026, 15:19:16",
+        "from": "Ceren",
+        "message": "şükür"
+      },
+      {
+        "timestamp": "17.02.2026, 15:19:25",
+        "from": "Ceren",
+        "message": "Çok sevindimmm"
+      },
+      {
+        "timestamp": "17.02.2026, 15:20:28",
+        "from": "Bora",
+        "message": "evet şükür"
+      },
+      {
+        "timestamp": "17.02.2026, 15:22:06",
+        "from": "Ceren",
+        "message": "Şimdi sıra yanına gelmemde sonundaa"
+      },
+      {
+        "timestamp": "17.02.2026, 15:24:04",
+        "from": "Bora",
+        "message": "evet, inşallah"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c10",
+    "start_time": "17.02.2026, 20:58:19",
+    "end_time": "17.02.2026, 23:46:03",
+    "message_count": 39,
+    "messages": [
+      {
+        "timestamp": "17.02.2026, 20:58:19",
+        "from": "Ceren",
+        "message": "Bebek napıyorsun?"
+      },
+      {
+        "timestamp": "17.02.2026, 21:01:52",
+        "from": "Ceren",
+        "message": "Voice call. 27 sec"
+      },
+      {
+        "timestamp": "17.02.2026, 21:56:37",
+        "from": "Ceren",
+        "message": "Voice call. 45 min"
+      },
+      {
+        "timestamp": "17.02.2026, 22:17:01",
+        "from": "Ceren",
+        "message": "https://docs.google.com/spreadsheets/d/19SZNkpe0kgsZCeMhszd-yto24v9TnDNboROZSWv7g3s/edit?gid=1623985105#gid=1623985105"
+      },
+      {
+        "timestamp": "17.02.2026, 23:30:17",
+        "from": "Ceren",
+        "message": "Düzeltmlşsin bebek"
+      },
+      {
+        "timestamp": "17.02.2026, 23:30:44",
+        "from": "Bora",
+        "message": "kapattım biraz başka şeylere baktım, açtım oldu"
+      },
+      {
+        "timestamp": "17.02.2026, 23:31:59",
+        "from": "Ceren",
+        "message": "Burada direk liste halinde görmek için isim ve iletişim bilgilerini aanırım"
+      },
+      {
+        "timestamp": "17.02.2026, 23:32:19",
+        "from": "Ceren",
+        "message": "Email var gerçi sadece"
+      },
+      {
+        "timestamp": "17.02.2026, 23:32:54",
+        "from": "Ceren",
+        "message": "Aktif pasif durum nedir?"
+      },
+      {
+        "timestamp": "17.02.2026, 23:33:01",
+        "from": "Ceren",
+        "message": "Online olması mı?"
+      },
+      {
+        "timestamp": "17.02.2026, 23:34:31",
+        "from": "Bora",
+        "message": "bu demo sadece"
+      },
+      {
+        "timestamp": "17.02.2026, 23:34:39",
+        "from": "Bora",
+        "message": "ui kit"
+      },
+      {
+        "timestamp": "17.02.2026, 23:34:53",
+        "from": "Bora",
+        "message": "tasarımı göstermek için saçma içerikler"
+      },
+      {
+        "timestamp": "17.02.2026, 23:35:12",
+        "from": "Bora",
+        "message": "bu tasarımı alıp kendi senaryon için kullanıyorsun"
+      },
+      {
+        "timestamp": "17.02.2026, 23:35:18",
+        "from": "Bora",
+        "message": "şablon gibi yani"
+      },
+      {
+        "timestamp": "17.02.2026, 23:35:35",
+        "from": "Ceren",
+        "message": "O zaman güzel gözüküyor"
+      },
+      {
+        "timestamp": "17.02.2026, 23:36:00",
+        "from": "Bora",
+        "message": "profesyonel, modern ve hala elegant"
+      },
+      {
+        "timestamp": "17.02.2026, 23:36:09",
+        "from": "Bora",
+        "message": "mevcut tasarım kadar elegant olmasa da"
+      },
+      {
+        "timestamp": "17.02.2026, 23:36:25",
+        "from": "Bora",
+        "message": "daha modern, o da önemli"
+      },
+      {
+        "timestamp": "17.02.2026, 23:37:04",
+        "from": "Ceren",
+        "message": "iconlar iyi olmuş bence"
+      },
+      {
+        "timestamp": "17.02.2026, 23:37:06",
+        "from": "Bora",
+        "message": "openai, gemini tüm admin arayüzü siteler birbirine benziyor, bu biraz farklı oldu"
+      },
+      {
+        "timestamp": "17.02.2026, 23:37:35",
+        "from": "Ceren",
+        "message": "Bu boudoir a özgü olmuş işte"
+      },
+      {
+        "timestamp": "17.02.2026, 23:37:50",
+        "from": "Bora",
+        "message": "evet iyi oldu ya di mi?"
+      },
+      {
+        "timestamp": "17.02.2026, 23:38:03",
+        "from": "Ceren",
+        "message": "Evet ben çok beğendim"
+      },
+      {
+        "timestamp": "17.02.2026, 23:38:13",
+        "from": "Ceren",
+        "message": "Ellerine sağlık bebek"
+      },
+      {
+        "timestamp": "17.02.2026, 23:38:14",
+        "from": "Bora",
+        "message": "iyi süper!"
+      },
+      {
+        "timestamp": "17.02.2026, 23:38:34",
+        "from": "Ceren",
+        "message": "Tabii profesyonel bir görüş ne der bilmiyorum"
+      },
+      {
+        "timestamp": "17.02.2026, 23:40:51",
+        "from": "Ceren",
+        "message": "Evet bu hali de güzel ama sen içeriği  değiştirdiğin için"
+      },
+      {
+        "timestamp": "17.02.2026, 23:41:01",
+        "from": "Ceren",
+        "message": "Daha sade olması da iyi bence"
+      },
+      {
+        "timestamp": "17.02.2026, 23:41:09",
+        "from": "Bora",
+        "message": "valla bir an bu tasarımı kullanasım geldi yine"
+      },
+      {
+        "timestamp": "17.02.2026, 23:41:11",
+        "from": "Ceren",
+        "message": "Bana öyle geldi"
+      },
+      {
+        "timestamp": "17.02.2026, 23:42:15",
+        "from": "Bora",
+        "message": "yok ya yenisi daha güzel"
+      },
+      {
+        "timestamp": "17.02.2026, 23:42:23",
+        "from": "Bora",
+        "message": "fotolar gelsin daha güzel görünür"
+      },
+      {
+        "timestamp": "17.02.2026, 23:42:46",
+        "from": "Bora",
+        "message": "sidebar olmayacak zaten hiç sağdaki"
+      },
+      {
+        "timestamp": "17.02.2026, 23:43:50",
+        "from": "Ceren",
+        "message": "Merakla bekliyorum o zmn fotolu halini"
+      },
+      {
+        "timestamp": "17.02.2026, 23:45:39",
+        "from": "Ceren",
+        "message": "Ben yatıyorum bebek"
+      },
+      {
+        "timestamp": "17.02.2026, 23:45:47",
+        "from": "Ceren",
+        "message": "İyi geceler"
+      },
+      {
+        "timestamp": "17.02.2026, 23:45:50",
+        "from": "Bora",
+        "message": "iyi geceler"
+      },
+      {
+        "timestamp": "17.02.2026, 23:46:03",
+        "from": "Ceren",
+        "message": "Öpücüğüm neredeee?"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c11",
+    "start_time": "18.02.2026, 06:58:42",
+    "end_time": "18.02.2026, 06:58:42",
+    "message_count": 1,
+    "messages": [
+      {
+        "timestamp": "18.02.2026, 06:58:42",
+        "from": "Ceren",
+        "message": "Günaydın bebek"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c12",
+    "start_time": "18.02.2026, 12:10:40",
+    "end_time": "18.02.2026, 22:09:05",
+    "message_count": 60,
+    "messages": [
+      {
+        "timestamp": "18.02.2026, 12:10:40",
+        "from": "Bora",
+        "message": "Günaydın canım"
+      },
+      {
+        "timestamp": "18.02.2026, 12:29:53",
+        "from": "Ceren",
+        "message": "Nasılsın canım?"
+      },
+      {
+        "timestamp": "18.02.2026, 13:48:22",
+        "from": "Bora",
+        "message": "toplantı canım"
+      },
+      {
+        "timestamp": "18.02.2026, 13:48:38",
+        "from": "Ceren",
+        "message": "Ben de canım"
+      },
+      {
+        "timestamp": "18.02.2026, 13:48:45",
+        "from": "Bora",
+        "message": "kolay gelsin"
+      },
+      {
+        "timestamp": "18.02.2026, 13:49:06",
+        "from": "Ceren",
+        "message": "Sana da kolay gelsin canım"
+      },
+      {
+        "timestamp": "18.02.2026, 15:34:32",
+        "from": "Bora",
+        "message": "bitti benim"
+      },
+      {
+        "timestamp": "18.02.2026, 15:34:41",
+        "from": "Bora",
+        "message": "boyacı geldi eve"
+      },
+      {
+        "timestamp": "18.02.2026, 15:34:56",
+        "from": "Bora",
+        "message": "rezil oldum  mutfak baya dağınık"
+      },
+      {
+        "timestamp": "18.02.2026, 15:35:36",
+        "from": "Ceren",
+        "message": "ayy"
+      },
+      {
+        "timestamp": "18.02.2026, 15:35:40",
+        "from": "Ceren",
+        "message": "benim devam canım"
+      },
+      {
+        "timestamp": "18.02.2026, 15:35:43",
+        "from": "Ceren",
+        "message": "ararım bitince"
+      },
+      {
+        "timestamp": "18.02.2026, 15:35:52",
+        "from": "Bora",
+        "message": "tamam"
+      },
+      {
+        "timestamp": "18.02.2026, 16:18:25",
+        "from": "Ceren",
+        "message": "benim de şimdi bitti canım"
+      },
+      {
+        "timestamp": "18.02.2026, 16:18:37",
+        "from": "Ceren",
+        "message": "boya nereden çıktı ya"
+      },
+      {
+        "timestamp": "18.02.2026, 16:18:56",
+        "from": "Ceren",
+        "message": "Devam ediyor mu?"
+      },
+      {
+        "timestamp": "18.02.2026, 17:04:32",
+        "from": "Bora",
+        "message": "Giyindim hazırlandım tam çıkıcam mesaj attı iyi değilim yarın yapalım diye"
+      },
+      {
+        "timestamp": "18.02.2026, 17:04:51",
+        "from": "Bora",
+        "message": "Neyse benim de çok gidesim yoktu"
+      },
+      {
+        "timestamp": "18.02.2026, 17:07:01",
+        "from": "Bora",
+        "message": "Hava biraz kararsın bisiklet falan kiralayım bari"
+      },
+      {
+        "timestamp": "18.02.2026, 17:49:14",
+        "from": "Bora",
+        "message": "https://us05web.zoom.us/clips/share/4rKHu8s1Qh6-w4F7xHIrdA"
+      },
+      {
+        "timestamp": "18.02.2026, 18:19:35",
+        "from": "Ceren",
+        "message": "Sevgiliiimm ben de ne yaptın diye bakayım dedim çıkarken de haber verecektin"
+      },
+      {
+        "timestamp": "18.02.2026, 18:19:48",
+        "from": "Ceren",
+        "message": "Şimdi geldi mesajlar"
+      },
+      {
+        "timestamp": "18.02.2026, 18:20:17",
+        "from": "Ceren",
+        "message": "Son anda olması da ilginçmiş"
+      },
+      {
+        "timestamp": "18.02.2026, 18:20:45",
+        "from": "Bora",
+        "message": "evet bari 1-2 saat önce yazsaymış, hazırlanmakla uğraşmazdım"
+      },
+      {
+        "timestamp": "18.02.2026, 18:20:49",
+        "from": "Bora",
+        "message": "ama iyi oldu neyse"
+      },
+      {
+        "timestamp": "18.02.2026, 18:21:36",
+        "from": "Bora",
+        "message": "slot makinesi nasıl olmuş?"
+      },
+      {
+        "timestamp": "18.02.2026, 18:22:37",
+        "from": "Ceren",
+        "message": "Yarına ön hazırlık olmuş"
+      },
+      {
+        "timestamp": "18.02.2026, 18:23:06",
+        "from": "Ceren",
+        "message": "Ona bakıyordum sol taraf sabit orta fıldır fıldır"
+      },
+      {
+        "timestamp": "18.02.2026, 18:23:23",
+        "from": "Ceren",
+        "message": "Sağ da ortayı takip ediyor"
+      },
+      {
+        "timestamp": "18.02.2026, 18:23:37",
+        "from": "Ceren",
+        "message": "Maç anlatır gibi yanlız"
+      },
+      {
+        "timestamp": "18.02.2026, 18:24:26",
+        "from": "Ceren",
+        "message": "Sol kanat da oyunda ama o daha yavaş kalmış sanırım"
+      },
+      {
+        "timestamp": "18.02.2026, 18:25:20",
+        "from": "Ceren",
+        "message": "Mouse un üstüne geldiği yer mi daha oynak?"
+      },
+      {
+        "timestamp": "18.02.2026, 18:25:42",
+        "from": "Ceren",
+        "message": "Aynı anda hepsini takip edemiyorum"
+      },
+      {
+        "timestamp": "18.02.2026, 18:26:05",
+        "from": "Ceren",
+        "message": "Fotoların üzerine gelince hafif büyüyorlar güzel olmuş"
+      },
+      {
+        "timestamp": "18.02.2026, 18:26:16",
+        "from": "Ceren",
+        "message": "Ellerine sağöık canım"
+      },
+      {
+        "timestamp": "18.02.2026, 18:28:45",
+        "from": "Bora",
+        "message": "sağol canım, işte slot makinesi efekti yaptım, aslında baya 3 kolonlu bir grid, 1. sıra, 2. sıra vs tam ortada eşleşiyor, bir sürü post var da kaçıyormuş hissi ama aslında hiç biri kaçmıyor"
+      },
+      {
+        "timestamp": "18.02.2026, 18:29:37",
+        "from": "Ceren",
+        "message": "İyiymiş valla"
+      },
+      {
+        "timestamp": "18.02.2026, 18:30:01",
+        "from": "Bora",
+        "message": "kosinüsler sinüsler havada uçuştu dün"
+      },
+      {
+        "timestamp": "18.02.2026, 18:30:43",
+        "from": "Ceren",
+        "message": "Haaydii hooppa diyeydin"
+      },
+      {
+        "timestamp": "18.02.2026, 18:30:59",
+        "from": "Ceren",
+        "message": "https://kavyar.com/boudoir-inspiration-magazine/admin/submissions?categoryId=68017&search=Boudoir%20Royale&submissionId=2703453#"
+      },
+      {
+        "timestamp": "18.02.2026, 18:31:19",
+        "from": "Ceren",
+        "message": "bir şey soracağım bu kadın mp4 yüklemiş projeye"
+      },
+      {
+        "timestamp": "18.02.2026, 18:32:05",
+        "from": "Ceren",
+        "message": "reels olarak fotoğrafların sonunda ya da 2. olarak paylaşayım diyorum ne dersin?"
+      },
+      {
+        "timestamp": "18.02.2026, 18:33:16",
+        "from": "Bora",
+        "message": "2. sıra mantıklı"
+      },
+      {
+        "timestamp": "18.02.2026, 18:33:27",
+        "from": "Bora",
+        "message": "sitede de nasıl koyacağını göstereyim istiyorsan"
+      },
+      {
+        "timestamp": "18.02.2026, 18:33:31",
+        "from": "Bora",
+        "message": "bir de youtubeda short"
+      },
+      {
+        "timestamp": "18.02.2026, 18:33:59",
+        "from": "Ceren",
+        "message": "olur siteye koyamadım youtube videosu olmayınca"
+      },
+      {
+        "timestamp": "18.02.2026, 18:34:11",
+        "from": "Ceren",
+        "message": "postu paylaşayım haber vereyim canım olur mu?"
+      },
+      {
+        "timestamp": "18.02.2026, 18:34:12",
+        "from": "Bora",
+        "message": "youtube olmasına gerek yok da"
+      },
+      {
+        "timestamp": "18.02.2026, 18:34:25",
+        "from": "Bora",
+        "message": "youtubea koyulursa o koyulur"
+      },
+      {
+        "timestamp": "18.02.2026, 19:01:49",
+        "from": "Ceren",
+        "message": "Paylaştım postları müsaitsen zoom linki göndereyim canım"
+      },
+      {
+        "timestamp": "18.02.2026, 19:34:00",
+        "from": "Ceren",
+        "message": "Voice call. 41 sec"
+      },
+      {
+        "timestamp": "18.02.2026, 19:35:56",
+        "from": "Ceren",
+        "message": "Ceren adlı kullanıcı sizi planlanmış Zoom toplantısına davet ediyor.\nKonu: Ceren Adlı Kişinin Zoom Toplantısı\nZaman: 18 Şub 2026 09:30 ÖS İstanbul\nZoom Toplantısına Katıl\nhttps://us04web.zoom.us/j/76449006929?pwd=dUPsBcFa9eLxeI9nK8k5jB3yOrgL2E.1\nToplantı Kimliği: 764 4900 6929\nşifre: [REDACTED_SECRET]"
+      },
+      {
+        "timestamp": "18.02.2026, 19:36:47",
+        "from": "Ceren",
+        "message": "Bekliyorum"
+      },
+      {
+        "timestamp": "18.02.2026, 20:17:08",
+        "from": "Ceren",
+        "message": "bitti canım qynı bağlantıdan gel"
+      },
+      {
+        "timestamp": "18.02.2026, 20:23:02",
+        "from": "Ceren",
+        "message": "İK Teknolojileri Zirvesi 2026\nİK Teknolojileri alanında, eğitim tadında ve dolu dolu sunumların yer alacağı bu ücretsiz online etkinliğe davetlisiniz.\nİKda dijitalleşme, eğitim teknolojileri ve yeni nesil çözümler konuşulacak.\n 19 Şubat Perşembe\n 10.30  17.00\n Online (Vedubox + Zoom altyapısı)\n Ücretsiz kayıt için:\nhttps://www.linkedin.com/posts/etgigrup_iaovk-vedubox-iaovkteknolojileri-activity-7426619628317032448-iiWg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAADdTHYB3kLpJY0UuPXKRCO_WcE6dIA83CE\nİK, eğitim ve teknoloji dünyasının kesişim noktasında yerinizi alın"
+      },
+      {
+        "timestamp": "18.02.2026, 20:51:02",
+        "from": "Bora",
+        "message": "You deleted this message."
+      },
+      {
+        "timestamp": "18.02.2026, 20:51:44",
+        "from": "Bora",
+        "message": "[PART 1  THE SPIN THAT HOOKS THE HUMAN BRAIN]\n[DELIVERY NOTE: Begin calm and curious. Let tension build slowly.]\n[OPENING  HOOK]\nInstagram Reels are NOT just entertainment.\n[PAUSE]\nThey are engineered like a slot machine.\n[LOWER VOICE]\nAnd every time you swipe\nyou place another bet.\n[SHORT PAUSE]\nNot with money.\n[PAUSE]\nWith your attention.\n\n[THE QUESTION  BUILD CURIOSITY]\nWhy is it so hard to stop scrolling?\nWhy does just one more video turn into thirty minutes?\nWhy does the NEXT swipe feel more exciting than the last?\n[PAUSE]\nBecause youre not just watching.\nYoure playing.\n\n[ANTICIPATION, NOT PLEASURE]\nWe think we scroll for pleasure.\nWe dont.\nDopamine is not the pleasure chemical.\n[PAUSE]\nIt is the ANTICIPATION chemical.\nIt rises when we expect a reward.\nIt spikes when the outcome is uncertain.\nIt pushes us to try again.\nThe strongest trigger is not reward.\nIt is unpredictable reward.\n\n[THE SLOT MACHINE LOOP  SUSPENSE BUILD]\nLate 1800s.\nA machine appears.\nInside it spinning reels.\nYou pull the lever.\nThey spin\nthey slow\nthey stop.\n[LONG PAUSE]\nAnd in that waiting moment\ndopamine rises.\nBecause you dont know the outcome.\nThis is called VARIABLE REWARD.\nSometimes you win.\nMost times you dont.\nBut the possibility keeps you engaged.\nEvery spin whispers:\nmaybe this time.\n\n[WHY SPINNING WORKS]\nHumans are wired to notice patterns and motion.\nRotation creates a loop.\nLoops create expectation.\nExpectation creates attention.\nWhen something spins, your brain predicts:\nwhere will it land\nwhen will it stop\nwhat will happen next?\nThis tension keeps you engaged.\nAnd the delay between action and result?\nThat delay intensifies anticipation.\nSlot machine designers perfected it:\nslow click align pause.\nEach click builds tension.\nEach pause increases anticipation.\nYour brain leans forward.\nSpinning doesnt create anticipation.\nIt amplifies it.\n\n[A NATURAL INSTINCT]\nHumans have always been drawn to cycles.\nSpinning tools wound thread.\nCircular dances repeated rhythm.\nRotation creates flow.\nFlow holds attention.\nModern systems engineered this instinct.\n\n:::writing{variant=standard id=10018}\n[PART 2  FROM SUSPENSE TO ALGORITHMS]\n[DELIVERY NOTE: Resume steady. Gradual intensity rise toward the end.]\n[CINEMA & SUSPENSE]\nFilm reels didnt just store images.\nThey allowed time to be controlled.\nEditors could extend a pause\ncut before the reveal\ndelay the answer.\nCinema discovered:\nsuspense holds attention longer than action.\nThe silence before the answer.\nThe tension before the reveal.\nThe pause before the climax.\nDelay  expectation  emotional payoff.\nStory became a controlled release of moments.\n\n[SHOWREELS  ACCELERATED ANTICIPATION]\nThen came the showreel.\nRapid highlight sequences.\nOnly the strongest moments.\nA showreel removes slow buildup but keeps anticipation alive.\nEach cut asks:\nwhats next?\nwhats stronger?\nwhats more impressive?\nThis trained audiences to expect faster rewards\nquicker highlights\ncontinuous stimulation.\nThe anticipation loop became shorter.\nFaster.\nMore intense.\n\n[INSTAGRAM REELS  THE DIGITAL SLOT MACHINE]\nNow fast forward to today.\nSwipe.\nWait.\nReward.\nRepeat.\nYou dont know when the next video will be:\nfunny\nsurprising\nbeautiful\nemotionally powerful.\nSo you keep scrolling.\nEach swipe creates anticipation.\nEach unexpected hit releases dopamine.\n\n[THE ALGORITHM TWIST  LOWER VOICE]\nBut heres what changed.\nSlot machines are random.\nInstagram is not.\nThe algorithm learns you.\nIt studies when you pause\nwhat you replay\nwhat keeps you watching.\nThen it delivers at precisely the right moment.\nNot predictable.\nNot random.\nOptimized uncertainty.\n\n[WHY YOU KEEP PLAYING]\nIf every video were amazing youd stop.\nIf every video were boring youd leave.\nBut variability keeps you searching.\nYour brain stays alert.\nWaiting.\nExpecting.\nHunting the next hit.\nYou are not watching content.\nYou are chasing reward.\n\n[FINAL BUILD  RISING INTENSITY]\nSlot machines discovered anticipation.\nCinema amplified it.\nShowreels accelerated it.\nAlgorithms perfected it.\nAnd now\nthe spinning reel lives in your pocket.\n\n[CLOSING  SLOW, POWERFUL]\nEvery swipe feels like it might be the one.\nThe funniest.\nThe most shocking.\nThe most satisfying.\nAnd that feeling keeps you spinning.\n[PAUSE]\nBecause this game\nwas never about winning.\n[PAUSE]\nIt was about keeping you playing.\n[LOWER VOICE  FINAL LINE]\nThe machine is rigged.\n:::\n\nIf you want, I can also:\n make the ending less dark / more reflective\n add visual cut cues for the final line impact\n craft a viral shorter ending variant\n add music & silence timing for dramatic drop\n produce a TED-style reflective ending"
+      },
+      {
+        "timestamp": "18.02.2026, 20:57:40",
+        "from": "Ceren",
+        "message": "bitti canım"
+      },
+      {
+        "timestamp": "18.02.2026, 20:57:43",
+        "from": "Ceren",
+        "message": "giriyorum"
+      },
+      {
+        "timestamp": "18.02.2026, 22:09:05",
+        "from": "Ceren",
+        "message": "Voice call. 53 sec"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c13",
+    "start_time": "19.02.2026, 10:05:17",
+    "end_time": "19.02.2026, 10:29:19",
+    "message_count": 2,
+    "messages": [
+      {
+        "timestamp": "19.02.2026, 10:05:17",
+        "from": "Bora",
+        "message": "Günaydın canım"
+      },
+      {
+        "timestamp": "19.02.2026, 10:29:19",
+        "from": "Ceren",
+        "message": "Günaydın canım"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c14",
+    "start_time": "19.02.2026, 13:51:36",
+    "end_time": "20.02.2026, 00:23:07",
+    "message_count": 192,
+    "messages": [
+      {
+        "timestamp": "19.02.2026, 13:51:36",
+        "from": "Ceren",
+        "message": "Canım birazdan çıkıyorum, varuna ya gideceğim"
+      },
+      {
+        "timestamp": "19.02.2026, 13:52:08",
+        "from": "Ceren",
+        "message": "Teyzem dün yazmıştı ne demiş?"
+      },
+      {
+        "timestamp": "19.02.2026, 13:52:12",
+        "from": "Bora",
+        "message": "ok, contesti bi konuşsak, ne durumdayız diye"
+      },
+      {
+        "timestamp": "19.02.2026, 13:52:35",
+        "from": "Bora",
+        "message": "Günaydın"
+      },
+      {
+        "timestamp": "19.02.2026, 13:52:35",
+        "from": "Bora",
+        "message": "O doktor emekli olmuş. Şadiye Gümrük adı. Medamericana'da çalışıyormuş."
+      },
+      {
+        "timestamp": "19.02.2026, 13:52:35",
+        "from": "Bora",
+        "message": "İstersen isim olarak ara hani kendisi serbest çalışıyorsa çıkar zaten."
+      },
+      {
+        "timestamp": "19.02.2026, 13:52:35",
+        "from": "Bora",
+        "message": "Başka isim olursa da bana yazacak bunu gönderen arkadaş."
+      },
+      {
+        "timestamp": "19.02.2026, 13:52:47",
+        "from": "Ceren",
+        "message": "Varuna da çalışacağım conteste diye düşündüm"
+      },
+      {
+        "timestamp": "19.02.2026, 13:53:02",
+        "from": "Bora",
+        "message": "ok, konuşuruz akşam"
+      },
+      {
+        "timestamp": "19.02.2026, 13:53:42",
+        "from": "Ceren",
+        "message": "Serbest çalışıyor muymuş?"
+      },
+      {
+        "timestamp": "19.02.2026, 13:54:05",
+        "from": "Bora",
+        "message": "bilmiyorum, bakamadım"
+      },
+      {
+        "timestamp": "19.02.2026, 13:54:23",
+        "from": "Bora",
+        "message": "3-4 tane isim geldi, tek tek bakmak lazım"
+      },
+      {
+        "timestamp": "19.02.2026, 14:12:57",
+        "from": "Ceren",
+        "message": "Müsait misin sevgilim?"
+      },
+      {
+        "timestamp": "19.02.2026, 14:13:12",
+        "from": "Bora",
+        "message": "ne için canım?"
+      },
+      {
+        "timestamp": "19.02.2026, 14:13:23",
+        "from": "Ceren",
+        "message": "Aramak istedim"
+      },
+      {
+        "timestamp": "19.02.2026, 14:13:38",
+        "from": "Bora",
+        "message": "konuşmak için ok, bana bi 5 dk ver"
+      },
+      {
+        "timestamp": "19.02.2026, 14:13:42",
+        "from": "Bora",
+        "message": "arıyorum birazdan"
+      },
+      {
+        "timestamp": "19.02.2026, 14:13:47",
+        "from": "Ceren",
+        "message": "Tamam canım"
+      },
+      {
+        "timestamp": "19.02.2026, 14:38:07",
+        "from": "Bora",
+        "message": "Voice call. 11 min"
+      },
+      {
+        "timestamp": "19.02.2026, 15:30:34",
+        "from": "Ceren",
+        "message": "Kılıf alıyorum sevgilim\n[19.02.2026, 15:30:39] Petek Ceren Çiçeğim :"
+      },
+      {
+        "timestamp": "19.02.2026, 15:30:48",
+        "from": "Ceren",
+        "message": "Pembeyi beğendim ama"
+      },
+      {
+        "timestamp": "19.02.2026, 15:30:59",
+        "from": "Ceren",
+        "message": "Hemen dokununca kirlendi bile"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:01",
+        "from": "Bora",
+        "message": "havalı"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:08",
+        "from": "Ceren",
+        "message": "O yüzden siyah diyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:11",
+        "from": "Ceren",
+        "message": "Sen ne dersin?"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:13",
+        "from": "Bora",
+        "message": "ben de pembeyi beğendim tabi ki"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:25",
+        "from": "Bora",
+        "message": "e siyah da kirli görünüyor"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:37",
+        "from": "Ceren",
+        "message": "O silinir de"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:44",
+        "from": "Ceren",
+        "message": "İstersen pembe alayım"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:50",
+        "from": "Ceren",
+        "message": "Son 10 sn"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:56",
+        "from": "Ceren",
+        "message": "Karar için"
+      },
+      {
+        "timestamp": "19.02.2026, 15:31:57",
+        "from": "Bora",
+        "message": "sen bilirsin bebek"
+      },
+      {
+        "timestamp": "19.02.2026, 15:32:06",
+        "from": "Bora",
+        "message": "sen kullancaksın sonuçta"
+      },
+      {
+        "timestamp": "19.02.2026, 15:32:13",
+        "from": "Ceren",
+        "message": "Birlikte bebek"
+      },
+      {
+        "timestamp": "19.02.2026, 15:32:25",
+        "from": "Bora",
+        "message": "e tablet sende aşkım"
+      },
+      {
+        "timestamp": "19.02.2026, 15:32:31",
+        "from": "Bora",
+        "message": "belki ben de yeni bir tablet alırım"
+      },
+      {
+        "timestamp": "19.02.2026, 15:32:44",
+        "from": "Ceren",
+        "message": "Gelince sende de olacak aşkım"
+      },
+      {
+        "timestamp": "19.02.2026, 15:33:05",
+        "from": "Bora",
+        "message": "e birlikte olduğumuzda da sende duruyor aşkım"
+      },
+      {
+        "timestamp": "19.02.2026, 15:33:12",
+        "from": "Bora",
+        "message": "sen çalışıyorsun onunla sonuçta"
+      },
+      {
+        "timestamp": "19.02.2026, 15:33:47",
+        "from": "Ceren",
+        "message": "Telefon yenilenince o kadar ihtiyacım olmayacak ama"
+      },
+      {
+        "timestamp": "19.02.2026, 15:34:12",
+        "from": "Bora",
+        "message": "hmmm öyle mi diyosun?"
+      },
+      {
+        "timestamp": "19.02.2026, 15:34:30",
+        "from": "Ceren",
+        "message": "Bana mı öyle geliyor?"
+      },
+      {
+        "timestamp": "19.02.2026, 15:34:59",
+        "from": "Bora",
+        "message": "neler yapıyorsun bilmediğim için"
+      },
+      {
+        "timestamp": "19.02.2026, 15:35:02",
+        "from": "Ceren",
+        "message": "Bu arada bu büyüklükte çok satılmadığı için kılıf da sınırlıymış"
+      },
+      {
+        "timestamp": "19.02.2026, 15:36:04",
+        "from": "Ceren",
+        "message": "Tel.de etiketleyemedipim için sosyal medyada ve şimdi video çekmek için kullacağım."
+      },
+      {
+        "timestamp": "19.02.2026, 15:36:15",
+        "from": "Ceren",
+        "message": "Neyse sevgilim"
+      },
+      {
+        "timestamp": "19.02.2026, 15:36:20",
+        "from": "Ceren",
+        "message": "Konu dağıldı"
+      },
+      {
+        "timestamp": "19.02.2026, 15:36:45",
+        "from": "Bora",
+        "message": "sen kendine göre al aşkım"
+      },
+      {
+        "timestamp": "19.02.2026, 15:37:14",
+        "from": "Ceren",
+        "message": "Pembe alıyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 15:37:45",
+        "from": "Bora",
+        "message": "siyah al bebek, sen onu beğenmişsin"
+      },
+      {
+        "timestamp": "19.02.2026, 15:40:45",
+        "from": "Ceren",
+        "message": "Yok ya"
+      },
+      {
+        "timestamp": "19.02.2026, 15:40:51",
+        "from": "Ceren",
+        "message": "Ben de pembe beğendim"
+      },
+      {
+        "timestamp": "19.02.2026, 15:43:12",
+        "from": "Bora",
+        "message": "ok bebek, nasıl istersen"
+      },
+      {
+        "timestamp": "19.02.2026, 15:49:07",
+        "from": "Ceren",
+        "message": "Ekran koruyucuyu da taktırdım"
+      },
+      {
+        "timestamp": "19.02.2026, 15:49:24",
+        "from": "Ceren",
+        "message": "Duruyordu öyle evde"
+      },
+      {
+        "timestamp": "19.02.2026, 15:49:40",
+        "from": "Ceren",
+        "message": "Ödeme alamadılar ama bir türlü"
+      },
+      {
+        "timestamp": "19.02.2026, 15:49:49",
+        "from": "Ceren",
+        "message": "Bekliyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 15:50:11",
+        "from": "Bora",
+        "message": "hayırlı olsun\n[19.02.2026, 16:11:20] Petek Ceren Çiçeğim :"
+      },
+      {
+        "timestamp": "19.02.2026, 16:11:36",
+        "from": "Ceren",
+        "message": "Güle güle kullanalım sevgilim"
+      },
+      {
+        "timestamp": "19.02.2026, 16:11:59",
+        "from": "Bora",
+        "message": "güle güle kullan canım"
+      },
+      {
+        "timestamp": "19.02.2026, 16:27:56",
+        "from": "Ceren",
+        "message": "Böyle bir doktor çıkmadı aramalarımda. Teyzemi aradım, toplantıdaymış. 9 gibi arayacak beni. Doktor isimleri gönderdim dedi canım, bu arada başka isim var mı paylaştığı?"
+      },
+      {
+        "timestamp": "19.02.2026, 16:28:12",
+        "from": "Bora",
+        "message": "evet ben de bulamadım"
+      },
+      {
+        "timestamp": "19.02.2026, 16:28:18",
+        "from": "Bora",
+        "message": "ama bir tel no buldum"
+      },
+      {
+        "timestamp": "19.02.2026, 16:28:32",
+        "from": "Bora",
+        "message": "du ben sana göndericem bir liste"
+      },
+      {
+        "timestamp": "19.02.2026, 16:28:40",
+        "from": "Ceren",
+        "message": "Müriş'i aradım, açmadı. Mesaj gönderdim, en geç yarına kadar karar vermek istiyoruz doktora diye."
+      },
+      {
+        "timestamp": "19.02.2026, 16:38:26",
+        "from": "Ceren",
+        "message": "Sevgilim web'de awards sayfası karışmış. Jürilere gittiğimde 2026'ya; sayfaya tıkladığımda da 2025 earlybird başvurusu ve önceki yılların fotoları açılıyor sanırım 2023'e ait kazananlar."
+      },
+      {
+        "timestamp": "19.02.2026, 16:39:44",
+        "from": "Bora",
+        "message": "hmmm evet teşekkür ederim canım, düzeltirim şimdi"
+      },
+      {
+        "timestamp": "19.02.2026, 16:40:10",
+        "from": "Ceren",
+        "message": "ellerine sağlık canım"
+      },
+      {
+        "timestamp": "19.02.2026, 16:49:28",
+        "from": "Ceren",
+        "message": "Hello,\nWe recently experienced a technical issue with our contest submission system. As a result, some entries were saved as drafts and the payment could not be processed, which also caused the uploaded images not to appear.\nSince this issue was on our side, we would like to include you in the contest free of charge. If you prefer not to participate under these conditions, please let us know.\nTo proceed, we kindly ask you to resend your images by replying to this email or by sharing a Drive link.\nPlease ensure your images meet the following minimum size requirements:\nPortrait: 8.5 × 11 inches, 300 dpi (2550 × 3300 pixels)\nLandscape: 17 × 11 inches, 300 dpi (5100 × 3300 pixels)\nWe kindly ask for your response by February 25, 2026.\nThank you for your understanding, and we truly appreciate your participation.\nWarm regards,"
+      },
+      {
+        "timestamp": "19.02.2026, 16:49:53",
+        "from": "Ceren",
+        "message": "Draftta olanlara canım, uygun mu?"
+      },
+      {
+        "timestamp": "19.02.2026, 16:50:26",
+        "from": "Bora",
+        "message": "şey dedik ya aşkım, biz koycaz, istemezseniz itiraz etmek için buraya vs"
+      },
+      {
+        "timestamp": "19.02.2026, 16:52:54",
+        "from": "Ceren",
+        "message": "bir de fotolar da yok canım mesala gabrielin hiç yok."
+      },
+      {
+        "timestamp": "19.02.2026, 16:53:03",
+        "from": "Ceren",
+        "message": "istediğin şekilde düzenleyeyim"
+      },
+      {
+        "timestamp": "19.02.2026, 16:53:37",
+        "from": "Bora",
+        "message": "e benim dediğim gibi not almışsın zaten"
+      },
+      {
+        "timestamp": "19.02.2026, 16:53:45",
+        "from": "Ceren",
+        "message": "evet de"
+      },
+      {
+        "timestamp": "19.02.2026, 16:53:49",
+        "from": "Bora",
+        "message": "foto olmayanlara mail atılabilir gönder diye"
+      },
+      {
+        "timestamp": "19.02.2026, 16:53:51",
+        "from": "Ceren",
+        "message": "fotolar yok ya"
+      },
+      {
+        "timestamp": "19.02.2026, 16:54:16",
+        "from": "Ceren",
+        "message": "işte bazılarının da yarım"
+      },
+      {
+        "timestamp": "19.02.2026, 16:54:18",
+        "from": "Ceren",
+        "message": "bir var bir yok"
+      },
+      {
+        "timestamp": "19.02.2026, 16:55:22",
+        "from": "Bora",
+        "message": "aşkım şöyle yapılacak:\n1. olanlara bakılacak, fotolar ok ise biz dahil ediyoruz, itiraz için yazın\n2. olmayanlar ya da yarım olanlar tespit edilip senin yazdığım maili atcaz"
+      },
+      {
+        "timestamp": "19.02.2026, 16:55:52",
+        "from": "Ceren",
+        "message": "tamam"
+      },
+      {
+        "timestamp": "19.02.2026, 17:00:05",
+        "from": "Ceren",
+        "message": "Hello,\nWere writing to inform you about a recent technical issue affecting some contest submissions. Although your images were successfully received, the payment could not be processed due to a system error on our side.\nTo ensure you are not affected by this issue, we have included your entry in the contest free of charge.\nIf you prefer not to participate under these conditions, please let us know.\nWe kindly ask that you contact us by February 25, 2026 if you wish to opt out.\nThank you for your understanding and for being part of Boudoir Inspiration.\nWarm regards,"
+      },
+      {
+        "timestamp": "19.02.2026, 17:00:52",
+        "from": "Ceren",
+        "message": "bu da 2. için ok. mi?"
+      },
+      {
+        "timestamp": "19.02.2026, 17:03:30",
+        "from": "Bora",
+        "message": "bu süre ay sonuna falan kadar uzatılabilir February 25, 2026"
+      },
+      {
+        "timestamp": "19.02.2026, 17:04:24",
+        "from": "Ceren",
+        "message": "28 şubat yazıyorum o zaman"
+      },
+      {
+        "timestamp": "19.02.2026, 17:04:36",
+        "from": "Ceren",
+        "message": "web sayfası açılmıyor canım"
+      },
+      {
+        "timestamp": "19.02.2026, 17:04:41",
+        "from": "Ceren",
+        "message": "bir şeyler mi yapıyorsun?"
+      },
+      {
+        "timestamp": "19.02.2026, 17:06:10",
+        "from": "Bora",
+        "message": "hayallah paylamış"
+      },
+      {
+        "timestamp": "19.02.2026, 17:06:13",
+        "from": "Bora",
+        "message": "offff"
+      },
+      {
+        "timestamp": "19.02.2026, 17:06:28",
+        "from": "Ceren",
+        "message": "ana sayfa ok. de"
+      },
+      {
+        "timestamp": "19.02.2026, 17:06:33",
+        "from": "Ceren",
+        "message": "içeriye giremiyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 17:07:07",
+        "from": "Bora",
+        "message": "gördüm canım"
+      },
+      {
+        "timestamp": "19.02.2026, 17:21:26",
+        "from": "Bora",
+        "message": "pilatesçi yine saçmaladı, ben de haftaya erteleyelim falan dedim, iptal yani"
+      },
+      {
+        "timestamp": "19.02.2026, 17:39:19",
+        "from": "Ceren",
+        "message": "Alla alla bence başka birine bak canım"
+      },
+      {
+        "timestamp": "19.02.2026, 17:39:37",
+        "from": "Bora",
+        "message": "vazgeçtim zaten 400 euro çok fazla"
+      },
+      {
+        "timestamp": "19.02.2026, 17:41:32",
+        "from": "Bora",
+        "message": "site geldi sanırım bakar mısın canım?"
+      },
+      {
+        "timestamp": "19.02.2026, 17:56:16",
+        "from": "Ceren",
+        "message": "Gelmedi canım"
+      },
+      {
+        "timestamp": "19.02.2026, 17:56:30",
+        "from": "Ceren",
+        "message": "Post da paylaşamıyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 17:57:43",
+        "from": "Bora",
+        "message": "bende açılıyor ya, bi tarayıcıyı kapatıp bir daha dener misin?"
+      },
+      {
+        "timestamp": "19.02.2026, 18:06:29",
+        "from": "Ceren",
+        "message": "Tamam deniyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 18:06:49",
+        "from": "Ceren",
+        "message": "Senin mesajlar da geç geliyor bana bu arada"
+      },
+      {
+        "timestamp": "19.02.2026, 18:06:52",
+        "from": "Ceren",
+        "message": "Yine"
+      },
+      {
+        "timestamp": "19.02.2026, 18:07:13",
+        "from": "Bora",
+        "message": "anlamadım"
+      },
+      {
+        "timestamp": "19.02.2026, 18:10:36",
+        "from": "Ceren",
+        "message": "Her şey dönüyorduuu"
+      },
+      {
+        "timestamp": "19.02.2026, 18:10:44",
+        "from": "Ceren",
+        "message": "Açılmıyor sevgilim"
+      },
+      {
+        "timestamp": "19.02.2026, 18:11:02",
+        "from": "Bora",
+        "message": "bi zoom yapalım mı?"
+      },
+      {
+        "timestamp": "19.02.2026, 18:11:12",
+        "from": "Ceren",
+        "message": "Şu online görünmeme muhabbetinden sonra mesajların geç geliyor"
+      },
+      {
+        "timestamp": "19.02.2026, 18:11:23",
+        "from": "Ceren",
+        "message": "Yapalım canım"
+      },
+      {
+        "timestamp": "19.02.2026, 18:11:35",
+        "from": "Ceren",
+        "message": "Göndereyim link"
+      },
+      {
+        "timestamp": "19.02.2026, 18:11:43",
+        "from": "Bora",
+        "message": "ok"
+      },
+      {
+        "timestamp": "19.02.2026, 18:14:00",
+        "from": "Ceren",
+        "message": "Ceren adlı kullanıcı sizi planlanmış Zoom toplantısına davet ediyor.\nKonu: Ceren Adlı Kişinin Zoom Toplantısı\nZaman: 19 Şub 2026 08:15 ÖS İstanbul\nZoom Toplantısına Katıl\nhttps://us04web.zoom.us/j/75208088988?pwd=4Z5gw6wQix5GfMFqbn0dA9SbrlkCXi.1\nToplantı Kimliği: 752 0808 8988\nşifre: [REDACTED_SECRET]"
+      },
+      {
+        "timestamp": "19.02.2026, 18:15:12",
+        "from": "Ceren",
+        "message": "böyle canım"
+      },
+      {
+        "timestamp": "19.02.2026, 18:15:18",
+        "from": "Ceren",
+        "message": "bekliyorum bu arada"
+      },
+      {
+        "timestamp": "19.02.2026, 18:15:24",
+        "from": "Bora",
+        "message": "geldim zoom a"
+      },
+      {
+        "timestamp": "19.02.2026, 18:50:52",
+        "from": "Bora",
+        "message": "atak yemişiz"
+      },
+      {
+        "timestamp": "19.02.2026, 18:51:25",
+        "from": "Bora",
+        "message": "birisi brute force yapmış"
+      },
+      {
+        "timestamp": "19.02.2026, 18:54:36",
+        "from": "Bora",
+        "message": "benim mesjlar yine mi gelmiyor acaba?"
+      },
+      {
+        "timestamp": "19.02.2026, 18:55:25",
+        "from": "Ceren",
+        "message": "Şimdi geldi sevgilim"
+      },
+      {
+        "timestamp": "19.02.2026, 18:55:35",
+        "from": "Ceren",
+        "message": "Evet gelmiyor bu arada"
+      },
+      {
+        "timestamp": "19.02.2026, 18:55:41",
+        "from": "Ceren",
+        "message": "Anlamadım neden"
+      },
+      {
+        "timestamp": "19.02.2026, 18:55:49",
+        "from": "Ceren",
+        "message": "Teyzem ile konuşuyordum"
+      },
+      {
+        "timestamp": "19.02.2026, 18:56:36",
+        "from": "Ceren",
+        "message": "Sanırım hacklemeye çalışmış:("
+      },
+      {
+        "timestamp": "19.02.2026, 18:57:17",
+        "from": "Ceren",
+        "message": "Gönderdiğin ismi bulamadık dedim. O zmn çalışmıyor demek ki artık dedi"
+      },
+      {
+        "timestamp": "19.02.2026, 18:57:42",
+        "from": "Ceren",
+        "message": "Başka bir isim daha gönderdim onun var özel yeri"
+      },
+      {
+        "timestamp": "19.02.2026, 18:57:52",
+        "from": "Ceren",
+        "message": "Dedi"
+      },
+      {
+        "timestamp": "19.02.2026, 18:59:43",
+        "from": "Ceren",
+        "message": "Bir de biriyle daha konuşmuş o da böyle durumlar ile karşılaştık aracı olanlar dahil başları belaya girdi, demiş. Teyzem de biz durumun farkındayız merak etme, bildiin birileri varsa paylaş, demiş. Ondan da haber bekliyoruz canım"
+      },
+      {
+        "timestamp": "19.02.2026, 19:00:46",
+        "from": "Bora",
+        "message": "ok canım teşekkürler ben de biraz araştırdım, göndercem liste"
+      },
+      {
+        "timestamp": "19.02.2026, 19:03:32",
+        "from": "Bora",
+        "message": "kabakmış"
+      },
+      {
+        "timestamp": "19.02.2026, 19:15:17",
+        "from": "Ceren",
+        "message": "Komiksin sevgilim"
+      },
+      {
+        "timestamp": "19.02.2026, 19:20:04",
+        "from": "Ceren",
+        "message": "Siteye girilemiyor sanırım hala"
+      },
+      {
+        "timestamp": "19.02.2026, 19:20:24",
+        "from": "Ceren",
+        "message": "Yani ben giremiyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 19:20:38",
+        "from": "Bora",
+        "message": "broswer cachei temizl"
+      },
+      {
+        "timestamp": "19.02.2026, 19:20:39",
+        "from": "Bora",
+        "message": "e"
+      },
+      {
+        "timestamp": "19.02.2026, 19:21:31",
+        "from": "Ceren",
+        "message": "Ok"
+      },
+      {
+        "timestamp": "19.02.2026, 19:25:15",
+        "from": "Bora",
+        "message": "başka sayfayı dene"
+      },
+      {
+        "timestamp": "19.02.2026, 19:31:20",
+        "from": "Ceren",
+        "message": "sen yemeğini ye de sevgilim bakarsın sonra  ben de bu arada fotoğrafçı seçeyim"
+      },
+      {
+        "timestamp": "19.02.2026, 19:31:44",
+        "from": "Bora",
+        "message": "yemek yaparken bir yandan da bir sürü şeyle uğraşıyorum sevgilim"
+      },
+      {
+        "timestamp": "19.02.2026, 19:35:31",
+        "from": "Ceren",
+        "message": "kolay gelsin sevgilim"
+      },
+      {
+        "timestamp": "19.02.2026, 19:35:41",
+        "from": "Ceren",
+        "message": "sana bir şifre: [REDACTED_SECRET] mi?"
+      },
+      {
+        "timestamp": "19.02.2026, 19:36:01",
+        "from": "Ceren",
+        "message": "tarayıcı temizleyince yeniden girmem gerekiyor"
+      },
+      {
+        "timestamp": "19.02.2026, 19:36:41",
+        "from": "Ceren",
+        "message": "IG'ye"
+      },
+      {
+        "timestamp": "19.02.2026, 19:37:08",
+        "from": "Ceren",
+        "message": "fotoğrafçı seçerken IG lerini de kopyalayım dedim canım"
+      },
+      {
+        "timestamp": "19.02.2026, 20:24:27",
+        "from": "Ceren",
+        "message": "canım"
+      },
+      {
+        "timestamp": "19.02.2026, 20:24:40",
+        "from": "Ceren",
+        "message": "iyi misin?"
+      },
+      {
+        "timestamp": "19.02.2026, 21:01:22",
+        "from": "Bora",
+        "message": "zoomdayım cnm"
+      },
+      {
+        "timestamp": "19.02.2026, 21:08:26",
+        "from": "Ceren",
+        "message": "Pc yi kapatmıştım eve gidecektim cnm"
+      },
+      {
+        "timestamp": "19.02.2026, 21:08:59",
+        "from": "Ceren",
+        "message": "Açayım mı yoksa eve gidince mi girelim?"
+      },
+      {
+        "timestamp": "19.02.2026, 21:16:29",
+        "from": "Bora",
+        "message": "aşkım geldim"
+      },
+      {
+        "timestamp": "19.02.2026, 21:17:02",
+        "from": "Bora",
+        "message": "Voice call. 53 sec"
+      },
+      {
+        "timestamp": "19.02.2026, 21:18:29",
+        "from": "Bora",
+        "message": "bir daha link atar mısın aşkım bulamadım"
+      },
+      {
+        "timestamp": "19.02.2026, 21:18:37",
+        "from": "Bora",
+        "message": "buldum tamam"
+      },
+      {
+        "timestamp": "19.02.2026, 21:26:14",
+        "from": "Bora",
+        "message": "sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+      },
+      {
+        "timestamp": "19.02.2026, 22:08:01",
+        "from": "Ceren",
+        "message": "Canım geldim eve"
+      },
+      {
+        "timestamp": "19.02.2026, 22:08:18",
+        "from": "Ceren",
+        "message": "Üstümü değiştirip haber veriyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 22:08:23",
+        "from": "Bora",
+        "message": "hoşgeldin, ben yine zoomdayım"
+      },
+      {
+        "timestamp": "19.02.2026, 22:08:34",
+        "from": "Bora",
+        "message": "ok canım biter o zaman kadar umarım"
+      },
+      {
+        "timestamp": "19.02.2026, 22:08:46",
+        "from": "Bora",
+        "message": "utku direk sisteme bakıyor"
+      },
+      {
+        "timestamp": "19.02.2026, 22:20:57",
+        "from": "Ceren",
+        "message": "Sağolsun ya"
+      },
+      {
+        "timestamp": "19.02.2026, 22:21:10",
+        "from": "Ceren",
+        "message": "Ben de açıyorum şimdi pc yi"
+      },
+      {
+        "timestamp": "19.02.2026, 22:21:24",
+        "from": "Bora",
+        "message": "ok bitecek inşallah"
+      },
+      {
+        "timestamp": "19.02.2026, 22:21:42",
+        "from": "Bora",
+        "message": "çocuk sıfırdan banlama sistemi kurdu gözümün önünde"
+      },
+      {
+        "timestamp": "19.02.2026, 22:26:32",
+        "from": "Ceren",
+        "message": "zoomdayım canımü"
+      },
+      {
+        "timestamp": "19.02.2026, 22:27:42",
+        "from": "Bora",
+        "message": "son 5 dk"
+      },
+      {
+        "timestamp": "19.02.2026, 22:27:54",
+        "from": "Ceren",
+        "message": "ok. çıktım o zaman :)"
+      },
+      {
+        "timestamp": "19.02.2026, 22:28:14",
+        "from": "Ceren",
+        "message": "haber verirsin canım bitince"
+      },
+      {
+        "timestamp": "19.02.2026, 22:34:59",
+        "from": "Bora",
+        "message": "bitti canım"
+      },
+      {
+        "timestamp": "19.02.2026, 22:35:03",
+        "from": "Bora",
+        "message": "girelim mi?"
+      },
+      {
+        "timestamp": "19.02.2026, 22:35:41",
+        "from": "Bora",
+        "message": "Voice call. 2 min"
+      },
+      {
+        "timestamp": "19.02.2026, 23:24:05",
+        "from": "Bora",
+        "message": "oh kurtardım"
+      },
+      {
+        "timestamp": "19.02.2026, 23:34:11",
+        "from": "Ceren",
+        "message": "Şükür"
+      },
+      {
+        "timestamp": "19.02.2026, 23:34:22",
+        "from": "Ceren",
+        "message": "Giriyorum zoom a"
+      },
+      {
+        "timestamp": "19.02.2026, 23:34:26",
+        "from": "Bora",
+        "message": "şimdi başka bir şey patlamış onu düzeltmeye çalışıyorum"
+      },
+      {
+        "timestamp": "19.02.2026, 23:34:37",
+        "from": "Bora",
+        "message": "nazar değdi bugün"
+      },
+      {
+        "timestamp": "19.02.2026, 23:34:37",
+        "from": "Ceren",
+        "message": "Hay allam"
+      },
+      {
+        "timestamp": "19.02.2026, 23:34:44",
+        "from": "Ceren",
+        "message": "Evet yaa"
+      },
+      {
+        "timestamp": "19.02.2026, 23:34:55",
+        "from": "Bora",
+        "message": "kaç saatimi yedi ya"
+      },
+      {
+        "timestamp": "19.02.2026, 23:35:39",
+        "from": "Ceren",
+        "message": "Bu arada tel.in sesini de açtım. Girip bakmadığım sürece mesajlar gelmiyor canım"
+      },
+      {
+        "timestamp": "19.02.2026, 23:35:59",
+        "from": "Bora",
+        "message": "başkalarında?"
+      },
+      {
+        "timestamp": "19.02.2026, 23:36:03",
+        "from": "Ceren",
+        "message": "Evet valla öyle"
+      },
+      {
+        "timestamp": "19.02.2026, 23:36:12",
+        "from": "Bora",
+        "message": "beni engelledin mi bakim sen"
+      },
+      {
+        "timestamp": "19.02.2026, 23:36:15",
+        "from": "Ceren",
+        "message": "Sadece seninle böyle"
+      },
+      {
+        "timestamp": "19.02.2026, 23:37:00",
+        "from": "Ceren",
+        "message": "Engelledim evet ama çözüm arıyorum seninle iletişim kurmak için"
+      },
+      {
+        "timestamp": "19.02.2026, 23:40:02",
+        "from": "Bora",
+        "message": "düzelttim şimdi girelim mi zooma?"
+      },
+      {
+        "timestamp": "19.02.2026, 23:40:12",
+        "from": "Ceren",
+        "message": "Olur"
+      },
+      {
+        "timestamp": "19.02.2026, 23:40:23",
+        "from": "Bora",
+        "message": "2025 konusu çözüldü bu arada"
+      },
+      {
+        "timestamp": "19.02.2026, 23:40:27",
+        "from": "Bora",
+        "message": "başka bir şey va rmı?"
+      },
+      {
+        "timestamp": "19.02.2026, 23:41:00",
+        "from": "Bora",
+        "message": "yoksa ben de dükkanı kapatıyım ya çok yoruldum"
+      },
+      {
+        "timestamp": "19.02.2026, 23:41:41",
+        "from": "Bora",
+        "message": "yaptığım şeyleri görmek istersen ayrı"
+      },
+      {
+        "timestamp": "19.02.2026, 23:42:26",
+        "from": "Bora",
+        "message": "Voice call. No answer"
+      },
+      {
+        "timestamp": "19.02.2026, 23:42:37",
+        "from": "Ceren",
+        "message": "Voice call. 6 sec"
+      },
+      {
+        "timestamp": "19.02.2026, 23:42:42",
+        "from": "Bora",
+        "message": "girdim"
+      },
+      {
+        "timestamp": "20.02.2026, 00:23:07",
+        "from": "Ceren",
+        "message": "bekliyoreee"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c15",
+    "start_time": "20.02.2026, 09:43:06",
+    "end_time": "20.02.2026, 13:49:21",
+    "message_count": 9,
+    "messages": [
+      {
+        "timestamp": "20.02.2026, 09:43:06",
+        "from": "Bora",
+        "message": "günaydın canım"
+      },
+      {
+        "timestamp": "20.02.2026, 11:12:16",
+        "from": "Ceren",
+        "message": "Günaydın canım"
+      },
+      {
+        "timestamp": "20.02.2026, 13:09:10",
+        "from": "Ceren",
+        "message": "Bir tanem nasılsın?"
+      },
+      {
+        "timestamp": "20.02.2026, 13:39:31",
+        "from": "Bora",
+        "message": "şimdi toplantıdan çıktım canım, iyiyim, sen nasılsın?"
+      },
+      {
+        "timestamp": "20.02.2026, 13:45:31",
+        "from": "Ceren",
+        "message": "iyiyim sevgilim"
+      },
+      {
+        "timestamp": "20.02.2026, 13:45:36",
+        "from": "Ceren",
+        "message": "özledim seni çok"
+      },
+      {
+        "timestamp": "20.02.2026, 13:45:59",
+        "from": "Ceren",
+        "message": "arıyorum"
+      },
+      {
+        "timestamp": "20.02.2026, 13:46:24",
+        "from": "Ceren",
+        "message": "Voice call. 24 min"
+      },
+      {
+        "timestamp": "20.02.2026, 13:49:21",
+        "from": "Ceren",
+        "message": "https://docs.google.com/spreadsheets/d/19SZNkpe0kgsZCeMhszd-yto24v9TnDNboROZSWv7g3s/edit?gid=1623985105#gid=1623985105"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c16",
+    "start_time": "20.02.2026, 16:07:36",
+    "end_time": "20.02.2026, 23:50:40",
+    "message_count": 88,
+    "messages": [
+      {
+        "timestamp": "20.02.2026, 16:07:36",
+        "from": "Ceren",
+        "message": "Canım müsait misin?"
+      },
+      {
+        "timestamp": "20.02.2026, 16:07:48",
+        "from": "Bora",
+        "message": "birazdan olcam"
+      },
+      {
+        "timestamp": "20.02.2026, 16:08:07",
+        "from": "Ceren",
+        "message": "ok. olunca ara o zmn canım"
+      },
+      {
+        "timestamp": "20.02.2026, 16:09:59",
+        "from": "Bora",
+        "message": "tamam canım"
+      },
+      {
+        "timestamp": "20.02.2026, 16:30:26",
+        "from": "Bora",
+        "message": "Voice call. 34 min"
+      },
+      {
+        "timestamp": "20.02.2026, 17:01:28",
+        "from": "Bora",
+        "message": "https://research.ku.edu.tr/research-infrastructure/laboratories/brain-cancer-research-and-therapy-lab/"
+      },
+      {
+        "timestamp": "20.02.2026, 17:12:08",
+        "from": "Bora",
+        "message": "tamam canım teşekkürler"
+      },
+      {
+        "timestamp": "20.02.2026, 17:12:27",
+        "from": "Ceren",
+        "message": "This message was deleted."
+      },
+      {
+        "timestamp": "20.02.2026, 18:16:50",
+        "from": "Bora",
+        "message": "Voice call. 25 min"
+      },
+      {
+        "timestamp": "20.02.2026, 19:44:33",
+        "from": "Bora",
+        "message": "İlacımı aldım sonra burada bir pub buldum oturdum, burası güzelmiş"
+      },
+      {
+        "timestamp": "20.02.2026, 19:45:59",
+        "from": "Ceren",
+        "message": "iyi yapmışsın canım"
+      },
+      {
+        "timestamp": "20.02.2026, 20:20:56",
+        "from": "Bora",
+        "message": "Bir tane bira içtim kafam güzel oldu :)"
+      },
+      {
+        "timestamp": "20.02.2026, 20:21:24",
+        "from": "Ceren",
+        "message": "cigara da var mı?"
+      },
+      {
+        "timestamp": "20.02.2026, 20:21:32",
+        "from": "Bora",
+        "message": "Yok"
+      },
+      {
+        "timestamp": "20.02.2026, 20:21:39",
+        "from": "Ceren",
+        "message": "süpermiş ya"
+      },
+      {
+        "timestamp": "20.02.2026, 21:31:16",
+        "from": "Ceren",
+        "message": "Ne yaptın sevgilim?"
+      },
+      {
+        "timestamp": "20.02.2026, 21:36:50",
+        "from": "Ceren",
+        "message": "Voice call. 9 min"
+      },
+      {
+        "timestamp": "20.02.2026, 22:43:30",
+        "from": "Ceren",
+        "message": "Waaoooowwwww"
+      },
+      {
+        "timestamp": "20.02.2026, 22:43:46",
+        "from": "Bora",
+        "message": "olmuş mu?"
+      },
+      {
+        "timestamp": "20.02.2026, 22:43:52",
+        "from": "Ceren",
+        "message": "Ya sevgilim ama bu hasızlık"
+      },
+      {
+        "timestamp": "20.02.2026, 22:44:17",
+        "from": "Ceren",
+        "message": "Olmuş mu ne demek! Çok güzelsinnn"
+      },
+      {
+        "timestamp": "20.02.2026, 22:44:45",
+        "from": "Bora",
+        "message": "teşekkür ederim canım"
+      },
+      {
+        "timestamp": "20.02.2026, 22:45:00",
+        "from": "Bora",
+        "message": "saat 11 oldu ya"
+      },
+      {
+        "timestamp": "20.02.2026, 22:45:25",
+        "from": "Ceren",
+        "message": "Ama öyle bir yere gideceksen normal bir saat değil mi?"
+      },
+      {
+        "timestamp": "20.02.2026, 22:45:37",
+        "from": "Bora",
+        "message": "doğru"
+      },
+      {
+        "timestamp": "20.02.2026, 22:48:11",
+        "from": "Ceren",
+        "message": "Çıkıyor musun?"
+      },
+      {
+        "timestamp": "20.02.2026, 22:49:26",
+        "from": "Ceren",
+        "message": "Çizme mi ayağındakiler?"
+      },
+      {
+        "timestamp": "20.02.2026, 22:50:29",
+        "from": "Ceren",
+        "message": "Bir foto daha gelecek sanırsam"
+      },
+      {
+        "timestamp": "20.02.2026, 22:52:11",
+        "from": "Ceren",
+        "message": "https://www.instagram.com/p/DU5kLndCn_8/?igsh=MXNxYWlvMHk4MnZrdQ=="
+      },
+      {
+        "timestamp": "20.02.2026, 22:52:39",
+        "from": "Ceren",
+        "message": "Bu arada bu adam geliyormuş 25inde katılayım diyorum"
+      },
+      {
+        "timestamp": "20.02.2026, 22:53:00",
+        "from": "Bora",
+        "message": "Hmmm sen bu adamı seviyordun"
+      },
+      {
+        "timestamp": "20.02.2026, 22:53:04",
+        "from": "Ceren",
+        "message": "Bu canım"
+      },
+      {
+        "timestamp": "20.02.2026, 22:53:27",
+        "from": "Bora",
+        "message": "Ben diğerini daha çok beğenmiştim"
+      },
+      {
+        "timestamp": "20.02.2026, 22:53:37",
+        "from": "Ceren",
+        "message": "Evet bir türlü denk gelememiştim ama bir taraftan da korkutucu geliyor"
+      },
+      {
+        "timestamp": "20.02.2026, 22:53:38",
+        "from": "Bora",
+        "message": "Bir de o çok kalın ya"
+      },
+      {
+        "timestamp": "20.02.2026, 22:54:24",
+        "from": "Ceren",
+        "message": "Bu daha şık durmuş bence. Diğeri de çok ince."
+      },
+      {
+        "timestamp": "20.02.2026, 22:54:57",
+        "from": "Ceren",
+        "message": "Çizmeymiş güle güle kullan canım, güzel duruyorlar"
+      },
+      {
+        "timestamp": "20.02.2026, 22:55:09",
+        "from": "Bora",
+        "message": "Evet"
+      },
+      {
+        "timestamp": "20.02.2026, 22:57:10",
+        "from": "Ceren",
+        "message": "Deri olan"
+      },
+      {
+        "timestamp": "20.02.2026, 22:57:32",
+        "from": "Ceren",
+        "message": "Eğer ikisi arasında seçim yapacaksan"
+      },
+      {
+        "timestamp": "20.02.2026, 22:57:46",
+        "from": "Bora",
+        "message": "Ay bilemedim ya"
+      },
+      {
+        "timestamp": "20.02.2026, 22:58:07",
+        "from": "Bora",
+        "message": "Demin çıktığımda gocuk dışarda çok gelmedi ama içeri girdim bunaldım"
+      },
+      {
+        "timestamp": "20.02.2026, 22:59:10",
+        "from": "Ceren",
+        "message": "İçeride çıkartacaksın zaten"
+      },
+      {
+        "timestamp": "20.02.2026, 22:59:43",
+        "from": "Ceren",
+        "message": "Güle güle kıllan falan dedim cevap evet"
+      },
+      {
+        "timestamp": "20.02.2026, 23:00:04",
+        "from": "Ceren",
+        "message": "Bu bence kesinlikle"
+      },
+      {
+        "timestamp": "20.02.2026, 23:00:14",
+        "from": "Bora",
+        "message": "görmedim canım pardon"
+      },
+      {
+        "timestamp": "20.02.2026, 23:00:24",
+        "from": "Bora",
+        "message": "e bunu göstermiştim zaten sana"
+      },
+      {
+        "timestamp": "20.02.2026, 23:00:28",
+        "from": "Bora",
+        "message": "baya oldu"
+      },
+      {
+        "timestamp": "20.02.2026, 23:00:34",
+        "from": "Bora",
+        "message": "yeni almadım"
+      },
+      {
+        "timestamp": "20.02.2026, 23:00:43",
+        "from": "Ceren",
+        "message": "Yok ya ben hatırlamıyorum"
+      },
+      {
+        "timestamp": "20.02.2026, 23:00:57",
+        "from": "Ceren",
+        "message": "Güzel durmuş"
+      },
+      {
+        "timestamp": "20.02.2026, 23:01:52",
+        "from": "Ceren",
+        "message": "Çoraplar da güzel"
+      },
+      {
+        "timestamp": "20.02.2026, 23:02:32",
+        "from": "Ceren",
+        "message": "Sanki hatırlıyorum bak çorapları"
+      },
+      {
+        "timestamp": "20.02.2026, 23:02:55",
+        "from": "Ceren",
+        "message": "ya da benzer vardı"
+      },
+      {
+        "timestamp": "20.02.2026, 23:04:43",
+        "from": "Bora",
+        "message": "Evet sormuştum hatta yırtılmış mı diye"
+      },
+      {
+        "timestamp": "20.02.2026, 23:05:25",
+        "from": "Ceren",
+        "message": "Ooooo"
+      },
+      {
+        "timestamp": "20.02.2026, 23:05:43",
+        "from": "Ceren",
+        "message": "Çok eğlenceli"
+      },
+      {
+        "timestamp": "20.02.2026, 23:09:04",
+        "from": "Bora",
+        "message": "evet ya"
+      },
+      {
+        "timestamp": "20.02.2026, 23:27:24",
+        "from": "Ceren",
+        "message": "Ne yaptın canım çıkabildin mi?"
+      },
+      {
+        "timestamp": "20.02.2026, 23:27:37",
+        "from": "Bora",
+        "message": "Şimdi çıktım canım"
+      },
+      {
+        "timestamp": "20.02.2026, 23:27:46",
+        "from": "Bora",
+        "message": "Taksi bekliyorum 6 dk diyor ya"
+      },
+      {
+        "timestamp": "20.02.2026, 23:28:07",
+        "from": "Bora",
+        "message": "Kapıdan çıktığımda iki genç kız beni görüp kaçtılar"
+      },
+      {
+        "timestamp": "20.02.2026, 23:29:13",
+        "from": "Bora",
+        "message": "Çok erken oldu"
+      },
+      {
+        "timestamp": "20.02.2026, 23:30:50",
+        "from": "Bora",
+        "message": "Sessizleşip garip garip korkarak baktılar, selam verdim kaçtılar. Biri eteğini falan düzeltiyor"
+      },
+      {
+        "timestamp": "20.02.2026, 23:31:44",
+        "from": "Ceren",
+        "message": "Alla alla"
+      },
+      {
+        "timestamp": "20.02.2026, 23:32:17",
+        "from": "Ceren",
+        "message": "Sarhoş falan da olabilirler"
+      },
+      {
+        "timestamp": "20.02.2026, 23:32:30",
+        "from": "Ceren",
+        "message": "Geldi mi taksi?"
+      },
+      {
+        "timestamp": "20.02.2026, 23:32:44",
+        "from": "Bora",
+        "message": "Yok ya iki salak çocuk işte görmemişler"
+      },
+      {
+        "timestamp": "20.02.2026, 23:32:53",
+        "from": "Bora",
+        "message": "2 dk diyor"
+      },
+      {
+        "timestamp": "20.02.2026, 23:33:07",
+        "from": "Bora",
+        "message": "İptal etti"
+      },
+      {
+        "timestamp": "20.02.2026, 23:33:10",
+        "from": "Ceren",
+        "message": "Aynen"
+      },
+      {
+        "timestamp": "20.02.2026, 23:33:40",
+        "from": "Ceren",
+        "message": "Hadiii.. millet bu saatte yoğun kullanıyor sanırım"
+      },
+      {
+        "timestamp": "20.02.2026, 23:33:49",
+        "from": "Bora",
+        "message": "Herhalde"
+      },
+      {
+        "timestamp": "20.02.2026, 23:34:12",
+        "from": "Bora",
+        "message": "Şimdi 4 dk diyor :)"
+      },
+      {
+        "timestamp": "20.02.2026, 23:34:43",
+        "from": "Ceren",
+        "message": "Nereye gidiyorsun?"
+      },
+      {
+        "timestamp": "20.02.2026, 23:36:17",
+        "from": "Bora",
+        "message": "Candy darling mi ne öyle bir yere"
+      },
+      {
+        "timestamp": "20.02.2026, 23:36:31",
+        "from": "Bora",
+        "message": "Hepsi yakın birbirine öyle bakıcam"
+      },
+      {
+        "timestamp": "20.02.2026, 23:37:01",
+        "from": "Bora",
+        "message": "Bu arada bunun şarjı bitiyor, diğerinden yazarım biterse"
+      },
+      {
+        "timestamp": "20.02.2026, 23:37:15",
+        "from": "Ceren",
+        "message": "Tamam canım"
+      },
+      {
+        "timestamp": "20.02.2026, 23:37:45",
+        "from": "Ceren",
+        "message": "Ben de yarım saate falan uyurum sanırım"
+      },
+      {
+        "timestamp": "20.02.2026, 23:37:53",
+        "from": "Ceren",
+        "message": "Yazarım sana yatarken"
+      },
+      {
+        "timestamp": "20.02.2026, 23:44:00",
+        "from": "Bora",
+        "message": "Tamam canım"
+      },
+      {
+        "timestamp": "20.02.2026, 23:44:09",
+        "from": "Bora",
+        "message": "Geldi sonunda taxi"
+      },
+      {
+        "timestamp": "20.02.2026, 23:44:59",
+        "from": "Bora",
+        "message": "Tatlı rüyalar şimdiden"
+      },
+      {
+        "timestamp": "20.02.2026, 23:49:57",
+        "from": "Ceren",
+        "message": "O zaman sana da iyi eğlenceler"
+      },
+      {
+        "timestamp": "20.02.2026, 23:50:05",
+        "from": "Ceren",
+        "message": "İyi geceler canım"
+      },
+      {
+        "timestamp": "20.02.2026, 23:50:25",
+        "from": "Bora",
+        "message": "Teşekkür ederim"
+      },
+      {
+        "timestamp": "20.02.2026, 23:50:40",
+        "from": "Bora",
+        "message": "İyi geceler canım"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c17",
+    "start_time": "21.02.2026, 02:09:06",
+    "end_time": "21.02.2026, 02:09:06",
+    "message_count": 1,
+    "messages": [
+      {
+        "timestamp": "21.02.2026, 02:09:06",
+        "from": "Bora",
+        "message": "Ben eve geldim aşkım"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c18",
+    "start_time": "21.02.2026, 09:23:03",
+    "end_time": "21.02.2026, 15:23:08",
+    "message_count": 63,
+    "messages": [
+      {
+        "timestamp": "21.02.2026, 09:23:03",
+        "from": "Ceren",
+        "message": "Günaydın sevgilim"
+      },
+      {
+        "timestamp": "21.02.2026, 11:14:00",
+        "from": "Ceren",
+        "message": "Bülent Düz'ün tel.i yine cevap vermedi, sitedeki forma yazdım. Burada dursun canım;\nMerhaba Bülent Hocam,\n79 yaşında (Annem) Glioblastoma (Grade 4) tanılı hasta için immünoterapi sürecine başlamak istiyoruz. Cerrahi + RT + TMZ tamamlandı.\nEşlik eden durumlar:\n\tKronik böbrek hastalığı\n\tKalp yüklenmesi (yüksek NT-proBNP)\n\tEsansiyel trombositoz\n\tAnemi\n\tDiyabet\n\tSteroid kullanımı\nİmmünoterapi süreci doğru bir karar mı? Nasıl uygulanıyor? Tedavi sürecinde SGK geçiyor mu?  Bilgilerinizi rica ederim.\nTeşekkür ederim.\nSaygılarımla,\nCeren"
+      },
+      {
+        "timestamp": "21.02.2026, 11:36:09",
+        "from": "Bora",
+        "message": "Günaydın aşkım"
+      },
+      {
+        "timestamp": "21.02.2026, 11:39:39",
+        "from": "Ceren",
+        "message": "burası dönüş yaptı sevgilim. 20 dakkaya arayacağım. Hoca'nın şahsi numarasını verdi sekreteri. Excel notlar kısmından okuyabilirsin, her şeyi yazdım oraya."
+      },
+      {
+        "timestamp": "21.02.2026, 11:40:16",
+        "from": "Bora",
+        "message": "Teşekkürler bebek"
+      },
+      {
+        "timestamp": "21.02.2026, 11:41:12",
+        "from": "Bora",
+        "message": "Dün kahve dökmüşüm android telefon cort"
+      },
+      {
+        "timestamp": "21.02.2026, 11:41:39",
+        "from": "Bora",
+        "message": "Ama çalışıyor ilginç şekilde"
+      },
+      {
+        "timestamp": "21.02.2026, 11:41:41",
+        "from": "Ceren",
+        "message": "nasıl sarhoştum canım hatırlamıyorsun"
+      },
+      {
+        "timestamp": "21.02.2026, 11:42:34",
+        "from": "Bora",
+        "message": "Sarhoş değildim uyurken olmuş olanlar"
+      },
+      {
+        "timestamp": "21.02.2026, 11:42:54",
+        "from": "Bora",
+        "message": "Ama bi kafa güzelmiş demek ki :)"
+      },
+      {
+        "timestamp": "21.02.2026, 11:43:09",
+        "from": "Bora",
+        "message": "Dün sarhoş olmadım, zaten az içtim"
+      },
+      {
+        "timestamp": "21.02.2026, 11:43:21",
+        "from": "Bora",
+        "message": "Hoşuma gitmedi"
+      },
+      {
+        "timestamp": "21.02.2026, 11:43:31",
+        "from": "Bora",
+        "message": "Alkol alamıyorum ya"
+      },
+      {
+        "timestamp": "21.02.2026, 11:43:46",
+        "from": "Bora",
+        "message": "Bira güzeldi ama"
+      },
+      {
+        "timestamp": "21.02.2026, 12:06:36",
+        "from": "Ceren",
+        "message": "Adam açmadı canım"
+      },
+      {
+        "timestamp": "21.02.2026, 12:08:40",
+        "from": "Ceren",
+        "message": "Excelde notlar kısmına bak sevgilim, yazdım bugün aradıklarımın hepsine not"
+      },
+      {
+        "timestamp": "21.02.2026, 12:08:53",
+        "from": "Bora",
+        "message": "Tamam canım"
+      },
+      {
+        "timestamp": "21.02.2026, 12:09:36",
+        "from": "Ceren",
+        "message": "Bence Poğda ile de paylaşsan iyi olur sevgilim"
+      },
+      {
+        "timestamp": "21.02.2026, 12:09:56",
+        "from": "Bora",
+        "message": "E paylaştım zaten"
+      },
+      {
+        "timestamp": "21.02.2026, 12:10:11",
+        "from": "Bora",
+        "message": "Sheets I diyorsun di mi?"
+      },
+      {
+        "timestamp": "21.02.2026, 12:13:15",
+        "from": "Bora",
+        "message": "Didem cevap verdi akşam dedi"
+      },
+      {
+        "timestamp": "21.02.2026, 12:18:25",
+        "from": "Ceren",
+        "message": "Evet canım doktor takip listesi."
+      },
+      {
+        "timestamp": "21.02.2026, 12:35:08",
+        "from": "Ceren",
+        "message": "Teyzem aradı şimdi, şifre: [REDACTED_SECRET] Hocanın ismini veren doktor özel numarasını paylaşamam, demiş."
+      },
+      {
+        "timestamp": "21.02.2026, 12:36:52",
+        "from": "Ceren",
+        "message": "şifre: [REDACTED_SECRET] Hocaya ancak hastaneden ulaşabilirmişiz ama telefonda da görüşemezsiniz demişer malesef"
+      },
+      {
+        "timestamp": "21.02.2026, 12:37:44",
+        "from": "Bora",
+        "message": "Hmmm ok canım"
+      },
+      {
+        "timestamp": "21.02.2026, 13:28:11",
+        "from": "Bora",
+        "message": "Ohhhh"
+      },
+      {
+        "timestamp": "21.02.2026, 13:28:28",
+        "from": "Bora",
+        "message": "Afiyet olsun :)"
+      },
+      {
+        "timestamp": "21.02.2026, 13:28:48",
+        "from": "Ceren",
+        "message": "Bize içtim aşkım"
+      },
+      {
+        "timestamp": "21.02.2026, 13:29:02",
+        "from": "Bora",
+        "message": "Şimdi karşında oturuyor olmak güzel olurdu"
+      },
+      {
+        "timestamp": "21.02.2026, 13:29:15",
+        "from": "Ceren",
+        "message": "Evetttt"
+      },
+      {
+        "timestamp": "21.02.2026, 13:29:28",
+        "from": "Ceren",
+        "message": "Hatta yamacımdaaa"
+      },
+      {
+        "timestamp": "21.02.2026, 13:29:53",
+        "from": "Bora",
+        "message": "Güher naptı ya"
+      },
+      {
+        "timestamp": "21.02.2026, 13:30:10",
+        "from": "Ceren",
+        "message": "Valla anlamıyorum onu da"
+      },
+      {
+        "timestamp": "21.02.2026, 13:30:12",
+        "from": "Bora",
+        "message": "Bu arada babama birşey gönderdim sana da atayım"
+      },
+      {
+        "timestamp": "21.02.2026, 13:30:20",
+        "from": "Ceren",
+        "message": "Tamam"
+      },
+      {
+        "timestamp": "21.02.2026, 13:30:33",
+        "from": "Bora",
+        "message": "Babacım merhaba bir videoya denk geldim de belki ilgili çeker diye düşündüm. İçeriği İngilizce olduğu için Türkçe özetini çıkardım ve Köyceğiz için uygulanabilirliğini yazdırdım. Fikirlerini merak ediyorum :)\nhttps://youtu.be/v3T8CAR3cTU?si=fO-I6eFgxyIq6Are"
+      },
+      {
+        "timestamp": "21.02.2026, 13:30:33",
+        "from": "Bora",
+        "message": "Ana Fikir\nVideo, doğru tasarlanmış bir doğal balık göleti ekosisteminin bir aileye veya küçük topluluğa uzun yıllar boyunca sürdürülebilir protein sağlayabileceğini anlatıyor.\nBu yaklaşım, geçmişte yaygın olan ancak modern sistemlerle unutulmuş bir gıda dayanıklılığı yöntemi olarak sunuluyor.\n\n Temel Kavram: Protein Göleti\nBu sistem:\n\tBalıkları doğal şekilde üretir\n\tDış yem ihtiyacını azaltır\n\tEkosistem dengesini kullanır\n\tUzun süreli protein kaynağı sağlar\nDoğru kurulduğunda 10 yıl veya daha uzun süre verim iddiası dile getiriliyor.\n\n Sistem Nasıl Çalışır?\n1 Gölet Ekosistemi\nDengeli bir gölet şunları içerir:\n\tBalıklar (sazan, tilapia, yayın vb.)\n\tSu bitkileri\n\tAlgler ve mikroorganizmalar\n\tBöcekler ve larvalar\n\tAmfibiler ve biyolojik çeşitlilik\nBu yapı doğal bir besin zinciri oluşturur.\n\n2 Doğal Beslenme Döngüsü\nBalıklar şunlarla beslenir:\n\tAlgler\n\tBöcek ve larvalar\n\tBitki materyali\n\tOrganik atıklar\nBu sayede dış yem ihtiyacı minimuma iner.\n\n3 Besin Döngüsü (Kapalı Sistem)\nAtık  besin  alg & bitkiler  balık yemi  balık  atık\nBu döngü sürdürülebilirliği sağlar.\n\n4 Hasat Stratejisi\nGöleti tamamen boşaltmak yerine:\n Seçici hasat yapılır\n Üreme popülasyonu korunur\n Doğal çoğalma sürdürülür\nBu sayede sistem uzun yıllar çalışır.\n\n Neden Sazan Balığı?\nSazan türleri sıklıkla önerilir çünkü:\n Çok dayanıklıdır\n Düşük oksijene toleranslıdır\n Omnivordur (her şeyi yer)\n Hızlı büyür\n Kolay ürer\n Avrupa ve Asyada yaygın tüketilir\nBatıda bazen tercih edilmese de birçok kültürde önemli bir besindir.\n\n Videoda Vurgulanan Faydalar\nGıda Güvencesi\n\tSürekli protein kaynağı\n\tTedarik zincirine bağımlılığı azaltır\nSürdürülebilirlik\n\tDoğal ekolojiyle uyumlu\n\tDüşük dış girdi\nEkonomik Avantaj\n\tKurulum sonrası düşük maliyet\n\tYem masrafı yok denecek kadar az\nDayanıklılık (Resilience)\n\tOff-grid yaşam için ideal\n\tAcil durum hazırlığı sağlar\n\n Gerçekçi Sınırlamalar\n Bedava gıda değildir\nGerekli olanlar:\n\tDoğru tasarım\n\tİlk kurulum\n\tEkosistem yönetimi\n Su kalitesi kritik\nDengesizlik  balık ölümleri.\n İklim ve yasal düzenlemeler\nBazı bölgelerde gölet ve balık türleri sınırlanabilir.\n Ekosistem dengesi\nAşırı balık  oksijen düşüşü  sistem çöküşü.\n\n Tarihsel Arka Plan\nBu yöntem şunlara benzer:\n\tAvrupa sazan göletleri\n\tAsya pirinç-balık sistemleri\n\tOrtaçağ manastır aquakültürü\n\tPermakültür sistemleri\nBu sistemler yüzyıllarca toplulukları beslemiştir.\n\n Neden Bunu Bilmiyoruz?\nModern gıda sistemi odaklanır:\n\tEndüstriyel tarıma\n\tMerkezi dağıtıma\n\tİşlenmiş gıdalara\nBu yüzden geleneksel dayanıklı yöntemler geri planda kalmıştır.\n\n Kimler İçin Uygun?\n Kırsal arazi sahipleri\n Permakültür & sürdürülebilir yaşam meraklıları\n Off-grid yaşam planlayanlar\n Gıda güvenliği odaklı kişiler\n Acil durum hazırlığı yapanlar\n\n Eleştirel Değerlendirme\nBu yöntem bilimsel ve tarihsel olarak geçerlidir; ancak:\n\tTamamen zahmetsiz değildir\n\tVerim tasarıma ve iklime bağlıdır\n\tTek başına sınırsız protein sağlamaz\n\tEkosistem bilgisi gerekir\n En doğru bakış:\nSihirli çözüm değil, uzun vadeli dayanıklılık yatırımıdır."
+      },
+      {
+        "timestamp": "21.02.2026, 13:30:33",
+        "from": "Bora",
+        "message": "Köyceğiz (Muğla) özelinde düşündüğümüzde, videoda anlatılan doğal balık göleti / protein göleti sistemi iklim ve coğrafya açısından oldukça uygun olabilir. Aşağıda Köyceğize özel değerlendirmeyi bulabilirsin:\n\n Köyceğizin Ekolojik Avantajları\n İklim\n\tAkdeniz iklimi\n\tIlık kışlar, sıcak yazlar\n\tDon riski çok düşük\n Balık büyümesi yılın büyük bölümünde devam eder.\n Su Kaynakları\n\tYeraltı suyu zenginliği\n\tKöyceğiz Gölü havzası\n\tYüksek nem oranı\n Gölet sürdürülebilirliği için ideal.\n Biyolojik Çeşitlilik\n\tBöcek ve larva bolluğu\n\tDoğal plankton üretimi yüksek\n Balıklar doğal besin bulabilir.\n\n Köyceğiz İçin Uygun Balık Türleri\n Sazan (Common Carp)\n Yerel ve dayanıklı\n Doğal besinle büyür\n Soğuğa toleranslı\n Ekosistem dostu\n En güvenli seçim.\n\n Aynalı Sazan\n Hızlı büyür\n Et verimi yüksek\n Türkiyede yaygın yetiştiricilik\n\n Tilapia (dikkatli değerlendirilmelidir)\n Çok hızlı büyür\n Yükek protein üretimi\n Soğuk suya hassas\n Bazı bölgelerde yasak veya sınırlı olabilir\n Köyceğizde genelde yetişebilir ancak yerel mevzuat kontrol edilmeli.\n\n Yayın Balığı (Catfish)\n Dip temizleyici\n Ekosistemi dengeler\n İyi protein kaynağı\n\n Gölet Ekosistem Tasarımı (Köyceğiz İçin)\nÖnerilen bileşenler:\n\tSu mercimeği (duckweed)  doğal yem\n\tKamış & saz  su filtresi\n\tSu sümbülü  gölge & nitrat kontrolü\n\tKurbağalar & böcekler  doğal besin\n Bu bitkiler su kalitesini iyileştirir.\n\n Gölet Boyutu ve Protein Üretimi\nYaklaşık tahmini üretim:\n\t100 m gölet\n yılda 4080 kg balık\n\t300 m gölet\n yılda 120250 kg balık\n\t1000 m gölet\n küçük aileyi besleyebilir\nVerim; tasarım, besin dengesi ve hasat yöntemine bağlıdır.\n\n Köyceğiz Bölgesine Özgü Riskler\n Yaban hayatı\n\tSu yılanları\n\tKuşlar (balıkçıl, karabatak)\n Koruma ağı gerekebilir.\n Yaz sıcakları\n\tOksijen düşüşü riski\n Derinlik: minimum 1.52 m önerilir.\n Sivrisinek üretimi\n Balık varlığı larvaları kontrol eder.\n Yasal düzenlemeler\n\tTarım arazisinde gölet açma izni gerekebilir\n\tYerel belediye ve DSİ mevzuatı kontrol edilmeli\n\n Köyceğizde Sistemin Avantajları\n Uzun büyüme sezonu\n Doğal yem bolluğu\n Su erişimi kolay\n Permakültür için uygun ekoloji\n Türkiyede uygulanabilecek en uygun bölgelerden biri.\n\n En İyi Uygulama Senaryosu\nKüçük ölçekli sürdürülebilir sistem:\n\t150300 m gölet\n\tSazan + yayın kombinasyonu\n\tSu mercimeği üretimi\n\tSeçici hasat sistemi\n Minimum bakım ile sürdürülebilir protein kaynağı.\n\n Gerçekçi Beklenti\nBu sistem:\n Gıda dayanıklılığı sağlar\n Ekolojik sürdürülebilirlik sunar\n Maliyetleri azaltır\nAma:\n tamamen bakım gerektirmez değildir\n doğru tasarım gerektirir\n ekosistem dengesi korunmalıdır\n\nİstersen bir sonraki adımda:\n Köyceğiz için adım adım kurulum planı\n maliyet tahmini (Türkiye fiyatlarıyla)\n permakültür + sebze üretimi entegrasyonu\n 1 dönüm arazi için sürdürülebilir tasarım\n yasal izin süreci rehberi\nhazırlayabilirim."
+      },
+      {
+        "timestamp": "21.02.2026, 13:30:42",
+        "from": "Ceren",
+        "message": "Poğda şu kolejli doktoru aradı mı acaba?"
+      },
+      {
+        "timestamp": "21.02.2026, 13:31:05",
+        "from": "Bora",
+        "message": "Bilmiyorum"
+      },
+      {
+        "timestamp": "21.02.2026, 13:32:50",
+        "from": "Ceren",
+        "message": "Hih bi bu eksikti çiçek çiftliğinde"
+      },
+      {
+        "timestamp": "21.02.2026, 13:33:11",
+        "from": "Ceren",
+        "message": "İyi yapmışsın sevgilim Dönüş yaptı mı?"
+      },
+      {
+        "timestamp": "21.02.2026, 13:33:41",
+        "from": "Bora",
+        "message": "Yok daha okumadı"
+      },
+      {
+        "timestamp": "21.02.2026, 13:33:45",
+        "from": "Ceren",
+        "message": "Gruptan sorsan mı acaba? Yazmıştım ben ararım demişti."
+      },
+      {
+        "timestamp": "21.02.2026, 14:53:15",
+        "from": "Bora",
+        "message": "bir hafta sonu için bilemedim ama sen bilirsin aşkım"
+      },
+      {
+        "timestamp": "21.02.2026, 14:53:36",
+        "from": "Ceren",
+        "message": "Önümüzdeki haftasonu için"
+      },
+      {
+        "timestamp": "21.02.2026, 14:53:48",
+        "from": "Ceren",
+        "message": "Haftaiçinde ben giderim demiş"
+      },
+      {
+        "timestamp": "21.02.2026, 14:55:30",
+        "from": "Bora",
+        "message": "nasıl istersen bebek"
+      },
+      {
+        "timestamp": "21.02.2026, 14:57:40",
+        "from": "Bora",
+        "message": "teşekkür ederim canım"
+      },
+      {
+        "timestamp": "21.02.2026, 14:58:33",
+        "from": "Ceren",
+        "message": "Sen yine Didem ile görüştükten sonra konuşalım canım"
+      },
+      {
+        "timestamp": "21.02.2026, 14:58:49",
+        "from": "Ceren",
+        "message": "Annem Ankaradaysa ben cuma giderim"
+      },
+      {
+        "timestamp": "21.02.2026, 14:59:30",
+        "from": "Bora",
+        "message": "aynen"
+      },
+      {
+        "timestamp": "21.02.2026, 15:19:59",
+        "from": "Ceren",
+        "message": "Bu arada babam yazdı mı?"
+      },
+      {
+        "timestamp": "21.02.2026, 15:20:12",
+        "from": "Bora",
+        "message": "yok yazmadı"
+      },
+      {
+        "timestamp": "21.02.2026, 15:20:56",
+        "from": "Ceren",
+        "message": "Düşünüyor sanırım"
+      },
+      {
+        "timestamp": "21.02.2026, 15:21:45",
+        "from": "Bora",
+        "message": "hahahahah"
+      },
+      {
+        "timestamp": "21.02.2026, 15:22:09",
+        "from": "Ceren",
+        "message": "Baya sesli güldüm ya kendi kendime mekanda"
+      },
+      {
+        "timestamp": "21.02.2026, 15:22:13",
+        "from": "Bora",
+        "message": "senin bu gocan benim anlamadığım şeyler gönderiyor, napayım?"
+      },
+      {
+        "timestamp": "21.02.2026, 15:22:15",
+        "from": "Ceren",
+        "message": "Komik adam ya"
+      },
+      {
+        "timestamp": "21.02.2026, 15:22:37",
+        "from": "Bora",
+        "message": "utanmış bana da anlamadım demiyor"
+      },
+      {
+        "timestamp": "21.02.2026, 15:22:50",
+        "from": "Ceren",
+        "message": "Ne demek istemiş diyor?"
+      },
+      {
+        "timestamp": "21.02.2026, 15:22:59",
+        "from": "Ceren",
+        "message": "Ahahahahhaha"
+      },
+      {
+        "timestamp": "21.02.2026, 15:23:08",
+        "from": "Ceren",
+        "message": "Allam yaaaa"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c19",
+    "start_time": "21.02.2026, 17:36:43",
+    "end_time": "21.02.2026, 20:00:00",
+    "message_count": 14,
+    "messages": [
+      {
+        "timestamp": "21.02.2026, 17:36:43",
+        "from": "Ceren",
+        "message": "Sevgilim eve geldim"
+      },
+      {
+        "timestamp": "21.02.2026, 17:40:19",
+        "from": "Bora",
+        "message": "hoşgeldin canım"
+      },
+      {
+        "timestamp": "21.02.2026, 19:27:36",
+        "from": "Bora",
+        "message": "You deleted this message."
+      },
+      {
+        "timestamp": "21.02.2026, 19:41:50",
+        "from": "Ceren",
+        "message": "Tamam canım"
+      },
+      {
+        "timestamp": "21.02.2026, 19:42:27",
+        "from": "Ceren",
+        "message": "Konuştun sanırım Didem Hoca ile, değil mi?"
+      },
+      {
+        "timestamp": "21.02.2026, 19:42:57",
+        "from": "Bora",
+        "message": "evet canım"
+      },
+      {
+        "timestamp": "21.02.2026, 19:48:25",
+        "from": "Ceren",
+        "message": "E ne dedi?"
+      },
+      {
+        "timestamp": "21.02.2026, 19:48:39",
+        "from": "Ceren",
+        "message": "Voice call. 14 sec"
+      },
+      {
+        "timestamp": "21.02.2026, 19:51:38",
+        "from": "Bora",
+        "message": "aşkım güncel halini aile grubuna attım"
+      },
+      {
+        "timestamp": "21.02.2026, 19:52:10",
+        "from": "Bora",
+        "message": "Voice call. No answer"
+      },
+      {
+        "timestamp": "21.02.2026, 19:52:22",
+        "from": "Ceren",
+        "message": "Ellerine sağlık canım"
+      },
+      {
+        "timestamp": "21.02.2026, 19:52:30",
+        "from": "Ceren",
+        "message": "Babamla konuşuyorum"
+      },
+      {
+        "timestamp": "21.02.2026, 19:57:38",
+        "from": "Bora",
+        "message": "ok canım"
+      },
+      {
+        "timestamp": "21.02.2026, 20:00:00",
+        "from": "Ceren",
+        "message": "Voice call. 20 min"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2026-02-w3-c20",
+    "start_time": "21.02.2026, 22:14:15",
+    "end_time": "21.02.2026, 23:48:52",
+    "message_count": 45,
+    "messages": [
+      {
+        "timestamp": "21.02.2026, 22:14:15",
+        "from": "Bora",
+        "message": "@Meta AI benim adıma Ceren'e iltifatlar eder misin, o çok güzel bir kadın"
+      },
+      {
+        "timestamp": "21.02.2026, 22:14:19",
+        "from": "Ceren",
+        "message": "Üzgünüm, şu anda bu talebinle ilgili sana yardımcı olamıyorum. Yardımcı olabileceğim başka bir konu var mı?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:14:32",
+        "from": "Bora",
+        "message": "@Meta AI rezil ettin beni"
+      },
+      {
+        "timestamp": "21.02.2026, 22:14:34",
+        "from": "Ceren",
+        "message": "Hadi ya, özür dilerim Ceren!  Bir dahaki sefere daha şanslı olacağım, değil mi?  Neyse, Ceren'e güzel sözler söylemek istersen, ben yardımcı olabilirim, hadi söyle bakalım!"
+      },
+      {
+        "timestamp": "21.02.2026, 22:14:57",
+        "from": "Bora",
+        "message": "@Meta AI Ceren çok güzel bir kız değil mi?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:14:59",
+        "from": "Ceren",
+        "message": "Ceren gerçekten çok güzel bir isim!  Eğer Ceren'i tanıyorsan, ona güzel şeyler söylemek istersen, ben yardımcı olabilirim. Mesela, \"Ceren, sen çok özel birisin!\" gibi bir şey söyleyebilirsin . Ceren hakkında daha fazla şey bilmek ister misin?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:15:13",
+        "from": "Bora",
+        "message": "@Meta AI hadi yaz"
+      },
+      {
+        "timestamp": "21.02.2026, 22:15:15",
+        "from": "Ceren",
+        "message": "Ceren, sen çok özel ve güzel birisin!"
+      },
+      {
+        "timestamp": "21.02.2026, 22:15:23",
+        "from": "Bora",
+        "message": "@Meta AI başka?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:15:26",
+        "from": "Ceren",
+        "message": "Ceren, güzelliğin ve zekânla herkesi büyüliyorsun"
+      },
+      {
+        "timestamp": "21.02.2026, 22:15:36",
+        "from": "Bora",
+        "message": "@Meta AI 10 tane yaz"
+      },
+      {
+        "timestamp": "21.02.2026, 22:15:38",
+        "from": "Ceren",
+        "message": "1. Ceren, sen bir meleksin!\n2. Güzelliğin dillere destan, Ceren!\n3. Ceren, senin gülüşün her yeri aydınlatıyor \n4. Sen bir hazinesin, Ceren!\n5. Ceren, güzelliğin ve zekân eşsiz!\n6. Herkes senin gibi birine sahip olmak ister, Ceren!\n7. Ceren, senin varlığın herkesi sevindiriyor!\n8. Güzelliğin ve iyiliğinle herkesi etkiliyorsun, Ceren!\n9. Ceren, sen bir sanat eseri gibisin!\n10. Ceren, seninle her an güzel!"
+      },
+      {
+        "timestamp": "21.02.2026, 22:17:15",
+        "from": "Ceren",
+        "message": "Yürü demişim yürümüş sevgilim"
+      },
+      {
+        "timestamp": "21.02.2026, 22:17:56",
+        "from": "Ceren",
+        "message": "Bu whatsapp ın uygulaması mı?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:18:38",
+        "from": "Bora",
+        "message": "aynen @ işareti ile MetaAI etiketleyip konuşabiliyorsun"
+      },
+      {
+        "timestamp": "21.02.2026, 22:21:28",
+        "from": "Bora",
+        "message": "@Meta AI Ceren ile güzel bir yere gidelim neresi olsun? oranın resmini çizermisin?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:22:01",
+        "from": "Bora",
+        "message": "@Meta AI şehir olsun"
+      },
+      {
+        "timestamp": "21.02.2026, 22:23:00",
+        "from": "Ceren",
+        "message": "@Meta AI az önce Selin sana benimle ilgili, iltifatlar eder misin?, diye sormuş. Ben kimim biliyor musun?\nBiliyorsan benim adıma Selin ile ilgili iltifatlar et."
+      },
+      {
+        "timestamp": "21.02.2026, 22:23:04",
+        "from": "Ceren",
+        "message": "Selin, sen çok tatlı ve zeki birisin!  Seninle tanışmak bir zevk olurdu."
+      },
+      {
+        "timestamp": "21.02.2026, 22:23:56",
+        "from": "Ceren",
+        "message": "@Meta AI zaten tanışıyoruz. Başka ne söylersin?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:23:58",
+        "from": "Ceren",
+        "message": "O zaman, Selin, seninle geçen her an çok keyifli!  Başka bir şey söylememi ister misin?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:25:11",
+        "from": "Ceren",
+        "message": "@Meta AI 20 iltifat sıralar mısın benim için?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:25:13",
+        "from": "Ceren",
+        "message": "Hadi bakalım \n1. Selin, sen bir hazinesin!\n2. Senin gülüşün her yeri aydınlatıyor \n3. Selin, sen çok özel birisin!\n4. Seninle her an güzel!\n5. Selin, sen bir sanat eseri gibisin!\n6. Senin zekân ve güzelliğin eşsiz!\n7. Selin, senin varlığın herkesi sevindiriyor!\n8. Sen bir meleksin, Selin!\n9. Selin, seninle tanışmak bir şans!\n10. Senin iyiliğin ve güzelliğin herkesi etkiliyor!\n11. Selin, sen bir yıldız gibisin!\n12. Seninle geçen her an unutulmaz!\n13. Selin, sen çok tatlısın!\n14. Senin gülüşün bulaşıcı!\n15. Selin, sen bir prenses gibisin!\n16. Seninle her şey daha güzel!\n17. Selin, sen çok güçlüsün!\n18. Senin zekân herkesi hayran bırakıyor!\n19. Selin, sen bir çiçek gibisin!\n20. Seninle her an değerli! \nBaşka bir şey ister misin?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:25:58",
+        "from": "Ceren",
+        "message": "@Meta AI sence Selin nerede yaşıyor?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:26:00",
+        "from": "Ceren",
+        "message": "Bence Selin, güzel bir şehir olan İstanbul'da yaşıyor olabilir . Ya da belki de Ankara'da?  Nerede yaşıyor acaba?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:26:41",
+        "from": "Bora",
+        "message": "@Meta AI ama Ceren çok tatlı değil mi?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:26:44",
+        "from": "Ceren",
+        "message": "Ceren de çok tatlı bir isim!  Herhalde Ceren de çok güzel bir insan . Senin favorin mi?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:26:53",
+        "from": "Ceren",
+        "message": "@Meta AI sen tahmin edeceksin. Ülke olarak farklı bir yer düşün ve fotoğrafını paylaş."
+      },
+      {
+        "timestamp": "21.02.2026, 22:26:58",
+        "from": "Bora",
+        "message": "@Meta AI evet benim favorim"
+      },
+      {
+        "timestamp": "21.02.2026, 22:27:00",
+        "from": "Ceren",
+        "message": "Ceren'i çok seviyor olmalısın . Ona güzel şeyler söylemek istersen, ben buradayım . Ceren'e bir mesaj yazmak ister misin?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:27:58",
+        "from": "Ceren",
+        "message": "@Meta AI daha hareketli canlı ve nazik biri. Ona göre bir yerin fotoğrafını paylaş"
+      },
+      {
+        "timestamp": "21.02.2026, 22:28:52",
+        "from": "Ceren",
+        "message": "@Meta AI neden böyle bir mekan?"
+      },
+      {
+        "timestamp": "21.02.2026, 22:28:54",
+        "from": "Ceren",
+        "message": "Ceren'in enerjisi ve canlılığı için, Brezilya'nın Rio de Janeiro'sundaki Copacabana Plajı'nı seçtim . Bu yer, hareketli atmosferi ve güzel manzarası ile Ceren'in dinamik kişiliğine çok uygun geldi ."
+      },
+      {
+        "timestamp": "21.02.2026, 22:29:08",
+        "from": "Bora",
+        "message": "@Meta AI resmini yap"
+      },
+      {
+        "timestamp": "21.02.2026, 22:29:20",
+        "from": "Ceren",
+        "message": "@Meta AI selin için paylaşacaktın"
+      },
+      {
+        "timestamp": "21.02.2026, 22:30:25",
+        "from": "Ceren",
+        "message": "Sevgilim sarı elbise giyiyoruz ikimizde bu yaz"
+      },
+      {
+        "timestamp": "21.02.2026, 22:30:56",
+        "from": "Ceren",
+        "message": "Kafası karıştı"
+      },
+      {
+        "timestamp": "21.02.2026, 22:31:13",
+        "from": "Bora",
+        "message": "evet ikiz gibi gezelim"
+      },
+      {
+        "timestamp": "21.02.2026, 23:20:46",
+        "from": "Ceren",
+        "message": "Voice call. 4 min"
+      },
+      {
+        "timestamp": "21.02.2026, 23:45:14",
+        "from": "Ceren",
+        "message": "İyi geceler canım"
+      },
+      {
+        "timestamp": "21.02.2026, 23:46:21",
+        "from": "Bora",
+        "message": "Rahatladın mı bakim?"
+      },
+      {
+        "timestamp": "21.02.2026, 23:47:56",
+        "from": "Ceren",
+        "message": "Rahatlamak derken"
+      },
+      {
+        "timestamp": "21.02.2026, 23:48:09",
+        "from": "Ceren",
+        "message": "Yok canım o kaçtı malesef"
+      },
+      {
+        "timestamp": "21.02.2026, 23:48:25",
+        "from": "Ceren",
+        "message": "Uykum geldi"
+      },
+      {
+        "timestamp": "21.02.2026, 23:48:52",
+        "from": "Bora",
+        "message": "Tatlı rüyalar canım"
+      }
+    ]
+  }
+]

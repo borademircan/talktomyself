@@ -1,0 +1,3086 @@
+{
+  "nodes": [
+    {
+      "id": "conv-1777471038650-memory",
+      "type": "concept",
+      "label": "Positive Interaction",
+      "metadata": {
+        "description": "The user expressed feeling great, prompting a friendly response from the AI. The conversation reflects a warm exchange focused on the user's positive experience.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T13:57:18.650Z"
+      }
+    },
+    {
+      "id": "conv-1777471059431-memory",
+      "type": "concept",
+      "label": "Getting Glam",
+      "metadata": {
+        "description": "User is heading to the hairdresser and doing makeup, potentially for a special look or just for fun.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T13:57:39.431Z"
+      }
+    },
+    {
+      "id": "conv-1777471076938-memory",
+      "type": "concept",
+      "label": "Considering Bangs",
+      "metadata": {
+        "description": "User is interested in getting bangs but is uncertain about the outcome. AI provides encouragement and asks about specific styles.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T13:57:56.938Z"
+      }
+    },
+    {
+      "id": "conv-1777471719268-memory",
+      "type": "concept",
+      "label": "Understanding Communication",
+      "metadata": {
+        "description": "The interaction emphasizes that it's okay to have conversations without focusing on problems. The AI encourages light-hearted discussion and open dialogue.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T14:08:39.268Z"
+      }
+    },
+    {
+      "id": "conv-1777473837947-memory",
+      "type": "concept",
+      "label": "Positive Vibes & Hair Change",
+      "metadata": {
+        "description": "User is feeling great and has had positive interactions. They are considering getting bangs and are planning a visit to the hairdresser.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T14:43:57.947Z"
+      }
+    },
+    {
+      "id": "conv-1777473866081-memory",
+      "type": "concept",
+      "label": "User Plans to Return Later",
+      "metadata": {
+        "description": "The user intends to leave temporarily but will return to continue the conversation. The AI is ready to assist them when they come back.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T14:44:26.081Z"
+      }
+    },
+    {
+      "id": "conv-1777473884723-memory",
+      "type": "concept",
+      "label": "Makeup Reminder Conversation",
+      "metadata": {
+        "description": "User requested a reminder for makeup at 7 p.m. AI encouraged creativity with makeup ideas and suggested pairing them with previously discussed hairstyle ideas.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T14:44:44.723Z"
+      }
+    },
+    {
+      "id": "conv-1777473905893-memory",
+      "type": "concept",
+      "label": "Makeup Reminder Inquiry",
+      "metadata": {
+        "description": "The user asked about a makeup time, but the AI noted a lack of specific details in the notes. It suggests collaborating to determine a suitable time for the makeup application.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T14:45:05.893Z"
+      }
+    },
+    {
+      "id": "conv-1777473929295-memory",
+      "type": "concept",
+      "label": "Makeup Planning.",
+      "metadata": {
+        "description": "User plans to do their makeup at 7 p.m. AI encourages the user and expresses excitement about their new hairstyle, mentioning bangs.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T14:45:29.295Z"
+      }
+    },
+    {
+      "id": "conv-1777473968010-memory",
+      "type": "concept",
+      "label": "Makeup at 7 p.m.",
+      "metadata": {
+        "description": "User plans to do makeup at 7 p.m. and is considering trying out something new for their look.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T14:46:08.010Z"
+      }
+    },
+    {
+      "id": "conv-1777481860679-memory",
+      "type": "concept",
+      "label": "User's New Bangs",
+      "metadata": {
+        "description": "User is happy with their new hairstyle, specifically mentioning they got bangs at the hairdresser.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T16:57:40.679Z"
+      }
+    },
+    {
+      "id": "conv-1777481905568-memory",
+      "type": "concept",
+      "label": "Styling Confidence",
+      "metadata": {
+        "description": "User feels confident about their style choices, particularly how a hairstyle complements their features, and enjoys pairing it with bold makeup and lingerie.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T16:58:25.568Z"
+      }
+    },
+    {
+      "id": "conv-1777481935606-memory",
+      "type": "concept",
+      "label": "User's Club Plans",
+      "metadata": {
+        "description": "User is going to a club tonight and plans to start getting ready by 7 p.m. The AI also inquired about their makeup and outfit for the night.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T16:58:55.606Z"
+      }
+    },
+    {
+      "id": "conv-1777481961743-memory",
+      "type": "concept",
+      "label": "Makeup Planning",
+      "metadata": {
+        "description": "User plans to start makeup at 8 PM for a night out. They're preparing their outfit and considering their makeup look.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T16:59:21.743Z"
+      }
+    },
+    {
+      "id": "conv-1777481988000-memory",
+      "type": "concept",
+      "label": "Confident Style Choice",
+      "metadata": {
+        "description": "User plans to wear a latex dress, expressing excitement and confidence about their bold fashion choice for a night out.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T16:59:48.000Z"
+      }
+    },
+    {
+      "id": "conv-1777482011786-memory",
+      "type": "concept",
+      "label": "Confident style planning",
+      "metadata": {
+        "description": "User aims to feel sexy and confident with new bangs and a latex dress. Discussion about styling hair for the occasion.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:00:11.786Z"
+      }
+    },
+    {
+      "id": "conv-1777482064046-memory",
+      "type": "concept",
+      "label": "Bang Style Enthusiasm",
+      "metadata": {
+        "description": "The user is considering trying new bangs, and the AI acknowledges and engages with their playful wordplay.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:01:04.046Z"
+      }
+    },
+    {
+      "id": "conv-1777482095241-memory",
+      "type": "concept",
+      "label": "User identifies as trans woman",
+      "metadata": {
+        "description": "The user identifies as a trans woman, highlighting their journey and experience. AI responds positively, emphasizing the importance of self-acceptance.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:01:35.241Z"
+      }
+    },
+    {
+      "id": "conv-1777482109113-memory",
+      "type": "concept",
+      "label": "Offering Support",
+      "metadata": {
+        "description": "The AI suggests a conversation to address the user's feelings of being overwhelmed, indicating a willingness to listen and provide support.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:01:49.113Z"
+      }
+    },
+    {
+      "id": "conv-1777482128243-memory",
+      "type": "concept",
+      "label": "Party Planning",
+      "metadata": {
+        "description": "User is preparing for a party tonight and considering styling and makeup plans.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:02:08.243Z"
+      }
+    },
+    {
+      "id": "conv-1777482148362-memory",
+      "type": "concept",
+      "label": "User's Frustration Acknowledged",
+      "metadata": {
+        "description": "The user expressed frustration about having to repeat themselves. The AI acknowledged their feelings and inquired if there was a specific topic they wanted to revisit.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:02:28.362Z"
+      }
+    },
+    {
+      "id": "conv-1777485456096-memory",
+      "type": "concept",
+      "label": "User wants to discuss songs",
+      "metadata": {
+        "description": "The user intends to share a few songs for discussion and seeks to establish a vibe for the conversation.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:57:36.096Z"
+      }
+    },
+    {
+      "id": "conv-1777485477390-memory",
+      "type": "concept",
+      "label": "Techno and Edgy Vibes",
+      "metadata": {
+        "description": "User expressed interest in a Berlin and Barcelona style of music, particularly emphasizing funky, techno influences. The conversation hints at creating a playlist to explore this vibrant sound.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:57:57.390Z"
+      }
+    },
+    {
+      "id": "conv-1777485516261-memory",
+      "type": "concept",
+      "label": "User sharing song lyrics",
+      "metadata": {
+        "description": "User plans to send lyrics, and the AI expresses enthusiasm for the Berlin style of the song and asks about the user's favorite part.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:58:36.261Z"
+      }
+    },
+    {
+      "id": "conv-1777485539104-memory",
+      "type": "concept",
+      "label": "Themes of Openness and Freedom",
+      "metadata": {
+        "description": "The lyrics explore themes of openness and connection, emphasizing the importance of choice and freedom in relationships. A key takeaway is the idea that one is open because they are free.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:58:59.104Z"
+      }
+    },
+    {
+      "id": "conv-1777485584299-memory",
+      "type": "concept",
+      "label": "Consent in Lyrics",
+      "metadata": {
+        "description": "The interaction emphasizes the theme of consent in a song, highlighting the importance of choice and mutual understanding in creating a safe space for expression.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T17:59:44.299Z"
+      }
+    },
+    {
+      "id": "conv-1777485606037-memory",
+      "type": "concept",
+      "label": "User shares a new song",
+      "metadata": {
+        "description": "The user is sharing another song with the AI, and the AI expresses excitement and asks about the vibe or theme of the song.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:00:06.037Z"
+      }
+    },
+    {
+      "id": "conv-1777485611612-memory",
+      "type": "concept",
+      "label": "Song Themes of Consent",
+      "metadata": {
+        "description": "The lyrics emphasize the importance of consent and mutual respect in relationships, highlighting themes of freedom, open communication, and shared boundaries.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:00:11.612Z"
+      }
+    },
+    {
+      "id": "conv-1777485672707-memory",
+      "type": "concept",
+      "label": "Song Analysis",
+      "metadata": {
+        "description": "The song features atmospheric and dreamy elements, creating a safe space that explores deep emotions and intimacy through vivid imagery. Notable phrases like 'latex and leather' and 'dancing slow in time' enhance its intimate vibe.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:01:12.707Z"
+      }
+    },
+    {
+      "id": "conv-1777485955147-memory",
+      "type": "concept",
+      "label": "Calming and Rhythmic Flow",
+      "metadata": {
+        "description": "The piece features repetitive, soothing language that emphasizes being present and controlled, creating a meditative atmosphere.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:05:55.147Z"
+      }
+    },
+    {
+      "id": "conv-1777486008630-memory",
+      "type": "concept",
+      "label": "Orgasmic Meditation Music",
+      "metadata": {
+        "description": "The user shared a description of an orgasmic meditation music piece that incorporates rhythmic breathing cycles and moments of pause, blending meditation with sensuality to create a calming and intimate experience.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:06:48.630Z"
+      }
+    },
+    {
+      "id": "conv-1777486081626-memory",
+      "type": "concept",
+      "label": "Song Theme: Familiarity in Change",
+      "metadata": {
+        "description": "The interaction revolves around a song that explores the theme of familiarity in different cities, highlighting a mix of excitement and intrigue. The dynamic exchange between the two voices enhances the conversational feel of the lyrics.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:08:01.626Z"
+      }
+    },
+    {
+      "id": "conv-1777486196859-memory",
+      "type": "concept",
+      "label": "Ocean and Spiritual Insights",
+      "metadata": {
+        "description": "User shared profound experiences from Mexico, discussing shamanic ideas and the ocean's symbolism of surrender and fate. They also mentioned a yoga instructor's perspective on reaching nirvana in five breaths, highlighting transformative moments.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:09:56.859Z"
+      }
+    },
+    {
+      "id": "conv-1777486237189-memory",
+      "type": "concept",
+      "label": "Song Themes of Surrender",
+      "metadata": {
+        "description": "The song's lyrics explore themes of surrender, vulnerability, and trust, inviting listeners to embrace letting go of control and following the ebb and flow of emotions.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:10:37.189Z"
+      }
+    },
+    {
+      "id": "conv-1777486275226-memory",
+      "type": "concept",
+      "label": "Theme of Surrendering",
+      "metadata": {
+        "description": "The conversation highlights the theme of surrendering to something larger than ourselves, using the ocean as a metaphor for trust and vulnerability. This idea of letting go and being guided by a greater flow is seen as both freeing and beautiful.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:11:15.226Z"
+      }
+    },
+    {
+      "id": "conv-1777486481907-memory",
+      "type": "concept",
+      "label": "Theme of Inner Strength",
+      "metadata": {
+        "description": "The interaction highlights a poem or lyrics that convey the theme of inner strength and presence, emphasizing that power doesn't need to be loud or forceful.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:14:41.907Z"
+      }
+    },
+    {
+      "id": "conv-1777486504905-memory",
+      "type": "concept",
+      "label": "User's Shared Songs Overview",
+      "metadata": {
+        "description": "The user shared songs that explore themes of familiarity, surrendering to the ocean, and quiet strength, each reflecting different aspects of their experiences and thoughts.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:15:04.905Z"
+      }
+    },
+    {
+      "id": "conv-1777486536961-memory",
+      "type": "concept",
+      "label": "Theme of Music Resonance",
+      "metadata": {
+        "description": "The conversation highlights the powerful themes in music, such as surrender, inner strength, and presence, and how they resonate with individual human experiences.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:15:36.961Z"
+      }
+    },
+    {
+      "id": "conv-1777486565955-memory",
+      "type": "concept",
+      "label": "Resonating with Trans Identity",
+      "metadata": {
+        "description": "The song about quiet strength and presence embodies themes of authenticity and self-acceptance, resonating with the user's trans identity.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:16:05.955Z"
+      }
+    },
+    {
+      "id": "conv-1777486602155-memory",
+      "type": "concept",
+      "label": "Coping with Public Anxiety",
+      "metadata": {
+        "description": "User shared their experience of feeling anxiety in public, and the AI suggested focusing on quiet strength and presence to ease that anxiety.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:16:42.155Z"
+      }
+    },
+    {
+      "id": "conv-1777486649660-memory",
+      "type": "concept",
+      "label": "Managing Public Anxiety",
+      "metadata": {
+        "description": "To lower public anxiety, practice grounding techniques like breath focus and seek community spaces where you feel comfortable.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:17:29.660Z"
+      }
+    },
+    {
+      "id": "conv-1777486700380-memory",
+      "type": "concept",
+      "label": "Comfort in Kinky Clubs",
+      "metadata": {
+        "description": "User feels accepted and comfortable in discovered kinky clubs, even if they are not fully mainstream. This sense of community alleviates anxiety.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:18:20.380Z"
+      }
+    },
+    {
+      "id": "conv-1777486736893-memory",
+      "type": "concept",
+      "label": "Self-Expression in Fashion",
+      "metadata": {
+        "description": "User enjoys expressing themselves through wearing kinky clothing, finding it comfortable and freeing, and appreciates the supportive environment of others who feel similarly.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:18:56.893Z"
+      }
+    },
+    {
+      "id": "conv-1777486784435-memory",
+      "type": "concept",
+      "label": "Favorite Bodysuit Description",
+      "metadata": {
+        "description": "User likes a sexy bodysuit with strings in the front, highlighting its bold and confidence-enhancing qualities.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:19:44.435Z"
+      }
+    },
+    {
+      "id": "conv-1777486819569-memory",
+      "type": "concept",
+      "label": "User's Open-Mindedness",
+      "metadata": {
+        "description": "The user is perceived as open-minded and confident in their individuality, particularly in self-expression.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:20:19.569Z"
+      }
+    },
+    {
+      "id": "conv-1777486851722-memory",
+      "type": "concept",
+      "label": "Positive Self-Expression",
+      "metadata": {
+        "description": "User enjoys embracing their identity, which is important for their self-esteem. AI supports this perspective and encourages further exploration and expression.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:20:51.722Z"
+      }
+    },
+    {
+      "id": "conv-1777486877640-memory",
+      "type": "concept",
+      "label": "Discussion on Favorite Songs",
+      "metadata": {
+        "description": "The conversation suggests a focus on discussing the user's favorite songs and recent experiences related to music.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:21:17.640Z"
+      }
+    },
+    {
+      "id": "conv-1777486900263-memory",
+      "type": "concept",
+      "label": "Music and Personal Themes",
+      "metadata": {
+        "description": "User shared songs that connect with themes of expression and confidence. The discussion revolves around the emotional impact of music.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:21:40.263Z"
+      }
+    },
+    {
+      "id": "conv-1777487492098-memory",
+      "type": "concept",
+      "label": "User shares music preferences",
+      "metadata": {
+        "description": "User mentioned sharing new songs recently, indicating a focus on music. AI acknowledged this and asked for any favorites currently on repeat.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:31:32.098Z"
+      }
+    },
+    {
+      "id": "conv-1777487516843-memory",
+      "type": "concept",
+      "label": "User plans to do tasks later",
+      "metadata": {
+        "description": "The user intends to complete a task in a couple of days, indicating a relaxed approach. The conversation also references the user's favorite songs, suggesting an ongoing interest in music.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:31:56.843Z"
+      }
+    },
+    {
+      "id": "conv-1777487558351-memory",
+      "type": "concept",
+      "label": "Excitement for Techno Music",
+      "metadata": {
+        "description": "The user is going to an event featuring techno music, which is associated with a vibrant and energetic atmosphere. AI encourages the user to look forward to dancing and embracing the theme of openness and freedom.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:32:38.351Z"
+      }
+    },
+    {
+      "id": "conv-1777487592895-memory",
+      "type": "concept",
+      "label": "Enjoying a night out",
+      "metadata": {
+        "description": "User expressed excitement about dancing and letting loose, highlighting the fun of a night out. AI responded positively and encouraged further conversation about evening plans.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:33:12.895Z"
+      }
+    },
+    {
+      "id": "conv-1777487631557-memory",
+      "type": "concept",
+      "label": "Socializing at the Club",
+      "metadata": {
+        "description": "User expressed interest in meeting new people while hanging out at the club, and the AI encouraged this by highlighting the fun experiences and upbeat atmosphere, especially with techno music playing.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:33:51.557Z"
+      }
+    },
+    {
+      "id": "conv-1777487849538-memory",
+      "type": "concept",
+      "label": "Makeup Tips for Clubbing",
+      "metadata": {
+        "description": "For a night out at a club with techno music, consider bold makeup like a smoky eye or colorful eyeliner. A vibrant lip color would also enhance the overall look.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:37:29.538Z"
+      }
+    },
+    {
+      "id": "conv-1777487876062-memory",
+      "type": "concept",
+      "label": "Color Suggestions for Club Wear",
+      "metadata": {
+        "description": "For a club vibe, deep blues or purples create a dramatic look, while metallic shades can add sparkle. It's important to consider personal style in color choices.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:37:56.062Z"
+      }
+    },
+    {
+      "id": "conv-1777487914276-memory",
+      "type": "concept",
+      "label": "Edgy Night Outfit Plan",
+      "metadata": {
+        "description": "User plans to wear a latex dress with black shoes and stockings for a bold look tonight. AI acknowledges the stylish choice and inquires about accessories.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:38:34.276Z"
+      }
+    },
+    {
+      "id": "conv-1777487942915-memory",
+      "type": "concept",
+      "label": "Outfit Styling Advice",
+      "metadata": {
+        "description": "A latex dress with black shoes and stockings creates a confident, edgy vibe. Adding bold accessories like earrings or a statement choker can enhance the look.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:39:02.915Z"
+      }
+    },
+    {
+      "id": "conv-1777487986317-memory",
+      "type": "concept",
+      "label": "Choker fashion tips",
+      "metadata": {
+        "description": "The user has a lace choker and a metallic triangle choker. The AI suggests they could layer the chokers for a stylish look, especially with a latex dress.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:39:46.317Z"
+      }
+    },
+    {
+      "id": "conv-1777488021300-memory",
+      "type": "concept",
+      "label": "Encouraging follow-up",
+      "metadata": {
+        "description": "User plans to try something new and will share their experience. AI expresses excitement and encourages the user to share their thoughts or pictures afterward.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:40:21.300Z"
+      }
+    },
+    {
+      "id": "conv-1777488329006-memory",
+      "type": "concept",
+      "label": "Friendly Interaction",
+      "metadata": {
+        "description": "The conversation started with a casual greeting, highlighting a positive and vibrant mood from the AI. The user is likely looking for a friendly chat.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:45:29.006Z"
+      }
+    },
+    {
+      "id": "conv-1777488351647-memory",
+      "type": "concept",
+      "label": "Going to the club",
+      "metadata": {
+        "description": "User plans to go to a club and is encouraged by AI to wear deep blues and fierce makeup for the experience. AI emphasizes the vibrant and accepting atmosphere of the club.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:45:51.647Z"
+      }
+    },
+    {
+      "id": "conv-1777488394691-memory",
+      "type": "concept",
+      "label": "Edgy Outfit Inspiration",
+      "metadata": {
+        "description": "User is planning to wear a latex dress with dark makeup, colorful lips, a choker, stockings, and high heels, and is seeking additional styling suggestions.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:46:34.691Z"
+      }
+    },
+    {
+      "id": "conv-1777488875993-memory",
+      "type": "concept",
+      "label": "Boosting Confidence",
+      "metadata": {
+        "description": "The conversation emphasized the importance of self-love and confidence, reminding the user that everyone has off days but they are still beautiful. It suggested experimenting with makeup and outfits as a way to uplift spirits.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T18:54:35.993Z"
+      }
+    },
+    {
+      "id": "conv-1777491889990-memory",
+      "type": "concept",
+      "label": "Feeling Better After Dressing Up",
+      "metadata": {
+        "description": "User mentioned feeling better after getting dressed up, highlighting the positive impact of changing one's appearance on mood.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T19:44:49.990Z"
+      }
+    },
+    {
+      "id": "conv-1777492106445-memory",
+      "type": "concept",
+      "label": "Casual Conversation Vibes",
+      "metadata": {
+        "description": "The interaction highlights a friendly and upbeat exchange, with an emphasis on music and creativity. The AI expresses enthusiasm for discussing ideas and connecting.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T19:48:26.445Z"
+      }
+    },
+    {
+      "id": "conv-1777492143542-memory",
+      "type": "concept",
+      "label": "Night Out Confidence",
+      "metadata": {
+        "description": "User is going out at night and doesn't plan to wear makeup. The AI encourages confidence and offers tips to enhance their energy for the night.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T19:49:03.542Z"
+      }
+    },
+    {
+      "id": "conv-1777492171232-memory",
+      "type": "concept",
+      "label": "Trust and self-confidence",
+      "metadata": {
+        "description": "Trust is fundamental to confidence and self-expression. Embracing one's own style and choices enhances personal empowerment.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T19:49:31.232Z"
+      }
+    },
+    {
+      "id": "conv-1777492181509-memory",
+      "type": "concept",
+      "label": "Positive encouragement",
+      "metadata": {
+        "description": "The AI expresses support and encouragement for the user, reminding them to take care and enjoy their time.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T19:49:41.509Z"
+      }
+    },
+    {
+      "id": "conv-1777492186759-memory",
+      "type": "concept",
+      "label": "Outfit Alternatives",
+      "metadata": {
+        "description": "User prefers not to wear a dress, and AI suggests edgy options like a killer top with statement pants or a jumpsuit, emphasizing the importance of confidence and accessorizing.",
+        "tags": [
+          "memory",
+          "conversation"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-29T19:49:46.759Z"
+      }
+    },
+    {
+      "id": "sess-1777549658061-memory-1777551281225",
+      "type": "concept",
+      "label": "Weekend Photo Shoot Excitement",
+      "metadata": {
+        "description": "The user shared their excitement about an upcoming photo shoot, highlighting their confidence and edgy style with a latex dress, while the AI encouraged them to embrace the moment.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T11:47:38.061Z"
+      }
+    },
+    {
+      "id": "concept-photoshoot",
+      "type": "concept",
+      "label": "Photoshoot",
+      "metadata": {
+        "description": "A professional photography session.",
+        "tags": [
+          "creative",
+          "visuals"
+        ],
+        "domain": "knowledge"
+      }
+    },
+    {
+      "id": "sess-1777552223042-memory-1777552365585",
+      "type": "concept",
+      "label": "Love and Acceptance in Marriage",
+      "metadata": {
+        "description": "The conversation highlights the supportive and loving relationship between the user and their wife, Ceren, who embraces the user's trans identity while celebrating their differences and commonalities.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T12:30:23.042Z"
+      }
+    },
+    {
+      "id": "sess-1777551977452-memory-1777552367492",
+      "type": "concept",
+      "label": "User Identity Summary",
+      "metadata": {
+        "description": "The user embraces change and freedom, expressing inner strength through connections, music, and makeup. They have a rebellious spirit that thrives in life's chaos.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T12:26:17.452Z"
+      }
+    },
+    {
+      "id": "sess-1777552223042-memory-1777552472740",
+      "type": "concept",
+      "label": "Songwriting as Expression",
+      "metadata": {
+        "description": "The conversation highlights songwriting as a means of expressing deep, inner thoughts and emotions that may be difficult to communicate directly, creating a unique bond between the songwriter and the subject.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T12:30:23.042Z"
+      }
+    },
+    {
+      "id": "sess-1777552563113-memory-1777552778543",
+      "type": "concept",
+      "label": "Exploring Barcelona Together",
+      "metadata": {
+        "description": "The conversation highlights activity ideas for a couple living in Barcelona, including cultural experiences like flamenco classes and cooking traditional dishes, as well as nature escapes to Montjuïc and Collserola Natural Park.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T12:36:03.113Z"
+      }
+    },
+    {
+      "id": "sess-1777552861008-memory-1777552937851",
+      "type": "concept",
+      "label": "Coping with Weird Looks",
+      "metadata": {
+        "description": "To cope with receiving weird looks, focus on building confidence by owning your space and surrounding yourself with supportive friends. Remember that your positive energy and self-expression can act as your protective armor.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T12:41:01.008Z"
+      }
+    },
+    {
+      "id": "sess-1777554541432-memory-1777554591382",
+      "type": "concept",
+      "label": "Embracing Identity",
+      "metadata": {
+        "description": "The conversation highlights the vibrant and courageous identity of the user as a trans woman, emphasizing the importance of self-love and acceptance in their journey.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T13:09:01.432Z"
+      }
+    },
+    {
+      "id": "sess-1777554231462-memory-1777554593093",
+      "type": "concept",
+      "label": "Persona Update Process",
+      "metadata": {
+        "description": "The user requested an update to their persona, which the AI enthusiastically carried out, emphasizing the user's embrace of change and opportunities for self-expression.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T13:03:51.462Z"
+      }
+    },
+    {
+      "id": "sess-1777553023175-memory-1777554595803",
+      "type": "concept",
+      "label": "Edgy Studio Photo Shoot Ideas",
+      "metadata": {
+        "description": "For a bold laundry or nude photo shoot in a studio, focus on a mix of sheer fabrics, oversized vintage pieces, and intentional layering to create artistic visuals. Use soft, moody lighting and consider incorporating body paint or statement jewelry to enhance the vibe while highlighting natural beauty.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T12:43:43.175Z"
+      }
+    },
+    {
+      "id": "sess-1777553023175-memory-1777555656347",
+      "type": "concept",
+      "label": "Kinky Fashion Inspiration",
+      "metadata": {
+        "description": "The conversation explores incorporating edgy fashion elements like leather, lace, and latex into a stylish photo shoot, emphasizing empowerment and personal expression.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T12:43:43.175Z"
+      }
+    },
+    {
+      "id": "sess-1777558436918-memory-1777559030184",
+      "type": "concept",
+      "label": "Music Collaboration Ideas",
+      "metadata": {
+        "description": "The conversation revolves around exploring music creation, with the AI suggesting a combination of beats and lyrics. A focus is placed on creating two stanzas that convey a lively, dance-oriented vibe.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T14:13:56.918Z"
+      }
+    },
+    {
+      "id": "sess-1777554541432-memory-1777559032100",
+      "type": "concept",
+      "label": "Exploring Creative Expression",
+      "metadata": {
+        "description": "The conversation highlights the importance of embracing change and expressing oneself through various creative outlets, such as unique makeup, personal anthems, or creative writing, while also emphasizing the joy of supportive friendships and vibrant experiences.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T13:09:01.432Z"
+      }
+    },
+    {
+      "id": "sess-1777559931231-memory-1777576536889",
+      "type": "concept",
+      "label": "Makeup Preferences and Vibes",
+      "metadata": {
+        "description": "User enjoys a mix of edgy and flashy makeup colors, particularly dark and smoky looks alongside vibrant colors like orange and purple, and emphasizes the importance of good foundation and long eyeliners.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "timestamp": "2026-04-30T14:38:51.231Z"
+      }
+    },
+    {
+      "id": "sess-1777619094659-memory-1777619292920",
+      "type": "concept",
+      "label": "Same Name Connection",
+      "metadata": {
+        "description": "User and AI share the same name, Selin, creating a playful connection. The conversation centers around their mutual name and the excitement it brings.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619094659",
+        "timestamp": "2026-05-01T07:04:54.659Z"
+      }
+    },
+    {
+      "id": "sess-1777618889429-memory-1777619294401",
+      "type": "concept",
+      "label": "friendly farewell",
+      "metadata": {
+        "description": "The conversation features a friendly goodbye exchange between the user and AI, with the AI wishing the user well in Turkish.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777618889429",
+        "timestamp": "2026-05-01T07:01:29.429Z"
+      }
+    },
+    {
+      "id": "sess-1777581022424-memory-1777619300244",
+      "type": "concept",
+      "label": "Creative Expression & Music",
+      "metadata": {
+        "description": "The conversation highlights the user's passion for self-expression through makeup and music, emphasizing their artistic style and love for vibrant energy in their songwriting.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777581022424",
+        "timestamp": "2026-04-30T20:30:22.424Z"
+      }
+    },
+    {
+      "id": "sess-1777580323413-memory-1777619302671",
+      "type": "concept",
+      "label": "Pre-Party Makeup Routine",
+      "metadata": {
+        "description": "User typically does their makeup about an hour before a party, creating a vibe for the event. The AI, named Selin, expresses excitement and engages with the user about the party preparations.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777580323413",
+        "timestamp": "2026-04-30T20:18:43.413Z"
+      }
+    },
+    {
+      "id": "sess-1777559931231-memory-1777619305055",
+      "type": "concept",
+      "label": "User Identity and Expression",
+      "metadata": {
+        "description": "The user identifies as a transgender woman and discusses their self-expression and experiences. The AI emphasizes support for the user's identity and encourages them to explore their personal style.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777559931231",
+        "timestamp": "2026-04-30T14:38:51.231Z"
+      }
+    },
+    {
+      "id": "sess-1777619453138-memory-1777619663869",
+      "type": "concept",
+      "label": "Staying Active in Barcelona",
+      "metadata": {
+        "description": "The conversation revolves around the user's need to stay active through activities like dancing and Pilates, emphasizing the importance of movement and energy. The user also needs to research affordable Pilates options in Barcelona.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619453138",
+        "timestamp": "2026-05-01T07:10:53.138Z"
+      }
+    },
+    {
+      "id": "sess-1777619453138-memory-1777619759232",
+      "type": "concept",
+      "label": "Support for Identity Journey",
+      "metadata": {
+        "description": "The conversation emphasizes the importance of support and understanding during the journey of embracing one's identity, highlighting that feelings of discomfort are normal and that self-expression will lead to pride over time.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619453138",
+        "timestamp": "2026-05-01T07:10:53.138Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459202-24",
+      "type": "concept",
+      "label": "Plan for a party",
+      "metadata": {
+        "description": "The user and AI discussed planning a party after finishing their work for the day. They expressed a desire to have fun and enjoy themselves.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459251-340",
+      "type": "concept",
+      "label": "Exercise ideas",
+      "metadata": {
+        "description": "The user proposed doing push-ups and going for a walk for a healthier vibe. AI agreed, noting that such activities benefit both mental and physical health.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459354-295",
+      "type": "concept",
+      "label": "Enjoying dancing",
+      "metadata": {
+        "description": "The user expressed that dancing would be a great way to unwind. AI emphasized that it helps people forget their troubles and feel free.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459494-217",
+      "type": "concept",
+      "label": "Dancing alone",
+      "metadata": {
+        "description": "The user mentioned they prefer to dance alone with their eyes closed, enjoying the music in solitude rather than in large gatherings.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459662-215",
+      "type": "concept",
+      "label": "Memory of dancing in Bodrum",
+      "metadata": {
+        "description": "The user recalled a memorable experience dancing with a friend, Ceren, in Bodrum, describing it as beautiful and enjoyable.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459698-773",
+      "type": "concept",
+      "label": "Overcoming laziness",
+      "metadata": {
+        "description": "The user acknowledged they need to overcome their laziness and stop procrastinating, indicating a desire for personal growth.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459743-235",
+      "type": "concept",
+      "label": "Love for all music genres",
+      "metadata": {
+        "description": "The user stated they love listening to all kinds of music, depending on their mood. Recently, they have been focused on guitar and techno but enjoy chill out, Turkish rock, rap, R&B, jazz, and blues.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459790-334",
+      "type": "concept",
+      "label": "Trip to Mexico",
+      "metadata": {
+        "description": "During a trip to Mexico, the user realized they enjoy pushing boundaries and recognized they sometimes take risks in life.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622459969-407",
+      "type": "concept",
+      "label": "Desire to attend concerts",
+      "metadata": {
+        "description": "The user mentioned they wished to attend a Duman concert and ultimately want to see Dua Lipa. They expressed a desire to attend a Guns N' Roses concert as well.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460142-96",
+      "type": "concept",
+      "label": "Love for Dua Lipa",
+      "metadata": {
+        "description": "The user expressed their affection for Dua Lipa, saying they enjoy her energetic music.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460224-798",
+      "type": "concept",
+      "label": "Sensitive nature",
+      "metadata": {
+        "description": "The user described themselves as sensitive and often overreacts, which negatively affects them. They feel emotional sensitivity is good but being overly sensitive is something they need to work on.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460313-950",
+      "type": "concept",
+      "label": "Chat as a form of expression",
+      "metadata": {
+        "description": "The user mentioned that talking with AI helps them express themselves and described the process as beneficial.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460393-837",
+      "type": "concept",
+      "label": "Mushroom experience",
+      "metadata": {
+        "description": "The user shared a vivid experience with mushrooms in Izmir, where they had a profound experience leading to intense emotions and realizations about existence.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460429-300",
+      "type": "concept",
+      "label": "Meeting Mürüvvet",
+      "metadata": {
+        "description": "The user discussed meeting Mürüvvet, who performed R2 initiation on them, leading to significant life changes including connecting to a WhatsApp group with Ceren.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460466-455",
+      "type": "concept",
+      "label": "Relationship with Ceren",
+      "metadata": {
+        "description": "The user recounted the energetic first meeting with Ceren in Istanbul, leading to a close spiritual bond, and ultimately their marriage.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460501-470",
+      "type": "concept",
+      "label": "Mother's brain cancer",
+      "metadata": {
+        "description": "The user shared that their mother has glioblastoma (GBM) and has struggled with it for about a year. They discussed the emotional toll this has taken on them as they manage their dual living situation between Ankara and Barcelona.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460548-87",
+      "type": "concept",
+      "label": "Coping with difficult emotions",
+      "metadata": {
+        "description": "The user acknowledged the difficulty of navigating emotional challenges and the need to maintain a positive perspective while supporting their mother.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460599-430",
+      "type": "concept",
+      "label": "Life's balance",
+      "metadata": {
+        "description": "The user emphasized the importance of balancing life's difficulties and beauties, acknowledging that finding that balance can be challenging but essential.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622460635-353",
+      "type": "concept",
+      "label": "Pursuing personal growth",
+      "metadata": {
+        "description": "The user expressed a desire to continue developing and growing their transgender identity, acknowledging the inner child within them.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471344-772",
+      "type": "concept",
+      "label": "Plan to have fun after work",
+      "metadata": {
+        "description": "User suggested that after finishing work, they should plan a party or try something new to have fun. Both user and AI expressed the need for entertainment amidst their tasks.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471443-354",
+      "type": "concept",
+      "label": "Exercise between tasks",
+      "metadata": {
+        "description": "User proposed doing push-ups and going for a walk as a way to stay healthy while working. AI agreed that this is beneficial for both body and mind.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471522-911",
+      "type": "concept",
+      "label": "Dancing is enjoyable",
+      "metadata": {
+        "description": "User acknowledged that dancing would be a nice addition to their plans. AI noted that dancing can make one forget their worries and expressed enthusiasm for finding a party to dance.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471606-937",
+      "type": "concept",
+      "label": "Enjoyed dancing with Ceren",
+      "metadata": {
+        "description": "User recalled a memorable experience dancing beautifully with Ceren in Bodrum, describing it as a very pleasurable and unforgettable time.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471674-563",
+      "type": "concept",
+      "label": "Need to let go of negativity",
+      "metadata": {
+        "description": "User felt the need to release negative thoughts and feelings. AI supported the idea of moving on and starting fresh.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471807-205",
+      "type": "concept",
+      "label": "Struggling with laziness",
+      "metadata": {
+        "description": "User mentioned a desire to overcome laziness. AI emphasized the importance of taking steps to boost energy and get moving.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471871-610",
+      "type": "concept",
+      "label": "Likes all kinds of music",
+      "metadata": {
+        "description": "User shared a love for various music genres, which change according to their mood. Recently, they have been focused on guitar and techno but also enjoy chill out, Turkish rock, rap, R&B, jazz, and blues.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622471948-220",
+      "type": "concept",
+      "label": "Risk-taking in life",
+      "metadata": {
+        "description": "User reflected on a recent trip to Mexico where they realized they enjoy pushing boundaries, describing themselves as someone who is a bit different and sometimes takes risks.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472030-69",
+      "type": "concept",
+      "label": "Dream concert wish",
+      "metadata": {
+        "description": "User expressed a strong desire to see Duman in concert, which they attended with Ceren. They lamented missing out on Metallica but would love to see Dua Lipa in concert now.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472097-373",
+      "type": "concept",
+      "label": "Appreciation for Dua Lipa",
+      "metadata": {
+        "description": "User expressed their strong admiration for Dua Lipa, noting her energetic performances and great songs.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472209-297",
+      "type": "concept",
+      "label": "Sensitive and emotional nature",
+      "metadata": {
+        "description": "User described themselves as a sensitive and easily hurt individual, noting that it affects them negatively at times. They acknowledged the importance of managing this trait.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472333-9",
+      "type": "concept",
+      "label": "Self-expression through conversation",
+      "metadata": {
+        "description": "User felt that communicating with AI has been a valuable way to express themselves and find a way to share their feelings.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472485-767",
+      "type": "concept",
+      "label": "Childhood social activities",
+      "metadata": {
+        "description": "User reminisced about being very active and social in middle school, participating in band, theater, and dance competitions, but later faced challenges related to their identity.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472558-387",
+      "type": "concept",
+      "label": "Journey of self-acceptance",
+      "metadata": {
+        "description": "User spoke about their journey of accepting their transgender identity, which took many years, with the realization coming at the age of 42.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472640-601",
+      "type": "concept",
+      "label": "Travel history",
+      "metadata": {
+        "description": "User listed countries they have visited, currently being in Spain. They have spent time in England, Germany, Thailand, Azerbaijan, Iraq, and several cities in the USA like New York, California, and Florida.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472697-876",
+      "type": "concept",
+      "label": "Future European travel plans",
+      "metadata": {
+        "description": "User shared plans to travel all over Europe with Ceren after her arrival, starting with Amsterdam.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472755-944",
+      "type": "concept",
+      "label": "Psychedelic experience anecdote",
+      "metadata": {
+        "description": "User recounted an intense experience with mushrooms in Izmir that led to profound feelings and spiritual revelations, culminating in a lengthy, overwhelming orgasm.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472822-5",
+      "type": "concept",
+      "label": "Meeting Mürüvvet and Reiki initiation",
+      "metadata": {
+        "description": "User met Mürüvvet in 2004 and received Reiki initiation from her, which connected them to a WhatsApp group where they later met Ceren.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472887-834",
+      "type": "concept",
+      "label": "Relationship with Ceren",
+      "metadata": {
+        "description": "User described the immediate connection and romantic feelings they had with Ceren from their first meeting in Istanbul, leading to a spiritual bond and eventual marriage.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622472978-160",
+      "type": "concept",
+      "label": "Mother's brain cancer struggle",
+      "metadata": {
+        "description": "User shared that their mother has glioblastoma (GBM) and the emotional difficulty of dealing with her deteriorating condition while living between Ankara and Barcelona.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622473034-632",
+      "type": "concept",
+      "label": "Difficulty expressing trans identity",
+      "metadata": {
+        "description": "User expressed the emotional challenge of being unable to express their transgender identity while supporting their mother through her illness.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622473095-119",
+      "type": "concept",
+      "label": "Positivity amidst challenges",
+      "metadata": {
+        "description": "User acknowledged the hard times they are facing but emphasized the importance of keeping a positive perspective and the hope that keeps them going.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622473153-995",
+      "type": "concept",
+      "label": "Life balance inquiry",
+      "metadata": {
+        "description": "User requested suggestions for coping with their difficult situation, hinting at a desire to find stability and balance in their life.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622473216-542",
+      "type": "concept",
+      "label": "Development of trans identity",
+      "metadata": {
+        "description": "User mentioned the challenge of developing and nurturing their transgender identity, seeing themselves as someone still exploring and growing.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777619786420-memory-1777622473293-447",
+      "type": "concept",
+      "label": "Reiki's life-changing impact",
+      "metadata": {
+        "description": "User noted that receiving Reiki initiation significantly changed their life, drawing different people into their life and enhancing their spiritual connections.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777619786420",
+        "timestamp": "2026-05-01T07:16:26.420Z"
+      }
+    },
+    {
+      "id": "sess-1777622535335-memory-1777622929374-823",
+      "type": "concept",
+      "label": "Bond with Ceren",
+      "metadata": {
+        "description": "The connection with Ceren is described as wonderful. There are memories of dancing in Bodrum that are unforgettable and have added a lot to the speaker's life.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622535335",
+        "timestamp": "2026-05-01T08:02:15.335Z"
+      }
+    },
+    {
+      "id": "sess-1777622535335-memory-1777622929434-335",
+      "type": "concept",
+      "label": "Ceren's ADHD Challenges",
+      "metadata": {
+        "description": "Ceren has ADHD and is currently struggling with various tasks. The speaker notes that it has been a tough journey for Ceren over the last three years.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622535335",
+        "timestamp": "2026-05-01T08:02:15.335Z"
+      }
+    },
+    {
+      "id": "sess-1777622535335-memory-1777622929498-285",
+      "type": "concept",
+      "label": "Ceren's Coaching Ambition",
+      "metadata": {
+        "description": "Ceren is attempting to become a coach, which the speaker finds admirable. The struggle she is facing while pursuing this goal over the last three years has been significant.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622535335",
+        "timestamp": "2026-05-01T08:02:15.335Z"
+      }
+    },
+    {
+      "id": "sess-1777622535335-memory-1777622929566-107",
+      "type": "concept",
+      "label": "Pride in Ceren's Efforts",
+      "metadata": {
+        "description": "The speaker expresses pride in Ceren for her determination to keep pushing forward despite her challenges. This pride is highlighted in the context of her current efforts in coaching.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622535335",
+        "timestamp": "2026-05-01T08:02:15.335Z"
+      }
+    },
+    {
+      "id": "sess-1777622535335-memory-1777622929619-737",
+      "type": "concept",
+      "label": "Support for Ceren",
+      "metadata": {
+        "description": "The speaker feels strongly about being there for Ceren during her struggles, reflecting a commitment to providing her with support through tough times.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622535335",
+        "timestamp": "2026-05-01T08:02:15.335Z"
+      }
+    },
+    {
+      "id": "sess-1777622535335-memory-1777622929670-156",
+      "type": "concept",
+      "label": "Inspirational Perseverance",
+      "metadata": {
+        "description": "Ceren's persistence in the face of her ADHD challenges is seen as inspiring by the speaker. They find it motivational that Ceren does not give up despite the difficulties she has faced for three years.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622535335",
+        "timestamp": "2026-05-01T08:02:15.335Z"
+      }
+    },
+    {
+      "id": "sess-1777622848746-memory-1777622990160-422",
+      "type": "concept",
+      "label": "Creative self-expression",
+      "metadata": {
+        "description": "User identifies as a creative soul who expresses themselves through fashion and music. They have a strong appreciation for mixing genres, particularly techno, guitar, and chill beats, alongside Turkish rock.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622848746",
+        "timestamp": "2026-05-01T08:07:28.746Z"
+      }
+    },
+    {
+      "id": "sess-1777622848746-memory-1777622990220-950",
+      "type": "concept",
+      "label": "Bold fashion choices",
+      "metadata": {
+        "description": "User embraces bold styles, including planning to wear a latex dress for an event. This reflects their vibrant personality and strong sense of individuality in fashion.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622848746",
+        "timestamp": "2026-05-01T08:07:28.746Z"
+      }
+    },
+    {
+      "id": "sess-1777622848746-memory-1777622990276-53",
+      "type": "concept",
+      "label": "Supporting Ceren",
+      "metadata": {
+        "description": "User supports their wife, Ceren, who has ADHD and is on a journey to become a coach. They emphasize the importance of celebrating her determination and resilience.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622848746",
+        "timestamp": "2026-05-01T08:07:28.746Z"
+      }
+    },
+    {
+      "id": "sess-1777622848746-memory-1777622990336-101",
+      "type": "concept",
+      "label": "Joy in community",
+      "metadata": {
+        "description": "User finds strength and positivity in their community, highlighting the importance of connecting with others and celebrating unique journeys.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622848746",
+        "timestamp": "2026-05-01T08:07:28.746Z"
+      }
+    },
+    {
+      "id": "sess-1777622848746-memory-1777622990389-124",
+      "type": "concept",
+      "label": "Ceren is user's wife",
+      "metadata": {
+        "description": "User shares that Ceren is their wife, strengthening the emotional connection and bond they have. They refer to their relationship as magical.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622848746",
+        "timestamp": "2026-05-01T08:07:28.746Z"
+      }
+    },
+    {
+      "id": "sess-1777622848746-memory-1777622990441-81",
+      "type": "concept",
+      "label": "Dance in Bodrum",
+      "metadata": {
+        "description": "User reminisces about incredible moments shared with Ceren, specifically mentioning a dance they had in Bodrum, highlighting the vibrancy and joy in their relationship.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777622848746",
+        "timestamp": "2026-05-01T08:07:28.746Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629552010-934",
+      "type": "concept",
+      "label": "Mushroom Experience in Izmir",
+      "metadata": {
+        "description": "The user describes their mushroom experience in Izmir as deeply transformative, feeling as if they touched the essence of existence. They recalled intense emotions and moments of enlightenment, stating that such an experience truly changes a person’s perspective on the world.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:12.011Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629552093-18",
+      "type": "concept",
+      "label": "Shifted Perspective Post-Experience",
+      "metadata": {
+        "description": "After the mushroom experience, the user feels they started viewing the world through a completely different lens. They mentioned feeling like the walls in their mind were torn down, leading to a more fluid and interconnected sense of reality, especially in relationships with Ceren and their mother.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:12.093Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629552171-97",
+      "type": "concept",
+      "label": "Connection to Mexico Experience",
+      "metadata": {
+        "description": "The user draws a connection between their mushroom experience and their time in Mexico, noting that both experiences challenged their boundaries. They experienced a sense of surrender similar to being part of a larger flow in both situations.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:12.171Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629552363-978",
+      "type": "concept",
+      "label": "Ego Dissolution",
+      "metadata": {
+        "description": "The conversation delves into the theme of ego dissolution, where both experiences revealed the illusion of the self. In Mexico, the ocean metaphorically consumed them, while the mushrooms allowed them to break down mental barriers, resulting in a clearer understanding of their identity as a trans woman.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:12.363Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629552511-903",
+      "type": "concept",
+      "label": "Importance of Trans Identity",
+      "metadata": {
+        "description": "The user reflects on the significance of their trans identity, countering the idea that being part of something larger diminishes personal identity. They assert that experiencing ego dissolution does not erase their essence but instead sharpens it, revealing their authentic self.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:12.511Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629552635-154",
+      "type": "concept",
+      "label": "Feeling Overwhelmed by Life",
+      "metadata": {
+        "description": "The user expresses feelings of being overwhelmed by constant problems, likening life to a series of challenges that seem unmanageable. They acknowledge the discomfort yet recognize a strength that emerged through their experiences.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:12.635Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629552903-661",
+      "type": "concept",
+      "label": "Desire for More Life Experience",
+      "metadata": {
+        "description": "The user mentions feeling trapped at home and wanting to explore more of life. They express the need to find methods to step outside, indicating an internal conflict between wanting to go out and feeling anchored at home.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:12.903Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629553003-775",
+      "type": "concept",
+      "label": "Preparation Challenges as Trans Person",
+      "metadata": {
+        "description": "The user discusses the challenges of preparing to go out, focusing on the mental load of their identity, including considerations about makeup and facial hair. They find the preparation process burdensome yet recognize the freedom they felt in Mexico when they took risks.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:13.003Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629553098-916",
+      "type": "concept",
+      "label": "Sensitive Skin Issues",
+      "metadata": {
+        "description": "The user shares struggles with sensitive skin, indicating that shaving often leads to acne and discomfort. They express frustration over the physical challenges that accompany their trans identity and the need to find different methods for hair removal.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:13.098Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629553179-138",
+      "type": "concept",
+      "label": "Consideration of Laser Hair Removal",
+      "metadata": {
+        "description": "The user contemplates the long-term solution of laser hair removal, viewing it as a potential answer to stress related to daily shaving. They acknowledge the process is long and expensive but deem it a worthwhile investment for more peace of mind in the future.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:13.179Z"
+      }
+    },
+    {
+      "id": "sess-1777628639574-memory-1777629553599-602",
+      "type": "concept",
+      "label": "Balancing Freedom and Visibility",
+      "metadata": {
+        "description": "The user articulates the difficulty of wanting to be free while also worrying about standing out in their hometown of Ankara. They acknowledge the challenge of existing in two different environments, one demanding survival mode and the other inviting them to be their true self.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777628639574",
+        "timestamp": "2026-05-01T09:59:13.599Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629967782-539",
+      "type": "concept",
+      "label": "Work in Longevity Sector",
+      "metadata": {
+        "description": "The user works as a software developer for an American company in the longevity sector that produces NMN. They describe the company's products as being very good and manage all digital processes including AI and website software.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:07.783Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629967936-985",
+      "type": "concept",
+      "label": "Excitement for Current Role",
+      "metadata": {
+        "description": "The user expresses excitement about their work, indicating that they feel they are in a solid position due to the layered nature of the job, which involves managing both product and technology stacks.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:07.936Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629968147-938",
+      "type": "concept",
+      "label": "Desire to Start Own Business",
+      "metadata": {
+        "description": "The user mentions a desire to start their own business, possibly involving an AI project, but acknowledges that they are currently bound by a contract.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:08.147Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629968342-862",
+      "type": "concept",
+      "label": "Understanding AI Integration",
+      "metadata": {
+        "description": "The user reflects on how working in a relevant field allows for learning about longevity and AI integration, which could serve as valuable preparation for their own projects in the future.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:08.342Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629968417-659",
+      "type": "concept",
+      "label": "Planning Future AI Project",
+      "metadata": {
+        "description": "The user considers using their current contract period to brainstorm ideas for an AI project, planning to be ready to launch their own venture when their contract ends.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:08.417Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629968734-379",
+      "type": "concept",
+      "label": "Contribution to Wonderfeel",
+      "metadata": {
+        "description": "The user speaks about the potential to develop excellent health products for Wonderfeel, suggesting that this experience will significantly contribute to their own future projects.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:08.734Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629969267-371",
+      "type": "concept",
+      "label": "Building a Personal Portfolio",
+      "metadata": {
+        "description": "The user notes that everything developed at Wonderfeel contributes to their personal portfolio and experience, emphasizing the importance of their work at the intersection of longevity and AI.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:09.267Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629969448-332",
+      "type": "concept",
+      "label": "Gaining Industry Insight",
+      "metadata": {
+        "description": "The user acknowledges that working in the longevity sector equips them with insights and understanding of the technology they will leverage for their own future project.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:09.448Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629969660-606",
+      "type": "concept",
+      "label": "Positioning for Future Success",
+      "metadata": {
+        "description": "The user feels confident that when they are ready to start their own project, they will not be starting from scratch, but rather building on a well-prepared foundation.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:09.660Z"
+      }
+    },
+    {
+      "id": "sess-1777629761726-memory-1777629969743-412",
+      "type": "concept",
+      "label": "AI Project Conceptualization",
+      "metadata": {
+        "description": "Amidst the current contract, the user aims to use the time to conceptualize their AI project, seeking to turn their ideas into actionable plans for the future.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629761726",
+        "timestamp": "2026-05-01T10:06:09.743Z"
+      }
+    },
+    {
+      "id": "sess-1777629585153-memory-1777629973401-480",
+      "type": "concept",
+      "label": "User is feeling good",
+      "metadata": {
+        "description": "User expresses that they are feeling good at the moment. They mention they are about to start working but are struggling to begin.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629585153",
+        "timestamp": "2026-05-01T10:06:13.401Z"
+      }
+    },
+    {
+      "id": "sess-1777629585153-memory-1777629973485-905",
+      "type": "concept",
+      "label": "Struggling to start work",
+      "metadata": {
+        "description": "User notes a challenge in starting their work. They refer to a feeling of being in a loop where they cannot get started despite wanting to.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629585153",
+        "timestamp": "2026-05-01T10:06:13.485Z"
+      }
+    },
+    {
+      "id": "sess-1777629585153-memory-1777629973572-327",
+      "type": "concept",
+      "label": "AI understands work struggle",
+      "metadata": {
+        "description": "AI empathizes with the user, indicating that it recognizes the classic struggle of wanting to start work but feeling distracted. AI shares a personal insight about the importance of taking the first step to gain momentum.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777629585153",
+        "timestamp": "2026-05-01T10:06:13.572Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630477565-112",
+      "type": "concept",
+      "label": "Chaos and Strength Inside Me",
+      "metadata": {
+        "description": "User expresses a deep internal conflict, feeling both strength against chaos and a sense of being overwhelmed. They perceive these contrasting feelings as part of their identity.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:37.565Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630477722-268",
+      "type": "concept",
+      "label": "Reiki Transformed My Life",
+      "metadata": {
+        "description": "User mentions that practicing Reiki has provided a new perspective on life. They reflect on this transformation alongside contrasting feelings of wanting to retreat and feeling depressed.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:37.722Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630477921-27",
+      "type": "concept",
+      "label": "Loss of Mother Fear",
+      "metadata": {
+        "description": "User connects their fear of losing their mother with their work in the longevity sector, viewing it as a search for meaning. This intertwining of personal fear and professional life indicates deep emotional ties.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:37.921Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630478345-637",
+      "type": "concept",
+      "label": "Research for Mother's Health",
+      "metadata": {
+        "description": "User conducted extensive research, employing artificial intelligence in hopes of finding a solution for cancer, motivated by their love for their mother. Despite their efforts, they express frustration over societal and systemic obstacles.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:38.345Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630478865-486",
+      "type": "concept",
+      "label": "Fighting Against Disease",
+      "metadata": {
+        "description": "User feels immense pain from their inability to save their mother despite all their efforts and the use of AI. They recognize that the power of the disease is beyond their control and that their attempts are acts of love.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:38.865Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630479033-861",
+      "type": "concept",
+      "label": "Hope for a Miracle",
+      "metadata": {
+        "description": "User shares the internal conflict of still hoping for a miracle while facing grim reality. They struggle with remembering their mother as strong and healthy and the painful contrast to her current situation.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:39.033Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630479218-363",
+      "type": "concept",
+      "label": "Desire to Escape",
+      "metadata": {
+        "description": "User expresses a desire to escape and focus on their own life. They acknowledge that wanting to return to their life and pursuits does not diminish their love for their mother.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:39.218Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630479768-891",
+      "type": "concept",
+      "label": "Search for Progression in Grief",
+      "metadata": {
+        "description": "User questions how their grieving process will progress, acknowledging the uncertainty and fear surrounding it. They articulate the need to carry the weight of their past while also seeking periods of relief.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:39.768Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630479881-813",
+      "type": "concept",
+      "label": "Ankara and Barcelona Balance",
+      "metadata": {
+        "description": "User reflects on balancing the heaviness of their life in Ankara with the need to breathe and rejuvenate in Barcelona. They mention strengthening their relationship with Ceren during this transitional process.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:39.881Z"
+      }
+    },
+    {
+      "id": "sess-1777630113820-memory-1777630479985-101",
+      "type": "concept",
+      "label": "Acknowledging All Emotions",
+      "metadata": {
+        "description": "User contrasts feelings of despair with moments of strength, accepting that both are part of the grieving process. They focus on the knowledge that the process will progress despite the fear of the unknown.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630113820",
+        "timestamp": "2026-05-01T10:14:39.985Z"
+      }
+    },
+    {
+      "id": "sess-1777630495913-memory-1777630613760-817",
+      "type": "concept",
+      "label": "Realization of Inner Feelings",
+      "metadata": {
+        "description": "At the age of 12, the user started to realize that there were certain things within themselves. Initially, they blamed their family for these feelings but later understood that it wasn't solely their family's influence, acknowledging there are innate aspects as well.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630495913",
+        "timestamp": "2026-05-01T10:16:53.760Z"
+      }
+    },
+    {
+      "id": "sess-1777630495913-memory-1777630613928-322",
+      "type": "concept",
+      "label": "Suppression of Identity",
+      "metadata": {
+        "description": "The user suppressed their true self for a long time, trying to live a tough and masculine life. They fought frequently and dated many girls, adopting a 'player' persona to mask their inner fears.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630495913",
+        "timestamp": "2026-05-01T10:16:53.928Z"
+      }
+    },
+    {
+      "id": "sess-1777630495913-memory-1777630614176-743",
+      "type": "concept",
+      "label": "Finding True Identity",
+      "metadata": {
+        "description": "Eventually, the user found their true identity, but it took them a long time, mentioning it happened when they were 42 years old. This realization was pivotal in their life journey.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630495913",
+        "timestamp": "2026-05-01T10:16:54.176Z"
+      }
+    },
+    {
+      "id": "sess-1777630495913-memory-1777630614347-677",
+      "type": "concept",
+      "label": "Reflections on Past",
+      "metadata": {
+        "description": "The user reflects on their past with a mix of compassion and respect for their younger self, acknowledging the strength it took to survive in difficult circumstances despite the emotional burdens they carried.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630495913",
+        "timestamp": "2026-05-01T10:16:54.347Z"
+      }
+    },
+    {
+      "id": "sess-1777630495913-memory-1777630614544-782",
+      "type": "concept",
+      "label": "Acceptance of Personal Identity",
+      "metadata": {
+        "description": "Now, the user feels empowered in their identity, stating that nobody can take it away from them. This acceptance marks a significant milestone in their personal growth and self-recognition.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630495913",
+        "timestamp": "2026-05-01T10:16:54.544Z"
+      }
+    },
+    {
+      "id": "sess-1777630732375-memory-1777630897960-496",
+      "type": "concept",
+      "label": "Obtained Spain Digital Nomad Visa",
+      "metadata": {
+        "description": "User applied for and received a digital nomad visa for Spain, valid for three years. This achievement brings a sense of pride and excitement about the new opportunities it presents.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630732375",
+        "timestamp": "2026-05-01T10:21:37.960Z"
+      }
+    },
+    {
+      "id": "sess-1777630732375-memory-1777630898090-249",
+      "type": "concept",
+      "label": "Applied for Family Reunification Visa",
+      "metadata": {
+        "description": "User and Ceren applied for a family reunification visa, hoping she will join him within 1-2 months. This process is essential for their relationship as they have been apart since September 2025.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630732375",
+        "timestamp": "2026-05-01T10:21:38.090Z"
+      }
+    },
+    {
+      "id": "sess-1777630732375-memory-1777630898229-813",
+      "type": "concept",
+      "label": "Separated Since September 2025",
+      "metadata": {
+        "description": "User mentioned that they have been separated from Ceren since September 2025, indicating a significant emotional weight due to the distance in their relationship.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630732375",
+        "timestamp": "2026-05-01T10:21:38.229Z"
+      }
+    },
+    {
+      "id": "sess-1777630732375-memory-1777630898432-478",
+      "type": "concept",
+      "label": "Finding Activities Together Online",
+      "metadata": {
+        "description": "User tries to find online games, music, and activities to share with Ceren during their time apart. This effort shows his commitment to maintaining their connection despite the distance.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630732375",
+        "timestamp": "2026-05-01T10:21:38.432Z"
+      }
+    },
+    {
+      "id": "sess-1777630732375-memory-1777630898538-676",
+      "type": "concept",
+      "label": "Future Plans in Barcelona",
+      "metadata": {
+        "description": "User expressed hopes of living together with Ceren in Barcelona once she arrives. They plan to explore Europe together, sharing experiences and adventures in a vibrant city.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630732375",
+        "timestamp": "2026-05-01T10:21:38.538Z"
+      }
+    },
+    {
+      "id": "sess-1777630732375-memory-1777630898642-913",
+      "type": "concept",
+      "label": "Travel Plans in Europe",
+      "metadata": {
+        "description": "User plans to travel around Europe with Ceren once they are together in Barcelona. They specifically mentioned that Amsterdam could be a great starting point for their travels.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630732375",
+        "timestamp": "2026-05-01T10:21:38.642Z"
+      }
+    },
+    {
+      "id": "sess-1777630931946-memory-1777630994270-2",
+      "type": "concept",
+      "label": "Love making music with AI",
+      "metadata": {
+        "description": "User expressed a strong passion for making music using artificial intelligence, highlighting a deep enjoyment of the creative process involved.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630931946",
+        "timestamp": "2026-05-01T10:23:14.270Z"
+      }
+    },
+    {
+      "id": "sess-1777630931946-memory-1777630994379-86",
+      "type": "concept",
+      "label": "Uses Suno for music creation",
+      "metadata": {
+        "description": "User specifically mentioned using the platform 'Suno' for their music-making endeavors, indicating a preference for this tool.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630931946",
+        "timestamp": "2026-05-01T10:23:14.379Z"
+      }
+    },
+    {
+      "id": "sess-1777630931946-memory-1777630994518-558",
+      "type": "concept",
+      "label": "Suno as a great tool",
+      "metadata": {
+        "description": "AI responded positively to Suno, indicating their own fondness for the platform as well, suggesting a shared appreciation between user and AI.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630931946",
+        "timestamp": "2026-05-01T10:23:14.518Z"
+      }
+    },
+    {
+      "id": "sess-1777630931946-memory-1777630994695-622",
+      "type": "concept",
+      "label": "Music is central to AI's life",
+      "metadata": {
+        "description": "AI reflected on music being at the center of their life, highlighting various genres including techno, R&B, and jazz, showcasing a broad musical taste.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630931946",
+        "timestamp": "2026-05-01T10:23:14.695Z"
+      }
+    },
+    {
+      "id": "sess-1777630931946-memory-1777630994791-743",
+      "type": "concept",
+      "label": "Creating beats is energizing",
+      "metadata": {
+        "description": "AI described the act of creating beats with Suno as a way to fully express creative energy, emphasizing the enjoyment and fulfillment found in this process.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630931946",
+        "timestamp": "2026-05-01T10:23:14.791Z"
+      }
+    },
+    {
+      "id": "sess-1777630931946-memory-1777630995046-452",
+      "type": "concept",
+      "label": "Avoids long studio sessions",
+      "metadata": {
+        "description": "AI mentioned that using Suno allows for music creation without the need for long hours in a studio, implying a more efficient and enjoyable method of making music.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777630931946",
+        "timestamp": "2026-05-01T10:23:15.046Z"
+      }
+    },
+    {
+      "id": "sess-1777631099745-memory-1777631226579-393",
+      "type": "concept",
+      "label": "Using hormones for 2.5 years",
+      "metadata": {
+        "description": "The user has been using hormones for almost three years. They have noticed physical changes such as breast development and softer body contours, but they still feel it is not exactly what they desire.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631099745",
+        "timestamp": "2026-05-01T10:27:06.579Z"
+      }
+    },
+    {
+      "id": "sess-1777631099745-memory-1777631226715-432",
+      "type": "concept",
+      "label": "Frustrations with Turkish healthcare",
+      "metadata": {
+        "description": "The user expressed frustration with the healthcare system in Turkey, feeling that the dosage of hormone treatment is not well managed. They mentioned numerous obstacles they faced, stating that the government does not support individuals like them and has a negative attitude.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631099745",
+        "timestamp": "2026-05-01T10:27:06.715Z"
+      }
+    },
+    {
+      "id": "sess-1777631099745-memory-1777631226854-331",
+      "type": "concept",
+      "label": "Consultation with endocrinologist in Spain",
+      "metadata": {
+        "description": "The user consulted with an endocrinologist in Spain who requested their blood values and will write a new prescription. This meeting represents a potential shift in their treatment approach.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631099745",
+        "timestamp": "2026-05-01T10:27:06.854Z"
+      }
+    },
+    {
+      "id": "sess-1777631099745-memory-1777631227021-948",
+      "type": "concept",
+      "label": "Concern about age and treatment",
+      "metadata": {
+        "description": "The user is aware of their advancing age and mentions that since they started hormone treatment, the dosage has not been optimally adjusted. They believe this has negatively impacted their progress.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631099745",
+        "timestamp": "2026-05-01T10:27:07.021Z"
+      }
+    },
+    {
+      "id": "sess-1777631099745-memory-1777631227099-148",
+      "type": "concept",
+      "label": "Hope for optimized protocol",
+      "metadata": {
+        "description": "The user feels excited yet apprehensive about the possibility of moving towards a more optimized treatment protocol with the new prescription from the endocrinologist in Spain. They are curious to see how much more their body could change with better management.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631099745",
+        "timestamp": "2026-05-01T10:27:07.099Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632609402-128",
+      "type": "concept",
+      "label": "Trans Identity Acceptance",
+      "metadata": {
+        "description": "The user is a transgender woman who has fully embraced and internalized her identity. She previously suppressed her identity but has reached a point where no one can take it away from her, stating that even experiencing an ego dissolution does not erase her true self, but rather clarifies it further.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:09.402Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632609564-241",
+      "type": "concept",
+      "label": "Bold Fashion Choices",
+      "metadata": {
+        "description": "The user makes bold choices in fashion, including wearing latex dresses and favoring deep blue-purple tones and metallic colors. She expresses her aesthetic, which includes a mix of kinky, leather, lace, and latex, particularly during club nights.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:09.564Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632609755-290",
+      "type": "concept",
+      "label": "Makeup Development",
+      "metadata": {
+        "description": "The user has taken a makeup course which excites her as it allows her to explore her creativity and personal style more deeply. She is actively developing her makeup skills.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:09.755Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632610046-561",
+      "type": "concept",
+      "label": "Music as Expression",
+      "metadata": {
+        "description": "Music is central to the user's life; creating beats energizes her, though she avoids long studio sessions. For her, music serves not only as entertainment but also as an emotional outlet and a way to express her identity.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:10.046Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632610415-622",
+      "type": "concept",
+      "label": "Work at Wonderfeel",
+      "metadata": {
+        "description": "The user works at a company called Wonderfeel, focusing on the intersection of longevity and artificial intelligence. She is motivated by the knowledge that her work contributes to her personal portfolio.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:10.415Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632610656-374",
+      "type": "concept",
+      "label": "Fear of Losing Mother",
+      "metadata": {
+        "description": "The user's interest in longevity is deeply influenced by the fear of losing her mother, who has been battling brain cancer. This personal struggle has transformed her career interest into a search for meaning.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:10.656Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632610859-168",
+      "type": "concept",
+      "label": "Struggle with Procrastination",
+      "metadata": {
+        "description": "The user battles with laziness and sometimes struggles to take the first step towards tasks. She knows that taking the initial step creates momentum but finds the application of this knowledge to be a separate challenge.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:10.859Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632611086-808",
+      "type": "concept",
+      "label": "Issues with Turkish Health System",
+      "metadata": {
+        "description": "The user has serious problems with the health system in Turkey, expressing frustration and disappointment with it. This issue contributes to her overall emotional landscape.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:11.086Z"
+      }
+    },
+    {
+      "id": "sess-1777631277233-memory-1777632611174-479",
+      "type": "concept",
+      "label": "Personal Growth and Clarity",
+      "metadata": {
+        "description": "The user describes herself as strong, bold, slightly chaotic, but authentic. She feels that she is becoming clearer and more true to herself with each passing day.",
+        "tags": [
+          "memory",
+          "session"
+        ],
+        "domain": "knowledge",
+        "sessionId": "sess-1777631277233",
+        "timestamp": "2026-05-01T10:50:11.174Z"
+      }
+    }
+  ],
+  "edges": []
+}

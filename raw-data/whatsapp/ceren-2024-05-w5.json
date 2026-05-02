@@ -1,0 +1,28 @@
+[
+  {
+    "id": "ceren-2024-05-w5-c1",
+    "start_time": "30.05.2024, 15:33:42",
+    "end_time": "30.05.2024, 15:33:42",
+    "message_count": 1,
+    "messages": [
+      {
+        "timestamp": "30.05.2024, 15:33:42",
+        "from": "Ceren",
+        "message": "https://maps.app.goo.gl/GEyrpydvPPWQnZMZ6?g_st=iw"
+      }
+    ]
+  },
+  {
+    "id": "ceren-2024-05-w5-c2",
+    "start_time": "31.05.2024, 17:32:10",
+    "end_time": "31.05.2024, 17:32:10",
+    "message_count": 1,
+    "messages": [
+      {
+        "timestamp": "31.05.2024, 17:32:10",
+        "from": "Bora",
+        "message": "52409494137"
+      }
+    ]
+  }
+]
