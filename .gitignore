@@ -10,6 +10,7 @@ dist/
 .DS_Store
 
 # Local application data (we don't want to upload personal memories)
+raw-data/
 src/data/
 src/data-new/
 sessions.json
