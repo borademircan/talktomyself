@@ -1,0 +1,103 @@
+/* Voice Panel Styles */
+.voice-section { flex: 0 0 auto; }
+
+.mic-container {
+  display: flex; flex-direction: column; align-items: center;
+  gap: var(--sp-4); padding: var(--sp-6) var(--sp-4);
+}
+
+.mic-btn {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--bg-tertiary); border: 2px solid var(--border-default);
+  color: var(--text-secondary); font-size: 28px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--dur-slow) var(--ease-in-out);
+  position: relative; cursor: pointer;
+}
+.mic-btn:hover { border-color: var(--chakra-crown); color: var(--text-primary); background: var(--bg-elevated); }
+.mic-btn.recording {
+  border-color: var(--chakra-root); color: var(--chakra-root-light);
+  background: rgba(239,68,68,0.1);
+  animation: mic-pulse 1.5s ease-in-out infinite;
+}
+.mic-btn.recording::before {
+  content: ''; position: absolute; inset: -8px; border-radius: 50%;
+  border: 2px solid var(--chakra-root-glow);
+  animation: mic-ring 1.5s ease-out infinite;
+}
+
+.mic-label { font-size: 12px; color: var(--text-tertiary); font-weight: 500; }
+
+.waveform {
+  width: 100%; height: 32px; display: flex; align-items: center;
+  justify-content: center; gap: 2px;
+}
+.waveform__bar {
+  width: 3px; border-radius: 2px; background: var(--chakra-crown);
+  transition: height var(--dur-fast) var(--ease-out);
+}
+
+.transcript-area {
+  flex: 1; overflow-y: auto; padding: var(--sp-4);
+}
+
+.transcript-entry {
+  padding: var(--sp-3); border-radius: var(--radius-lg);
+  margin-bottom: var(--sp-2); font-size: 13px; line-height: 20px;
+}
+.transcript-entry.user {
+  background: var(--overlay-primary-10); border-left: 2px solid var(--chakra-crown);
+  color: var(--text-primary);
+}
+.transcript-entry.ai {
+  background: var(--bg-secondary); border-left: 2px solid var(--chakra-throat);
+  color: var(--text-primary);
+}
+.transcript-entry__role {
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.04em; margin-bottom: var(--sp-1);
+}
+.transcript-entry.user .transcript-entry__role { color: var(--chakra-crown-light); }
+.transcript-entry.ai .transcript-entry__role { color: var(--chakra-throat-light); }
+.transcript-entry__time {
+  font-size: 10px; color: var(--text-quaternary); margin-top: var(--sp-1);
+  font-family: var(--font-mono);
+}
+
+.transcript-interim {
+  padding: var(--sp-3) var(--sp-4); font-size: 13px;
+  color: var(--text-tertiary); font-style: italic;
+  border-top: 1px solid var(--border-subtle);
+}
+
+@keyframes mic-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+@keyframes mic-ring {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.session-header {
+  display: flex;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.session-header select {
+  flex: 1;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  outline: none;
+}
+.session-header select:focus {
+  border-color: var(--chakra-crown);
+}
+

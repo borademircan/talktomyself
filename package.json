@@ -1,0 +1,23 @@
+{
+  "name": "talk-to-myself",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Voice-Driven Cognitive AI System with Knowledge Graph + Multi-Vector DB Orchestration",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.3.4"
+  },
+  "dependencies": {
+    "@elevenlabs/client": "^1.4.0",
+    "@xenova/transformers": "^2.17.2",
+    "better-sqlite3": "^12.9.0",
+    "d3": "^7.9.0"
+  }
+}

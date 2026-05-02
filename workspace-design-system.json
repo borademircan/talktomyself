@@ -1,0 +1,1281 @@
+{
+  "designSystem": {
+    "metadata": {
+      "name": "Workspace Platform Design System",
+      "version": "1.1.0",
+      "description": "A Cursor IDE-inspired design system for the workspace platform web interface, incorporating the Seven Chakras color system as accents. The crown chakra violet serves as the primary accent, with other chakra colors used contextually.",
+      "lastUpdated": "2025-12-04",
+      "aiAgentContext": "This design system mirrors Cursor IDE aesthetics - dark theme, minimal UI, clean lines, and subtle interactions. Chakra colors are used as meaningful accents: Crown (primary), Third Eye (strategy), Throat (communication), Heart (success/health), Solar Plexus (action), Sacral (creativity), Root (foundation/alerts).",
+      "symbolism": {
+        "treeOfLife": "The Architect's profile image represents the Tree of Life (Celtic: Crann Bethadh) - symbolizing interconnection, balance, renewal, protection, strength, durability, knowledge, experience, and wisdom. The tree's roots (foundation), trunk (stability), and branches (growth) mirror our ecosystem structure.",
+        "chakraSystem": "The seven chakra colors align with our organizational energy centers, bringing ancient wisdom into modern design."
+      },
+      "mockupStatus": {
+        "location": "/var/www/dashboard/angels-hub/pages/ui/",
+        "status": "Active mockup for future app redesign",
+        "liveUrl": "https://angelshub.app/pages/ui/",
+        "note": "This UI mockup will serve as the foundation for the full workspace platform application."
+      }
+    },
+    
+    "colorPalette": {
+      "primary": {
+        "main": "#9333ea",
+        "hover": "#7c3aed",
+        "active": "#6d28d9",
+        "light": "#a855f7",
+        "lighter": "#c4b5fd",
+        "description": "Crown Chakra Violet - Primary accent inspired by Sahasrara, representing consciousness, wisdom, and higher purpose"
+      },
+      "chakraAccents": {
+        "description": "The Seven Chakra colors for occasional accent use - borders, icons, animations, badges. These complement the dark theme without becoming primary colors.",
+        "crown": {
+          "main": "#9333ea",
+          "light": "#a855f7",
+          "glow": "rgba(147, 51, 234, 0.3)",
+          "name": "Sahasrara",
+          "meaning": "Consciousness, wisdom, transcendence",
+          "use": "Primary accent - CTAs, focus states, active items"
+        },
+        "thirdEye": {
+          "main": "#4f46e5",
+          "light": "#6366f1",
+          "glow": "rgba(79, 70, 229, 0.3)",
+          "name": "Ajna",
+          "meaning": "Intuition, insight, vision",
+          "use": "Strategy indicators, AI/automation features"
+        },
+        "throat": {
+          "main": "#0ea5e9",
+          "light": "#38bdf8",
+          "glow": "rgba(14, 165, 233, 0.3)",
+          "name": "Vishuddha",
+          "meaning": "Communication, expression, truth",
+          "use": "Communication features, messaging, reports"
+        },
+        "heart": {
+          "main": "#22c55e",
+          "light": "#4ade80",
+          "glow": "rgba(34, 197, 94, 0.3)",
+          "name": "Anahata",
+          "meaning": "Love, compassion, balance",
+          "use": "Success states, health indicators, personal life features"
+        },
+        "solarPlexus": {
+          "main": "#eab308",
+          "light": "#facc15",
+          "glow": "rgba(234, 179, 8, 0.3)",
+          "name": "Manipura",
+          "meaning": "Power, will, action",
+          "use": "Execution features, power actions, project status"
+        },
+        "sacral": {
+          "main": "#f97316",
+          "light": "#fb923c",
+          "glow": "rgba(249, 115, 22, 0.3)",
+          "name": "Svadhisthana",
+          "meaning": "Creativity, flow, relationships",
+          "use": "Creative features, collaboration, innovation markers"
+        },
+        "root": {
+          "main": "#ef4444",
+          "light": "#f87171",
+          "glow": "rgba(239, 68, 68, 0.3)",
+          "name": "Muladhara",
+          "meaning": "Foundation, stability, security",
+          "use": "Critical alerts, foundation/infrastructure indicators"
+        },
+        "usage": {
+          "rules": [
+            "Chakra colors are ACCENTS only - never background or primary text colors",
+            "Use for: borders, icon colors, small badges, subtle glows, animations",
+            "Crown chakra violet (#9333ea) is the primary accent for the entire system",
+            "Other chakra colors used contextually based on meaning",
+            "Always ensure sufficient contrast against dark backgrounds",
+            "Use 'glow' variants for subtle animations and hover effects"
+          ],
+          "examples": {
+            "borderAccent": "border-left: 2px solid #9333ea",
+            "iconColor": "color: #22c55e (for success/heart)",
+            "badgeGlow": "box-shadow: 0 0 8px rgba(147, 51, 234, 0.3)",
+            "pulseAnimation": "Use chakra glow colors for subtle pulsing effects"
+          }
+        }
+      },
+      "secondary": {
+        "main": "#3b82f6",
+        "hover": "#2563eb",
+        "active": "#1d4ed8",
+        "description": "Blue accent for secondary actions and links"
+      },
+      "accent": {
+        "success": "#22c55e",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "info": "#06b6d4",
+        "description": "Semantic accent colors for states and feedback"
+      },
+      "neutrals": {
+        "background": {
+          "base": "#0d0d0d",
+          "primary": "#111111",
+          "secondary": "#161616",
+          "tertiary": "#1a1a1a",
+          "elevated": "#1e1e1e",
+          "hover": "#252525",
+          "active": "#2a2a2a"
+        },
+        "borders": {
+          "subtle": "#1f1f1f",
+          "default": "#2a2a2a",
+          "strong": "#3a3a3a",
+          "hover": "#444444",
+          "focus": "#7c3aed"
+        },
+        "text": {
+          "primary": "#e4e4e7",
+          "secondary": "#a1a1aa",
+          "tertiary": "#71717a",
+          "quaternary": "#52525b",
+          "disabled": "#3f3f46",
+          "muted": "#6b7280",
+          "inverse": "#111111"
+        }
+      },
+      "syntax": {
+        "keyword": "#c678dd",
+        "string": "#98c379",
+        "number": "#d19a66",
+        "function": "#61afef",
+        "variable": "#e06c75",
+        "comment": "#5c6370",
+        "operator": "#56b6c2",
+        "constant": "#e5c07b",
+        "description": "Code syntax highlighting colors matching Cursor/VS Code themes"
+      },
+      "semantic": {
+        "error": "#f87171",
+        "errorBg": "rgba(248, 113, 113, 0.1)",
+        "warning": "#fbbf24",
+        "warningBg": "rgba(251, 191, 36, 0.1)",
+        "info": "#38bdf8",
+        "infoBg": "rgba(56, 189, 248, 0.1)",
+        "success": "#4ade80",
+        "successBg": "rgba(74, 222, 128, 0.1)"
+      },
+      "overlays": {
+        "dark90": "rgba(0, 0, 0, 0.9)",
+        "dark80": "rgba(0, 0, 0, 0.8)",
+        "dark60": "rgba(0, 0, 0, 0.6)",
+        "dark40": "rgba(0, 0, 0, 0.4)",
+        "white10": "rgba(255, 255, 255, 0.1)",
+        "white5": "rgba(255, 255, 255, 0.05)",
+        "primary10": "rgba(124, 58, 237, 0.1)",
+        "primary20": "rgba(124, 58, 237, 0.2)"
+      }
+    },
+    
+    "typography": {
+      "rules": {
+        "minimumSize": "10px",
+        "minimumBodySize": "14px",
+        "note": "NEVER use font sizes smaller than 10px. Body text should be minimum 14px for readability."
+      },
+      "fontFamilies": {
+        "ui": {
+          "name": "Inter",
+          "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif",
+          "weight": {
+            "regular": 400,
+            "medium": 500,
+            "semibold": 600,
+            "bold": 700
+          }
+        },
+        "mono": {
+          "name": "JetBrains Mono",
+          "fallback": "Menlo, Monaco, 'Courier New', monospace",
+          "weight": {
+            "regular": 400,
+            "medium": 500,
+            "semibold": 600
+          }
+        }
+      },
+      "scale": {
+        "headings": {
+          "h1": {
+            "size": "28px",
+            "lineHeight": "36px",
+            "fontWeight": 700,
+            "fontFamily": "ui",
+            "letterSpacing": "-0.02em"
+          },
+          "h2": {
+            "size": "24px",
+            "lineHeight": "32px",
+            "fontWeight": 600,
+            "fontFamily": "ui",
+            "letterSpacing": "-0.01em"
+          },
+          "h3": {
+            "size": "20px",
+            "lineHeight": "28px",
+            "fontWeight": 600,
+            "fontFamily": "ui"
+          },
+          "h4": {
+            "size": "18px",
+            "lineHeight": "26px",
+            "fontWeight": 600,
+            "fontFamily": "ui"
+          },
+          "h5": {
+            "size": "16px",
+            "lineHeight": "24px",
+            "fontWeight": 600,
+            "fontFamily": "ui"
+          },
+          "h6": {
+            "size": "14px",
+            "lineHeight": "20px",
+            "fontWeight": 600,
+            "fontFamily": "ui",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.04em"
+          }
+        },
+        "body": {
+          "large": {
+            "size": "18px",
+            "lineHeight": "28px",
+            "fontWeight": 400,
+            "fontFamily": "ui"
+          },
+          "regular": {
+            "size": "14px",
+            "lineHeight": "22px",
+            "fontWeight": 400,
+            "fontFamily": "ui"
+          },
+          "small": {
+            "size": "13px",
+            "lineHeight": "20px",
+            "fontWeight": 400,
+            "fontFamily": "ui"
+          },
+          "tiny": {
+            "size": "12px",
+            "lineHeight": "18px",
+            "fontWeight": 400,
+            "fontFamily": "ui",
+            "note": "Use sparingly - only for captions and metadata"
+          }
+        },
+        "code": {
+          "block": {
+            "size": "14px",
+            "lineHeight": "22px",
+            "fontWeight": 400,
+            "fontFamily": "mono"
+          },
+          "inline": {
+            "size": "13px",
+            "lineHeight": "20px",
+            "fontWeight": 400,
+            "fontFamily": "mono"
+          }
+        },
+        "label": {
+          "large": {
+            "size": "14px",
+            "lineHeight": "20px",
+            "fontWeight": 500,
+            "fontFamily": "ui"
+          },
+          "regular": {
+            "size": "13px",
+            "lineHeight": "18px",
+            "fontWeight": 500,
+            "fontFamily": "ui"
+          },
+          "small": {
+            "size": "12px",
+            "lineHeight": "16px",
+            "fontWeight": 500,
+            "fontFamily": "ui"
+          }
+        },
+        "caption": {
+          "regular": {
+            "size": "11px",
+            "lineHeight": "16px",
+            "fontWeight": 400,
+            "fontFamily": "ui",
+            "note": "For timestamps, metadata only"
+          },
+          "minimum": {
+            "size": "10px",
+            "lineHeight": "14px",
+            "fontWeight": 500,
+            "fontFamily": "ui",
+            "note": "ABSOLUTE MINIMUM - use only for badges/tags"
+          }
+        }
+      },
+      "sizePresets": {
+        "compact": {
+          "name": "Compact",
+          "description": "Smaller text for dense information displays",
+          "scale": 0.9,
+          "body": "13px",
+          "small": "12px",
+          "minimum": "10px"
+        },
+        "default": {
+          "name": "Default",
+          "description": "Balanced readability and density",
+          "scale": 1.0,
+          "body": "14px",
+          "small": "13px",
+          "minimum": "11px"
+        },
+        "comfortable": {
+          "name": "Comfortable",
+          "description": "Larger text for better readability",
+          "scale": 1.1,
+          "body": "15px",
+          "small": "14px",
+          "minimum": "12px"
+        },
+        "relaxed": {
+          "name": "Relaxed",
+          "description": "Maximum readability, fewer items visible",
+          "scale": 1.2,
+          "body": "16px",
+          "small": "14px",
+          "minimum": "12px"
+        },
+        "accessible": {
+          "name": "Accessible",
+          "description": "Optimized for visual accessibility",
+          "scale": 1.3,
+          "body": "18px",
+          "small": "16px",
+          "minimum": "14px"
+        }
+      }
+    },
+    
+    "spacing": {
+      "scale": {
+        "0": "0",
+        "0.5": "2px",
+        "1": "4px",
+        "1.5": "6px",
+        "2": "8px",
+        "2.5": "10px",
+        "3": "12px",
+        "4": "16px",
+        "5": "20px",
+        "6": "24px",
+        "8": "32px",
+        "10": "40px",
+        "12": "48px",
+        "16": "64px"
+      },
+      "layout": {
+        "sidebarWidth": "260px",
+        "sidebarCollapsed": "48px",
+        "panelMinWidth": "200px",
+        "panelMaxWidth": "400px",
+        "headerHeight": "48px",
+        "tabBarHeight": "36px",
+        "statusBarHeight": "22px",
+        "activityBarWidth": "48px"
+      }
+    },
+    
+    "borderRadius": {
+      "none": "0",
+      "xs": "2px",
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "12px",
+      "2xl": "16px",
+      "full": "9999px"
+    },
+    
+    "shadows": {
+      "none": "none",
+      "xs": "0 1px 2px rgba(0, 0, 0, 0.3)",
+      "sm": "0 2px 4px rgba(0, 0, 0, 0.3)",
+      "md": "0 4px 8px rgba(0, 0, 0, 0.4)",
+      "lg": "0 8px 16px rgba(0, 0, 0, 0.5)",
+      "xl": "0 12px 24px rgba(0, 0, 0, 0.6)",
+      "inner": "inset 0 1px 2px rgba(0, 0, 0, 0.3)",
+      "focus": "0 0 0 2px rgba(124, 58, 237, 0.4)",
+      "dropdown": "0 4px 16px rgba(0, 0, 0, 0.5)",
+      "modal": "0 16px 48px rgba(0, 0, 0, 0.6)",
+      "popover": "0 4px 12px rgba(0, 0, 0, 0.4)"
+    },
+    
+    "animations": {
+      "durations": {
+        "instant": "50ms",
+        "fast": "100ms",
+        "normal": "150ms",
+        "slow": "200ms",
+        "slower": "300ms",
+        "slowest": "500ms"
+      },
+      "easings": {
+        "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.2, 1)",
+        "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      },
+      "transitions": {
+        "colors": "color 150ms ease, background-color 150ms ease, border-color 150ms ease",
+        "opacity": "opacity 150ms ease",
+        "transform": "transform 150ms ease",
+        "all": "all 150ms ease",
+        "expand": "height 200ms ease, opacity 150ms ease"
+      },
+      "keyframes": {
+        "fadeIn": {
+          "from": { "opacity": 0 },
+          "to": { "opacity": 1 }
+        },
+        "slideDown": {
+          "from": { "transform": "translateY(-8px)", "opacity": 0 },
+          "to": { "transform": "translateY(0)", "opacity": 1 }
+        },
+        "slideUp": {
+          "from": { "transform": "translateY(8px)", "opacity": 0 },
+          "to": { "transform": "translateY(0)", "opacity": 1 }
+        },
+        "scaleIn": {
+          "from": { "transform": "scale(0.95)", "opacity": 0 },
+          "to": { "transform": "scale(1)", "opacity": 1 }
+        },
+        "spin": {
+          "from": { "transform": "rotate(0deg)" },
+          "to": { "transform": "rotate(360deg)" }
+        },
+        "pulse": {
+          "0%, 100%": { "opacity": 1 },
+          "50%": { "opacity": 0.5 }
+        },
+        "shimmer": {
+          "0%": { "backgroundPosition": "-200% 0" },
+          "100%": { "backgroundPosition": "200% 0" }
+        }
+      }
+    },
+    
+    "components": {
+      "buttons": {
+        "variants": {
+          "primary": {
+            "background": "#7c3aed",
+            "color": "#ffffff",
+            "border": "none",
+            "borderRadius": "6px",
+            "padding": "8px 16px",
+            "fontSize": "13px",
+            "fontWeight": 500,
+            "height": "32px",
+            "transition": "all 150ms ease",
+            "hover": {
+              "background": "#6d28d9"
+            },
+            "active": {
+              "background": "#5b21b6"
+            },
+            "disabled": {
+              "opacity": 0.5,
+              "cursor": "not-allowed"
+            }
+          },
+          "secondary": {
+            "background": "#2a2a2a",
+            "color": "#e4e4e7",
+            "border": "1px solid #3a3a3a",
+            "borderRadius": "6px",
+            "padding": "8px 16px",
+            "fontSize": "13px",
+            "fontWeight": 500,
+            "height": "32px",
+            "hover": {
+              "background": "#333333",
+              "borderColor": "#444444"
+            },
+            "active": {
+              "background": "#3a3a3a"
+            }
+          },
+          "ghost": {
+            "background": "transparent",
+            "color": "#a1a1aa",
+            "border": "none",
+            "borderRadius": "6px",
+            "padding": "8px 16px",
+            "fontSize": "13px",
+            "fontWeight": 500,
+            "height": "32px",
+            "hover": {
+              "background": "rgba(255, 255, 255, 0.05)",
+              "color": "#e4e4e7"
+            },
+            "active": {
+              "background": "rgba(255, 255, 255, 0.1)"
+            }
+          },
+          "link": {
+            "background": "transparent",
+            "color": "#7c3aed",
+            "border": "none",
+            "padding": "0",
+            "fontSize": "13px",
+            "fontWeight": 500,
+            "hover": {
+              "color": "#a78bfa",
+              "textDecoration": "underline"
+            }
+          },
+          "danger": {
+            "background": "#dc2626",
+            "color": "#ffffff",
+            "border": "none",
+            "borderRadius": "6px",
+            "padding": "8px 16px",
+            "fontSize": "13px",
+            "fontWeight": 500,
+            "height": "32px",
+            "hover": {
+              "background": "#b91c1c"
+            }
+          },
+          "icon": {
+            "background": "transparent",
+            "color": "#a1a1aa",
+            "border": "none",
+            "borderRadius": "4px",
+            "padding": "4px",
+            "width": "28px",
+            "height": "28px",
+            "hover": {
+              "background": "rgba(255, 255, 255, 0.1)",
+              "color": "#e4e4e7"
+            }
+          }
+        },
+        "sizes": {
+          "small": {
+            "padding": "4px 12px",
+            "fontSize": "12px",
+            "height": "26px"
+          },
+          "medium": {
+            "padding": "8px 16px",
+            "fontSize": "13px",
+            "height": "32px"
+          },
+          "large": {
+            "padding": "10px 20px",
+            "fontSize": "14px",
+            "height": "40px"
+          }
+        }
+      },
+      
+      "inputs": {
+        "base": {
+          "background": "#1a1a1a",
+          "color": "#e4e4e7",
+          "border": "1px solid #2a2a2a",
+          "borderRadius": "6px",
+          "padding": "8px 12px",
+          "fontSize": "13px",
+          "lineHeight": "20px",
+          "height": "32px",
+          "transition": "border-color 150ms ease, box-shadow 150ms ease",
+          "placeholder": {
+            "color": "#71717a"
+          },
+          "hover": {
+            "borderColor": "#3a3a3a"
+          },
+          "focus": {
+            "borderColor": "#7c3aed",
+            "outline": "none",
+            "boxShadow": "0 0 0 2px rgba(124, 58, 237, 0.2)"
+          },
+          "disabled": {
+            "background": "#161616",
+            "color": "#52525b",
+            "cursor": "not-allowed"
+          },
+          "error": {
+            "borderColor": "#ef4444",
+            "boxShadow": "0 0 0 2px rgba(239, 68, 68, 0.2)"
+          }
+        },
+        "search": {
+          "background": "#1a1a1a",
+          "borderRadius": "6px",
+          "padding": "8px 12px 8px 36px",
+          "iconColor": "#71717a"
+        },
+        "textarea": {
+          "minHeight": "80px",
+          "resize": "vertical",
+          "padding": "12px"
+        },
+        "select": {
+          "appearance": "none",
+          "backgroundImage": "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e\")",
+          "backgroundPosition": "right 8px center",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "20px",
+          "paddingRight": "40px"
+        }
+      },
+      
+      "sidebar": {
+        "background": "#111111",
+        "borderRight": "1px solid #1f1f1f",
+        "width": "260px",
+        "item": {
+          "padding": "6px 12px",
+          "borderRadius": "4px",
+          "fontSize": "13px",
+          "color": "#a1a1aa",
+          "transition": "all 100ms ease",
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.05)",
+            "color": "#e4e4e7"
+          },
+          "active": {
+            "background": "rgba(124, 58, 237, 0.15)",
+            "color": "#e4e4e7"
+          },
+          "selected": {
+            "background": "rgba(124, 58, 237, 0.2)",
+            "color": "#e4e4e7",
+            "borderLeft": "2px solid #7c3aed"
+          }
+        },
+        "section": {
+          "title": {
+            "fontSize": "11px",
+            "fontWeight": 600,
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "color": "#71717a",
+            "padding": "16px 12px 8px"
+          }
+        },
+        "treeView": {
+          "indent": "16px",
+          "iconSize": "16px",
+          "rowHeight": "28px",
+          "chevron": {
+            "size": "16px",
+            "color": "#71717a"
+          }
+        }
+      },
+      
+      "header": {
+        "background": "#111111",
+        "borderBottom": "1px solid #1f1f1f",
+        "height": "48px",
+        "padding": "0 16px",
+        "title": {
+          "fontSize": "14px",
+          "fontWeight": 600,
+          "color": "#e4e4e7"
+        },
+        "breadcrumb": {
+          "fontSize": "12px",
+          "color": "#71717a",
+          "separator": "/",
+          "separatorColor": "#52525b",
+          "hover": {
+            "color": "#a1a1aa"
+          }
+        }
+      },
+      
+      "tabs": {
+        "container": {
+          "background": "#111111",
+          "borderBottom": "1px solid #1f1f1f",
+          "height": "36px"
+        },
+        "tab": {
+          "padding": "0 16px",
+          "fontSize": "12px",
+          "color": "#71717a",
+          "background": "transparent",
+          "border": "none",
+          "borderBottom": "2px solid transparent",
+          "transition": "all 100ms ease",
+          "hover": {
+            "color": "#a1a1aa",
+            "background": "rgba(255, 255, 255, 0.03)"
+          },
+          "active": {
+            "color": "#e4e4e7",
+            "borderBottomColor": "#7c3aed"
+          }
+        }
+      },
+      
+      "panel": {
+        "background": "#161616",
+        "border": "1px solid #1f1f1f",
+        "borderRadius": "8px",
+        "header": {
+          "padding": "12px 16px",
+          "borderBottom": "1px solid #1f1f1f",
+          "fontSize": "13px",
+          "fontWeight": 600,
+          "color": "#e4e4e7"
+        },
+        "content": {
+          "padding": "16px"
+        }
+      },
+      
+      "card": {
+        "background": "#161616",
+        "border": "1px solid #1f1f1f",
+        "borderRadius": "8px",
+        "padding": "16px",
+        "transition": "border-color 150ms ease",
+        "hover": {
+          "borderColor": "#2a2a2a"
+        },
+        "active": {
+          "borderColor": "#7c3aed"
+        }
+      },
+      
+      "dropdown": {
+        "background": "#1a1a1a",
+        "border": "1px solid #2a2a2a",
+        "borderRadius": "8px",
+        "boxShadow": "0 4px 16px rgba(0, 0, 0, 0.5)",
+        "padding": "4px",
+        "minWidth": "180px",
+        "item": {
+          "padding": "8px 12px",
+          "fontSize": "13px",
+          "color": "#e4e4e7",
+          "borderRadius": "4px",
+          "transition": "background 100ms ease",
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.05)"
+          },
+          "active": {
+            "background": "rgba(124, 58, 237, 0.2)"
+          },
+          "disabled": {
+            "color": "#52525b",
+            "cursor": "not-allowed"
+          }
+        },
+        "separator": {
+          "height": "1px",
+          "background": "#2a2a2a",
+          "margin": "4px 0"
+        }
+      },
+      
+      "modal": {
+        "overlay": {
+          "background": "rgba(0, 0, 0, 0.8)",
+          "backdropFilter": "blur(4px)"
+        },
+        "container": {
+          "background": "#1a1a1a",
+          "border": "1px solid #2a2a2a",
+          "borderRadius": "12px",
+          "boxShadow": "0 16px 48px rgba(0, 0, 0, 0.6)",
+          "maxWidth": "560px",
+          "animation": "scaleIn 200ms ease"
+        },
+        "header": {
+          "padding": "20px 24px",
+          "borderBottom": "1px solid #2a2a2a",
+          "fontSize": "16px",
+          "fontWeight": 600
+        },
+        "content": {
+          "padding": "24px"
+        },
+        "footer": {
+          "padding": "16px 24px",
+          "borderTop": "1px solid #2a2a2a",
+          "display": "flex",
+          "justifyContent": "flex-end",
+          "gap": "12px"
+        }
+      },
+      
+      "commandPalette": {
+        "background": "#1a1a1a",
+        "border": "1px solid #2a2a2a",
+        "borderRadius": "12px",
+        "boxShadow": "0 16px 48px rgba(0, 0, 0, 0.6)",
+        "width": "600px",
+        "maxHeight": "400px",
+        "input": {
+          "background": "transparent",
+          "border": "none",
+          "padding": "16px 20px",
+          "fontSize": "15px",
+          "color": "#e4e4e7",
+          "borderBottom": "1px solid #2a2a2a"
+        },
+        "results": {
+          "padding": "8px"
+        },
+        "item": {
+          "padding": "10px 16px",
+          "borderRadius": "6px",
+          "fontSize": "13px",
+          "color": "#e4e4e7",
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.05)"
+          },
+          "active": {
+            "background": "rgba(124, 58, 237, 0.2)"
+          }
+        },
+        "shortcut": {
+          "fontSize": "11px",
+          "color": "#71717a",
+          "background": "#252525",
+          "padding": "2px 6px",
+          "borderRadius": "4px"
+        }
+      },
+      
+      "contextMenu": {
+        "background": "#1a1a1a",
+        "border": "1px solid #2a2a2a",
+        "borderRadius": "8px",
+        "boxShadow": "0 4px 16px rgba(0, 0, 0, 0.5)",
+        "padding": "4px",
+        "minWidth": "200px",
+        "item": {
+          "padding": "8px 12px",
+          "fontSize": "13px",
+          "color": "#e4e4e7",
+          "borderRadius": "4px",
+          "display": "flex",
+          "alignItems": "center",
+          "gap": "8px",
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.05)"
+          }
+        },
+        "separator": {
+          "height": "1px",
+          "background": "#2a2a2a",
+          "margin": "4px 0"
+        }
+      },
+      
+      "toast": {
+        "background": "#1a1a1a",
+        "border": "1px solid #2a2a2a",
+        "borderRadius": "8px",
+        "boxShadow": "0 4px 16px rgba(0, 0, 0, 0.5)",
+        "padding": "12px 16px",
+        "maxWidth": "400px",
+        "variants": {
+          "info": {
+            "borderLeftColor": "#3b82f6",
+            "iconColor": "#3b82f6"
+          },
+          "success": {
+            "borderLeftColor": "#22c55e",
+            "iconColor": "#22c55e"
+          },
+          "warning": {
+            "borderLeftColor": "#f59e0b",
+            "iconColor": "#f59e0b"
+          },
+          "error": {
+            "borderLeftColor": "#ef4444",
+            "iconColor": "#ef4444"
+          }
+        }
+      },
+      
+      "tooltip": {
+        "background": "#252525",
+        "color": "#e4e4e7",
+        "border": "1px solid #3a3a3a",
+        "borderRadius": "6px",
+        "padding": "6px 10px",
+        "fontSize": "12px",
+        "boxShadow": "0 4px 12px rgba(0, 0, 0, 0.4)",
+        "maxWidth": "300px"
+      },
+      
+      "badge": {
+        "variants": {
+          "default": {
+            "background": "#2a2a2a",
+            "color": "#a1a1aa",
+            "borderRadius": "4px",
+            "padding": "2px 8px",
+            "fontSize": "11px",
+            "fontWeight": 500
+          },
+          "primary": {
+            "background": "rgba(124, 58, 237, 0.2)",
+            "color": "#a78bfa"
+          },
+          "success": {
+            "background": "rgba(34, 197, 94, 0.2)",
+            "color": "#4ade80"
+          },
+          "warning": {
+            "background": "rgba(245, 158, 11, 0.2)",
+            "color": "#fbbf24"
+          },
+          "error": {
+            "background": "rgba(239, 68, 68, 0.2)",
+            "color": "#f87171"
+          },
+          "info": {
+            "background": "rgba(59, 130, 246, 0.2)",
+            "color": "#60a5fa"
+          }
+        }
+      },
+      
+      "avatar": {
+        "sizes": {
+          "xs": "20px",
+          "sm": "24px",
+          "md": "32px",
+          "lg": "40px",
+          "xl": "48px"
+        },
+        "borderRadius": "50%",
+        "background": "#2a2a2a",
+        "color": "#a1a1aa",
+        "fontSize": "12px",
+        "fontWeight": 500
+      },
+      
+      "table": {
+        "background": "transparent",
+        "borderRadius": "8px",
+        "border": "1px solid #1f1f1f",
+        "header": {
+          "background": "#161616",
+          "color": "#71717a",
+          "fontSize": "11px",
+          "fontWeight": 600,
+          "textTransform": "uppercase",
+          "letterSpacing": "0.05em",
+          "padding": "12px 16px",
+          "borderBottom": "1px solid #1f1f1f"
+        },
+        "row": {
+          "borderBottom": "1px solid #1f1f1f",
+          "transition": "background 100ms ease",
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.02)"
+          },
+          "selected": {
+            "background": "rgba(124, 58, 237, 0.1)"
+          }
+        },
+        "cell": {
+          "padding": "12px 16px",
+          "fontSize": "13px",
+          "color": "#e4e4e7"
+        }
+      },
+      
+      "codeBlock": {
+        "background": "#0d0d0d",
+        "border": "1px solid #1f1f1f",
+        "borderRadius": "8px",
+        "padding": "16px",
+        "fontFamily": "mono",
+        "fontSize": "13px",
+        "lineHeight": "20px",
+        "header": {
+          "background": "#111111",
+          "padding": "8px 12px",
+          "borderBottom": "1px solid #1f1f1f",
+          "fontSize": "12px",
+          "color": "#71717a"
+        },
+        "lineNumbers": {
+          "color": "#52525b",
+          "paddingRight": "16px",
+          "textAlign": "right",
+          "userSelect": "none"
+        }
+      },
+      
+      "skeleton": {
+        "background": "linear-gradient(90deg, #1a1a1a 25%, #252525 50%, #1a1a1a 75%)",
+        "backgroundSize": "200% 100%",
+        "animation": "shimmer 1.5s infinite",
+        "borderRadius": "4px"
+      },
+      
+      "progressBar": {
+        "track": {
+          "background": "#1f1f1f",
+          "borderRadius": "4px",
+          "height": "4px"
+        },
+        "fill": {
+          "background": "#7c3aed",
+          "borderRadius": "4px",
+          "transition": "width 300ms ease"
+        }
+      },
+      
+      "switch": {
+        "track": {
+          "width": "40px",
+          "height": "22px",
+          "background": "#2a2a2a",
+          "borderRadius": "11px",
+          "transition": "background 150ms ease"
+        },
+        "thumb": {
+          "width": "18px",
+          "height": "18px",
+          "background": "#ffffff",
+          "borderRadius": "50%",
+          "transition": "transform 150ms ease"
+        },
+        "checked": {
+          "trackBackground": "#7c3aed",
+          "thumbTransform": "translateX(18px)"
+        }
+      },
+      
+      "checkbox": {
+        "size": "16px",
+        "background": "#1a1a1a",
+        "border": "1px solid #3a3a3a",
+        "borderRadius": "4px",
+        "transition": "all 150ms ease",
+        "hover": {
+          "borderColor": "#52525b"
+        },
+        "checked": {
+          "background": "#7c3aed",
+          "borderColor": "#7c3aed"
+        },
+        "checkmark": {
+          "color": "#ffffff",
+          "strokeWidth": "2px"
+        }
+      },
+      
+      "radio": {
+        "size": "16px",
+        "background": "#1a1a1a",
+        "border": "1px solid #3a3a3a",
+        "borderRadius": "50%",
+        "transition": "all 150ms ease",
+        "hover": {
+          "borderColor": "#52525b"
+        },
+        "checked": {
+          "borderColor": "#7c3aed",
+          "dotColor": "#7c3aed",
+          "dotSize": "8px"
+        }
+      }
+    },
+    
+    "layouts": {
+      "workspaceGrid": {
+        "display": "grid",
+        "gridTemplateAreas": "'sidebar header' 'sidebar main'",
+        "gridTemplateColumns": "auto 1fr",
+        "gridTemplateRows": "48px 1fr",
+        "minHeight": "100vh"
+      },
+      "splitPane": {
+        "horizontal": {
+          "display": "flex",
+          "flexDirection": "row"
+        },
+        "vertical": {
+          "display": "flex",
+          "flexDirection": "column"
+        },
+        "divider": {
+          "background": "#1f1f1f",
+          "hoverBackground": "#7c3aed",
+          "size": "1px",
+          "hoverSize": "3px"
+        }
+      },
+      "container": {
+        "maxWidth": "1200px",
+        "padding": "0 24px",
+        "margin": "0 auto"
+      }
+    },
+    
+    "iconography": {
+      "sizes": {
+        "xs": "12px",
+        "sm": "14px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px"
+      },
+      "strokeWidth": "1.5px",
+      "color": "currentColor"
+    },
+    
+    "aiAgentRules": {
+      "designPrinciples": [
+        "Maintain Cursor IDE's dark, minimal aesthetic with high information density",
+        "Use Crown Chakra violet (#9333ea) as the primary accent for focus states, active items, and CTAs",
+        "Use other chakra colors as contextual accents (borders, icons, badges) based on their meaning",
+        "Preserve generous but efficient whitespace - not wasteful, but breathable",
+        "Ensure all interactive elements have subtle but clear hover/focus states",
+        "Use 150ms transitions for micro-interactions, 200-300ms for larger animations",
+        "Typography should be clean and readable - Inter for UI, JetBrains Mono for code",
+        "Borders should be subtle (#1f1f1f to #2a2a2a range)",
+        "Shadows are used minimally - mainly for floating elements like dropdowns and modals",
+        "Interface should feel like a natural extension of Cursor IDE when embedded"
+      ],
+      
+      "componentGeneration": {
+        "buttons": {
+          "rules": [
+            "Primary buttons are violet - use only for main actions",
+            "Secondary buttons have subtle borders and hover states",
+            "Ghost buttons are for less important actions",
+            "Icon-only buttons should have 28x28px size minimum for touch targets",
+            "All buttons should have focus rings using box-shadow, not outline"
+          ]
+        },
+        "forms": {
+          "rules": [
+            "Inputs have dark backgrounds (#1a1a1a) with subtle borders",
+            "Focus states use violet color with subtle glow",
+            "Error states use red (#ef4444) with appropriate messaging",
+            "Labels are above inputs, not inline",
+            "Maintain 32px height for standard inputs"
+          ]
+        },
+        "navigation": {
+          "rules": [
+            "Sidebar is fixed with tree-view structure",
+            "Active items have violet accent (left border or background)",
+            "Hover states are subtle (rgba white overlay)",
+            "Section headers are uppercase, muted color",
+            "Collapsible sections with chevron icons"
+          ]
+        },
+        "dataDisplay": {
+          "rules": [
+            "Tables have sticky headers with subtle background",
+            "Row hover states are very subtle",
+            "Use badges for status indicators",
+            "Code blocks have darker background than panels",
+            "Maintain monospace font for any code or technical data"
+          ]
+        }
+      },
+      
+      "accessibilityRequirements": [
+        "All interactive elements must be keyboard navigable",
+        "Focus indicators must be visible (violet box-shadow)",
+        "Color contrast meets WCAG AA standards",
+        "Don't rely on color alone - use icons and text for status",
+        "All images and icons have alt text or aria-labels",
+        "Modals trap focus and return focus on close",
+        "Skip links for keyboard navigation"
+      ],
+      
+      "performanceGuidelines": [
+        "Use CSS transitions instead of JavaScript animations where possible",
+        "Lazy load images and heavy components",
+        "Virtual scroll for long lists",
+        "Debounce search inputs",
+        "Skeleton loaders for async content",
+        "Minimize layout shifts during loading"
+      ],
+      
+      "responsiveBreakpoints": {
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": "1536px"
+      },
+      
+      "stateManagement": {
+        "loading": [
+          "Use skeleton loaders for content areas",
+          "Spinner for button loading states",
+          "Disable interactions during async operations",
+          "Show progress for multi-step operations"
+        ],
+        "error": [
+          "Display inline errors below form fields",
+          "Use toast notifications for global errors",
+          "Provide clear, actionable error messages",
+          "Red color with appropriate backgrounds"
+        ],
+        "empty": [
+          "Show meaningful empty states with guidance",
+          "Use muted text and optional icons",
+          "Provide primary action to resolve empty state"
+        ],
+        "success": [
+          "Brief toast notifications for success",
+          "Green accent for success states",
+          "Auto-dismiss after 3-5 seconds"
+        ]
+      }
+    },
+    
+    "cursorIntegration": {
+      "notes": "This design system is optimized for use within Cursor IDE's embedded browser",
+      "considerations": [
+        "Match Cursor's existing color palette for seamless integration",
+        "Use similar interaction patterns (command palette, tree views)",
+        "Maintain similar typography scales",
+        "Support for reduced motion preferences",
+        "Dark theme only - no light mode toggle needed"
+      ],
+      "embeddedBrowserOptimizations": [
+        "Compact UI to maximize content area",
+        "Avoid full-page scrolling when possible",
+        "Use panels and split views like IDE",
+        "Command palette pattern for quick navigation",
+        "Keyboard shortcuts for power users"
+      ]
+    }
+  }
+}
+

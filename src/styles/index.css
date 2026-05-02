@@ -1,0 +1,241 @@
+/* ═══════════════════════════════════════════════════════════
+   WORKSPACE DESIGN SYSTEM — CSS Custom Properties
+   Cursor IDE-inspired dark theme with Chakra accent colors
+   ═══════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ── Primary (Crown Chakra Violet) ── */
+  --primary: #9333ea;
+  --primary-hover: #7c3aed;
+  --primary-active: #6d28d9;
+  --primary-light: #a855f7;
+  --primary-lighter: #c4b5fd;
+
+  /* ── Chakra Accent System ── */
+  --chakra-crown: #9333ea;
+  --chakra-crown-light: #a855f7;
+  --chakra-crown-glow: rgba(147, 51, 234, 0.3);
+  
+  --chakra-third-eye: #4f46e5;
+  --chakra-third-eye-light: #6366f1;
+  --chakra-third-eye-glow: rgba(79, 70, 229, 0.3);
+  
+  --chakra-throat: #0ea5e9;
+  --chakra-throat-light: #38bdf8;
+  --chakra-throat-glow: rgba(14, 165, 233, 0.3);
+  
+  --chakra-heart: #22c55e;
+  --chakra-heart-light: #4ade80;
+  --chakra-heart-glow: rgba(34, 197, 94, 0.3);
+  
+  --chakra-solar: #eab308;
+  --chakra-solar-light: #facc15;
+  --chakra-solar-glow: rgba(234, 179, 8, 0.3);
+  
+  --chakra-sacral: #f97316;
+  --chakra-sacral-light: #fb923c;
+  --chakra-sacral-glow: rgba(249, 115, 22, 0.3);
+  
+  --chakra-root: #ef4444;
+  --chakra-root-light: #f87171;
+  --chakra-root-glow: rgba(239, 68, 68, 0.3);
+
+  /* ── Secondary ── */
+  --secondary: #3b82f6;
+  --secondary-hover: #2563eb;
+  --secondary-active: #1d4ed8;
+
+  /* ── Semantic ── */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #06b6d4;
+
+  /* ── Neutrals: Backgrounds ── */
+  --bg-base: #0d0d0d;
+  --bg-primary: #111111;
+  --bg-secondary: #161616;
+  --bg-tertiary: #1a1a1a;
+  --bg-elevated: #1e1e1e;
+  --bg-hover: #252525;
+  --bg-active: #2a2a2a;
+
+  /* ── Neutrals: Borders ── */
+  --border-subtle: #1f1f1f;
+  --border-default: #2a2a2a;
+  --border-strong: #3a3a3a;
+  --border-hover: #444444;
+  --border-focus: #7c3aed;
+
+  /* ── Neutrals: Text ── */
+  --text-primary: #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #71717a;
+  --text-quaternary: #52525b;
+  --text-disabled: #3f3f46;
+  --text-muted: #6b7280;
+  --text-inverse: #111111;
+
+  /* ── Semantic Backgrounds ── */
+  --error-bg: rgba(248, 113, 113, 0.1);
+  --warning-bg: rgba(251, 191, 36, 0.1);
+  --info-bg: rgba(56, 189, 248, 0.1);
+  --success-bg: rgba(74, 222, 128, 0.1);
+
+  /* ── Overlays ── */
+  --overlay-dark-90: rgba(0, 0, 0, 0.9);
+  --overlay-dark-80: rgba(0, 0, 0, 0.8);
+  --overlay-dark-60: rgba(0, 0, 0, 0.6);
+  --overlay-dark-40: rgba(0, 0, 0, 0.4);
+  --overlay-white-10: rgba(255, 255, 255, 0.1);
+  --overlay-white-5: rgba(255, 255, 255, 0.05);
+  --overlay-primary-10: rgba(124, 58, 237, 0.1);
+  --overlay-primary-20: rgba(124, 58, 237, 0.2);
+
+  /* ── Typography ── */
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  --font-mono: 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace;
+
+  /* ── Spacing ── */
+  --sp-0: 0;
+  --sp-05: 2px;
+  --sp-1: 4px;
+  --sp-15: 6px;
+  --sp-2: 8px;
+  --sp-25: 10px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  /* ── Layout ── */
+  --sidebar-width: 320px;
+  --sidebar-collapsed: 48px;
+  --panel-min-width: 280px;
+  --panel-max-width: 400px;
+  --header-height: 48px;
+  --status-bar-height: 26px;
+  --tab-bar-height: 36px;
+
+  /* ── Border Radius ── */
+  --radius-none: 0;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.6);
+  --shadow-focus: 0 0 0 2px rgba(124, 58, 237, 0.4);
+  --shadow-dropdown: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-modal: 0 16px 48px rgba(0, 0, 0, 0.6);
+
+  /* ── Animation ── */
+  --dur-instant: 50ms;
+  --dur-fast: 100ms;
+  --dur-normal: 150ms;
+  --dur-slow: 200ms;
+  --dur-slower: 300ms;
+  --dur-slowest: 500ms;
+
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ── Syntax Highlighting ── */
+  --syntax-keyword: #c678dd;
+  --syntax-string: #98c379;
+  --syntax-number: #d19a66;
+  --syntax-function: #61afef;
+  --syntax-variable: #e06c75;
+  --syntax-comment: #5c6370;
+  --syntax-operator: #56b6c2;
+  --syntax-constant: #e5c07b;
+}
+
+/* ── Global Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--overlay-primary-20);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+/* ── Focus Utility ── */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+/* ── Button Reset ── */
+button {
+  font-family: var(--font-ui);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+/* ── Input Reset ── */
+input, textarea, select {
+  font-family: var(--font-ui);
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

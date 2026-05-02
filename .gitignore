@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+*.db
+*.sqlite
+*.sqlite3
+
+# OS generated files
+.DS_Store
+
+# Local application data (we don't want to upload personal memories)
+src/data/
+src/data-new/
+sessions.json
+sessions.json.bak
+scratch-*.cjs
