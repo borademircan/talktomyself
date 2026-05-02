@@ -278,7 +278,7 @@ function localPersistencePlugin() {
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', async () => {
             try {
-              const { queryText, topK = 5, timeFilter, domains } = JSON.parse(body);
+              const { queryText, topK = 5, timeFilter, daysAgo, domains } = JSON.parse(body);
               const envVars = loadEnv('', process.cwd());
               const apiKey = envVars.VITE_OPENAI_API_KEY;
               
@@ -315,6 +315,11 @@ function localPersistencePlugin() {
                     const start = new Date(timeFilter.start).getTime();
                     const end = new Date(timeFilter.end).getTime();
                     if (ts < start || ts > end) continue;
+                  }
+                  if (daysAgo !== undefined && row.timestamp) {
+                    const ts = new Date(row.timestamp).getTime();
+                    const cutoff = Date.now() - (daysAgo * 24 * 60 * 60 * 1000);
+                    if (ts < cutoff) continue;
                   }
                   // Parse the raw Buffer into a Float32Array
                   const docVec = new Float32Array(row.embedding.buffer, row.embedding.byteOffset, row.embedding.length / 4);
