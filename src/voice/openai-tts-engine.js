@@ -23,7 +23,7 @@ export class OpenAITtsEngine {
       this.speaking = true;
       bus.emit('tts:status', true);
 
-      const response = await fetch('https://api.openai.com/v1/audio/speech', {
+      const response = await fetch(import.meta.env.BASE_URL + 'api/openai/v1/audio/speech', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${this.apiKey}`,

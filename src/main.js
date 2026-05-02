@@ -46,7 +46,7 @@ async function initializeSystem() {
     // Pre-warm backend integration
     vdb.init();
 
-    const res = await fetch('/api/load');
+    const res = await fetch(import.meta.env.BASE_URL + 'api/load');
     const { kg: kgData } = await res.json();
 
     // Hydrate Knowledge Graph
@@ -68,7 +68,7 @@ function saveState(e) {
   
   clearTimeout(saveTimeout);
   saveTimeout = setTimeout(() => {
-    fetch('/api/save', {
+    fetch(import.meta.env.BASE_URL + 'api/save', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ kg: kg.toJSON(), vdb: vdb.toJSON() })

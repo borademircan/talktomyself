@@ -77,7 +77,7 @@ export class OpenAISttEngine {
       formData.append('file', blob, 'audio.webm');
       formData.append('model', 'whisper-1');
 
-      const response = await fetch('https://api.openai.com/v1/audio/transcriptions', {
+      const response = await fetch(import.meta.env.BASE_URL + 'api/openai/v1/audio/transcriptions', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${this.apiKey}`

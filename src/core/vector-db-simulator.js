@@ -14,7 +14,7 @@ export class VectorDBOrchestrator {
 
   async addDocument(domain, id, text, metadata) {
     try {
-      const response = await fetch('/api/embed_node', {
+      const response = await fetch(import.meta.env.BASE_URL + 'api/embed_node', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, text, type: metadata?.type, category: domain })
@@ -46,7 +46,7 @@ export class VectorDBOrchestrator {
   /** Search across SQLite index via backend endpoint */
   async search(queryText, domains = null, topK = 5, timeFilter = null) {
     try {
-      const response = await fetch('/api/search', {
+      const response = await fetch(import.meta.env.BASE_URL + 'api/search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ queryText, topK, domains, timeFilter })

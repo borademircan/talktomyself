@@ -17,7 +17,7 @@ export class GoogleTtsEngine {
       this.speaking = true;
       bus.emit('tts:status', true);
 
-      const response = await fetch('/api/google-tts/v1/text:synthesize', {
+      const response = await fetch(import.meta.env.BASE_URL + 'api/google-tts/v1/text:synthesize', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

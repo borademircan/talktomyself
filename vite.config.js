@@ -415,16 +415,29 @@ function localPersistencePlugin() {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
+    base: '/talktomyself/',
     root: '.',
     publicDir: 'public',
     plugins: [localPersistencePlugin()],
     server: {
       port: 3000,
       open: true,
+      allowedHosts: ['www.selinmodel.com', 'selinmodel.com'],
       watch: {
         ignored: ['**/src/data-new/*.json', '**/src/data/*.json']
       },
       proxy: {
+        '/api/openai': {
+          target: 'https://api.openai.com',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api\/openai/, ''),
+          configure: (proxy, options) => {
+            proxy.on('proxyReq', (proxyReq, req, res) => {
+               proxyReq.removeHeader('origin');
+               proxyReq.removeHeader('referer');
+            });
+          }
+        },
         '/api/anthropic': {
           target: 'https://api.anthropic.com',
           changeOrigin: true,

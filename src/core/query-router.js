@@ -383,7 +383,7 @@ If no time context is found, set timeFilter to null.`;
           max_tokens: 1024
         });
       } else if (openaiKey) {
-        endpoint = 'https://api.openai.com/v1/chat/completions';
+        endpoint = '/api/openai/v1/chat/completions';
         headers = {
           'Authorization': `Bearer ${openaiKey}`,
           'Content-Type': 'application/json'
@@ -423,7 +423,7 @@ If no time context is found, set timeFilter to null.`;
       // Fallback to OpenAI if Claude returns a 404/400 Error (Model Not Found / Quota Issue)
       if (!response.ok && claudeKey && openaiKey) {
         console.warn(`[Agent] Claude API failed with status ${response.status}. Falling back to OpenAI...`);
-        endpoint = 'https://api.openai.com/v1/chat/completions';
+        endpoint = '/api/openai/v1/chat/completions';
         headers = {
           'Authorization': `Bearer ${openaiKey}`,
           'Content-Type': 'application/json'
@@ -687,7 +687,7 @@ ${historyStr}
           contents: [{ role: 'user', parts: [{ text: userPrompt }] }]
         });
       } else if (apiProvider === 'openai') {
-        endpoint = 'https://api.openai.com/v1/chat/completions';
+        endpoint = '/api/openai/v1/chat/completions';
         headers = {
           'Authorization': `Bearer ${openaiKey}`,
           'Content-Type': 'application/json'
@@ -724,7 +724,7 @@ ${historyStr}
       if (!response.ok && apiProvider === 'claude' && openaiKey) {
         console.warn(`[Agent] Claude API failed with status ${response.status} during main generation. Falling back to OpenAI...`);
         apiProvider = 'openai';
-        endpoint = 'https://api.openai.com/v1/chat/completions';
+        endpoint = '/api/openai/v1/chat/completions';
         headers = {
           'Authorization': `Bearer ${openaiKey}`,
           'Content-Type': 'application/json'
@@ -826,7 +826,7 @@ Keep it under 300 words. Do not use generic tropes unless it's explicitly in the
           max_tokens: 1024
         });
       } else {
-        endpoint = openaiKey ? 'https://api.openai.com/v1/chat/completions' : 'https://api.moonshot.ai/v1/chat/completions';
+        endpoint = openaiKey ? '/api/openai/v1/chat/completions' : 'https://api.moonshot.ai/v1/chat/completions';
         headers = {
           'Authorization': `Bearer ${openaiKey || moonshotKey}`,
           'Content-Type': 'application/json'
@@ -850,7 +850,7 @@ Keep it under 300 words. Do not use generic tropes unless it's explicitly in the
       // Fallback to OpenAI if Claude returns a 404/400 Error (Model Not Found / Quota Issue)
       if (!response.ok && claudeKey && openaiKey) {
         console.warn(`[Agent] Claude API failed with status ${response.status}. Falling back to OpenAI...`);
-        endpoint = 'https://api.openai.com/v1/chat/completions';
+        endpoint = '/api/openai/v1/chat/completions';
         headers = {
           'Authorization': `Bearer ${openaiKey}`,
           'Content-Type': 'application/json'
@@ -885,7 +885,7 @@ Keep it under 300 words. Do not use generic tropes unless it's explicitly in the
       }
 
       // 2. Save it back to the server
-      await fetch('/api/save_persona', {
+      await fetch(import.meta.env.BASE_URL + 'api/save_persona', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ persona: newPersonaText })
