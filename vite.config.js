@@ -7,10 +7,11 @@ function localPersistencePlugin() {
     name: 'local-persistence',
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
+        const apiPath = req.url.replace(/^\/talktomyself/, '');
         // We use dynamic import so it doesn't break Vite's optimization scanner
         const { default: db } = await import('./server/db.js');
 
-        if (req.url === '/api/save' && req.method === 'POST') {
+        if (apiPath === '/api/save' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', () => {
@@ -54,7 +55,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/load' && req.method === 'GET') {
+        if (apiPath === '/api/load' && req.method === 'GET') {
           try {
             const rawNodes = db.prepare(`
               SELECT n.*, c.name as category_name 
@@ -100,7 +101,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/categories' && req.method === 'GET') {
+        if (apiPath === '/api/categories' && req.method === 'GET') {
           try {
             const categories = db.prepare('SELECT name, description FROM categories').all();
             res.setHeader('Content-Type', 'application/json');
@@ -114,7 +115,7 @@ function localPersistencePlugin() {
         }
 
         // Save sessions to SQLite database
-        if (req.url === '/api/save_sessions' && req.method === 'POST') {
+        if (apiPath === '/api/save_sessions' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', () => {
@@ -146,7 +147,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/delete_session' && req.method === 'POST') {
+        if (apiPath === '/api/delete_session' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', () => {
@@ -169,7 +170,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/load_sessions' && req.method === 'GET') {
+        if (apiPath === '/api/load_sessions' && req.method === 'GET') {
           try {
             // First, migrate from legacy JSON if it exists and DB is empty
             const filePath = path.join(process.cwd(), 'src/data-new/sessions.json');
@@ -221,7 +222,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/map_entity' && req.method === 'POST') {
+        if (apiPath === '/api/map_entity' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', () => {
@@ -253,7 +254,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/save_persona' && req.method === 'POST') {
+        if (apiPath === '/api/save_persona' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', () => {
@@ -272,7 +273,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/search' && req.method === 'POST') {
+        if (apiPath === '/api/search' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', async () => {
@@ -354,7 +355,7 @@ function localPersistencePlugin() {
           return;
         }
 
-        if (req.url === '/api/embed_node' && req.method === 'POST') {
+        if (apiPath === '/api/embed_node' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', async () => {
