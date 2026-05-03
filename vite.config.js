@@ -2,7 +2,7 @@ import { defineConfig, loadEnv } from 'vite';
 import fs from 'fs';
 import path from 'path';
 
-function localPersistencePlugin() {
+function localPersistencePlugin(env) {
   let dbPromise;
   return {
     name: 'local-persistence',
@@ -15,7 +15,8 @@ function localPersistencePlugin() {
         if (apiPath.startsWith('/api/')) {
           const authHeader = req.headers.authorization;
           const appAuthHeader = req.headers['x-app-auth'];
-          const expectedAuth = 'Basic c2VsaW46VHJhbnMxOTgwIQ=='; // selin:Trans1980!
+          const expectedAuth = env?.VITE_APP_AUTH || 'Basic YWRtaW46YWRtaW4=';
+          const expectedPassword = env?.VITE_APP_PASSWORD || 'admin';
 
           if (apiPath === '/api/verify_login' && req.method === 'POST') {
              let body = '';
@@ -24,7 +25,7 @@ function localPersistencePlugin() {
                try {
                  const data = JSON.parse(body);
                  const clientAuth = data.token;
-                 if (clientAuth === expectedAuth || clientAuth === 'Trans1980!' || clientAuth === 'selin:Trans1980!') {
+                 if (clientAuth === expectedAuth || clientAuth === expectedPassword || clientAuth === `selin:${expectedPassword}`) {
                    res.setHeader('Content-Type', 'application/json');
                    res.end(JSON.stringify({ success: true, token: expectedAuth }));
                  } else {
@@ -464,7 +465,7 @@ export default defineConfig(({ mode }) => {
     base: '/talktomyself/',
     root: '.',
     publicDir: 'public',
-    plugins: [localPersistencePlugin()],
+    plugins: [localPersistencePlugin(env)],
     server: {
       port: 3000,
       open: 'https://www.selinmodel.com/talktomyself/',
