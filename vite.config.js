@@ -3,19 +3,56 @@ import fs from 'fs';
 import path from 'path';
 
 function localPersistencePlugin() {
+  let dbPromise;
   return {
     name: 'local-persistence',
     configureServer(server) {
-      server.middlewares.use(async (req, res, next) => {
+      dbPromise = import('./server/db.js').then(m => m.default);
+      server.middlewares.use((req, res, next) => {
         const apiPath = req.url.replace(/^\/talktomyself/, '');
-        // We use dynamic import so it doesn't break Vite's optimization scanner
-        const { default: db } = await import('./server/db.js');
+
+        // --- AUTHENTICATION GUARD ---
+        if (apiPath.startsWith('/api/')) {
+          const authHeader = req.headers.authorization;
+          const appAuthHeader = req.headers['x-app-auth'];
+          const expectedAuth = 'Basic c2VsaW46VHJhbnMxOTgwIQ=='; // selin:Trans1980!
+
+          if (apiPath === '/api/verify_login' && req.method === 'POST') {
+             let body = '';
+             req.on('data', chunk => { body += chunk.toString(); });
+             req.on('end', () => {
+               try {
+                 const data = JSON.parse(body);
+                 const clientAuth = data.token;
+                 if (clientAuth === expectedAuth || clientAuth === 'Trans1980!' || clientAuth === 'selin:Trans1980!') {
+                   res.setHeader('Content-Type', 'application/json');
+                   res.end(JSON.stringify({ success: true, token: expectedAuth }));
+                 } else {
+                   res.statusCode = 401;
+                   res.end(JSON.stringify({ success: false, error: 'Invalid password' }));
+                 }
+               } catch(e) {
+                 res.statusCode = 400;
+                 res.end(JSON.stringify({ error: 'Bad request' }));
+               }
+             });
+             return;
+          }
+
+          if (authHeader !== expectedAuth && appAuthHeader !== expectedAuth) {
+             res.statusCode = 401;
+             res.setHeader('Content-Type', 'application/json');
+             res.end(JSON.stringify({ error: 'Unauthorized' }));
+             return;
+          }
+        }
 
         if (apiPath === '/api/save' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
-          req.on('end', () => {
+          req.on('end', async () => {
             try {
+              const db = await dbPromise;
               const data = JSON.parse(body);
               
               if (data.kg) {
@@ -56,70 +93,72 @@ function localPersistencePlugin() {
         }
 
         if (apiPath === '/api/load' && req.method === 'GET') {
-          try {
-            const rawNodes = db.prepare(`
-              SELECT n.*, c.name as category_name 
-              FROM nodes n 
-              LEFT JOIN categories c ON n.category_id = c.id
-            `).all();
-            const rawEdges = db.prepare('SELECT * FROM edges').all();
+          (async () => {
+            try {
+              const db = await dbPromise;
+              const rawNodes = db.prepare(`
+                SELECT n.*, c.name as category_name 
+                FROM nodes n 
+                LEFT JOIN categories c ON n.category_id = c.id
+              `).all();
+              const rawEdges = db.prepare('SELECT * FROM edges').all();
 
-            // Format nodes back for frontend compatibility
-            const nodes = rawNodes.map(n => ({
-              id: n.id,
-              type: n.type,
-              label: n.text.split('.')[0].substring(0, 50) + (n.text.length > 50 ? '...' : ''), // Derive label from text
-              text: n.text, // pass down raw text
-              metadata: {
-                description: n.text,
-                category: n.category_name,
-                domain: n.category_name, // fallback for legacy code
-                timestamp: n.timestamp
-              }
-            }));
+              const nodes = rawNodes.map(n => ({
+                id: n.id,
+                type: n.type,
+                label: n.text.split('.')[0].substring(0, 50) + (n.text.length > 50 ? '...' : ''),
+                text: n.text,
+                metadata: {
+                  description: n.text,
+                  category: n.category_name,
+                  domain: n.category_name,
+                  timestamp: n.timestamp
+                }
+              }));
 
-            // Format edges
-            const edges = rawEdges.map(e => ({
-              id: e.id,
-              source: e.source_id,
-              target: e.target_id,
-              type: e.type,
-              weight: e.weight
-            }));
+              const edges = rawEdges.map(e => ({
+                id: e.id,
+                source: e.source_id,
+                target: e.target_id,
+                type: e.type,
+                weight: e.weight
+              }));
 
-            const data = {
-              kg: { nodes, edges }
-            };
+              const data = { kg: { nodes, edges } };
 
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify(data));
-          } catch (e) {
-            console.error('Error in /api/load:', e);
-            res.statusCode = 500;
-            res.end(JSON.stringify({ error: e.message }));
-          }
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify(data));
+            } catch (e) {
+              console.error('Error in /api/load:', e);
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: e.message }));
+            }
+          })();
           return;
         }
 
         if (apiPath === '/api/categories' && req.method === 'GET') {
-          try {
-            const categories = db.prepare('SELECT name, description FROM categories').all();
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify(categories));
-          } catch (e) {
-            console.error('Error in /api/categories:', e);
-            res.statusCode = 500;
-            res.end(JSON.stringify({ error: e.message }));
-          }
+          (async () => {
+            try {
+              const db = await dbPromise;
+              const categories = db.prepare('SELECT name, description FROM categories').all();
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify(categories));
+            } catch (e) {
+              console.error('Error in /api/categories:', e);
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: e.message }));
+            }
+          })();
           return;
         }
 
-        // Save sessions to SQLite database
         if (apiPath === '/api/save_sessions' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
-          req.on('end', () => {
+          req.on('end', async () => {
             try {
+              const db = await dbPromise;
               const sessions = JSON.parse(body);
               const insertSession = db.prepare(`INSERT OR REPLACE INTO sessions (id, name, timestamp, lastProcessedIndex) VALUES (?, ?, ?, ?)`);
               const insertMessage = db.prepare(`INSERT OR REPLACE INTO messages (id, session_id, sender, content, timestamp) VALUES (?, ?, ?, ?, ?)`);
@@ -129,7 +168,6 @@ function localPersistencePlugin() {
                   insertSession.run(session.id, session.name, session.timestamp, session.lastProcessedIndex || -1);
                   if (session.messages) {
                     for (const msg of session.messages) {
-                      // Some legacy messages might lack an id during migration, but sessionManager ensures it.
                       const msgId = msg.id || `msg-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
                       insertMessage.run(msgId, session.id, msg.role, msg.content, msg.timestamp);
                     }
@@ -150,8 +188,9 @@ function localPersistencePlugin() {
         if (apiPath === '/api/delete_session' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
-          req.on('end', () => {
+          req.on('end', async () => {
             try {
+              const db = await dbPromise;
               const data = JSON.parse(body);
               if (data.sessionId) {
                 db.transaction(() => {
@@ -171,54 +210,55 @@ function localPersistencePlugin() {
         }
 
         if (apiPath === '/api/load_sessions' && req.method === 'GET') {
-          try {
-            // First, migrate from legacy JSON if it exists and DB is empty
-            const filePath = path.join(process.cwd(), 'src/data-new/sessions.json');
-            const row = db.prepare('SELECT COUNT(*) as count FROM sessions').get();
-            if (row.count === 0 && fs.existsSync(filePath)) {
-               const legacyData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-               const insertSession = db.prepare(`INSERT OR REPLACE INTO sessions (id, name, timestamp, lastProcessedIndex) VALUES (?, ?, ?, ?)`);
-               const insertMessage = db.prepare(`INSERT OR REPLACE INTO messages (id, session_id, sender, content, timestamp) VALUES (?, ?, ?, ?, ?)`);
-               db.transaction(() => {
-                 for (const session of legacyData) {
-                    insertSession.run(session.id, session.name, session.timestamp, session.lastProcessedIndex || -1);
-                    if (session.messages) {
-                      for (const msg of session.messages) {
-                         const msgId = msg.id || `msg-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
-                         insertMessage.run(msgId, session.id, msg.role, msg.content, msg.timestamp);
+          (async () => {
+            try {
+              const db = await dbPromise;
+              const filePath = path.join(process.cwd(), 'src/data-new/sessions.json');
+              const row = db.prepare('SELECT COUNT(*) as count FROM sessions').get();
+              if (row.count === 0 && fs.existsSync(filePath)) {
+                 const legacyData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+                 const insertSession = db.prepare(`INSERT OR REPLACE INTO sessions (id, name, timestamp, lastProcessedIndex) VALUES (?, ?, ?, ?)`);
+                 const insertMessage = db.prepare(`INSERT OR REPLACE INTO messages (id, session_id, sender, content, timestamp) VALUES (?, ?, ?, ?, ?)`);
+                 db.transaction(() => {
+                   for (const session of legacyData) {
+                      insertSession.run(session.id, session.name, session.timestamp, session.lastProcessedIndex || -1);
+                      if (session.messages) {
+                        for (const msg of session.messages) {
+                           const msgId = msg.id || `msg-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+                           insertMessage.run(msgId, session.id, msg.role, msg.content, msg.timestamp);
+                        }
                       }
-                    }
-                 }
-               })();
-               // Optionally rename sessions.json so it doesn't get imported again
-               fs.renameSync(filePath, path.join(process.cwd(), 'src/data-new/sessions.json.bak'));
+                   }
+                 })();
+                 fs.renameSync(filePath, path.join(process.cwd(), 'src/data-new/sessions.json.bak'));
+              }
+
+              const sessions = db.prepare('SELECT * FROM sessions ORDER BY timestamp DESC').all();
+              const getMessages = db.prepare('SELECT * FROM messages WHERE session_id = ? ORDER BY timestamp ASC');
+              
+              const data = sessions.map(session => {
+                const messages = getMessages.all(session.id).map(m => ({
+                  id: m.id,
+                  role: m.sender,
+                  content: m.content,
+                  timestamp: m.timestamp
+                }));
+                return {
+                   id: session.id,
+                   name: session.name,
+                   timestamp: session.timestamp,
+                   lastProcessedIndex: session.lastProcessedIndex,
+                   messages
+                };
+              });
+
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify(data));
+            } catch (e) {
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: e.message }));
             }
-
-            const sessions = db.prepare('SELECT * FROM sessions ORDER BY timestamp DESC').all();
-            const getMessages = db.prepare('SELECT * FROM messages WHERE session_id = ? ORDER BY timestamp ASC');
-            
-            const data = sessions.map(session => {
-              const messages = getMessages.all(session.id).map(m => ({
-                id: m.id,
-                role: m.sender,
-                content: m.content,
-                timestamp: m.timestamp
-              }));
-              return {
-                 id: session.id,
-                 name: session.name,
-                 timestamp: session.timestamp,
-                 lastProcessedIndex: session.lastProcessedIndex,
-                 messages
-              };
-            });
-
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify(data));
-          } catch (e) {
-            res.statusCode = 500;
-            res.end(JSON.stringify({ error: e.message }));
-          }
+          })();
           return;
         }
 
@@ -433,10 +473,10 @@ export default defineConfig(({ mode }) => {
         ignored: ['**/src/data-new/*.json', '**/src/data/*.json']
       },
       proxy: {
-        '/api/openai': {
+        '/talktomyself/api/openai': {
           target: 'https://api.openai.com',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/openai/, ''),
+          rewrite: (path) => path.replace(/^\/talktomyself\/api\/openai/, ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
@@ -444,20 +484,20 @@ export default defineConfig(({ mode }) => {
             });
           }
         },
-        '/api/anthropic': {
+        '/talktomyself/api/anthropic': {
           target: 'https://api.anthropic.com',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/anthropic/, ''),
+          rewrite: (path) => path.replace(/^\/talktomyself\/api\/anthropic/, ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
             });
           }
         },
-        '/api/google-tts': {
+        '/talktomyself/api/google-tts': {
           target: 'https://texttospeech.googleapis.com',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/google-tts/, ''),
+          rewrite: (path) => path.replace(/^\/talktomyself\/api\/google-tts/, ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
@@ -469,20 +509,17 @@ export default defineConfig(({ mode }) => {
             });
           }
         },
-        '/api/elevenlabs': {
+        '/talktomyself/api/elevenlabs': {
           target: 'https://api.elevenlabs.io',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/elevenlabs/, ''),
+          rewrite: (path) => path.replace(/^\/talktomyself\/api\/elevenlabs/, ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
                proxyReq.removeHeader('referer');
-               // Securely inject the API key from the local environment if available
                if (env.VITE_ELEVENLABS_API_KEY) {
                  proxyReq.setHeader('xi-api-key', env.VITE_ELEVENLABS_API_KEY.trim());
                }
-               console.log(`[Vite Proxy] Forwarding to ElevenLabs: ${proxyReq.path}`);
-               console.log(`[Vite Proxy] xi-api-key header present:`, !!proxyReq.getHeader('xi-api-key'));
             });
           }
         }

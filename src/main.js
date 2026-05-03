@@ -58,8 +58,78 @@ async function initializeSystem() {
     console.error('[Cognitive AI] Failed to load data from disk:', err);
   }
 }
-initializeSystem();
+// ── Authentication & Fetch Override ──────────────────────────
+const originalFetch = window.fetch;
+window.fetch = async function(...args) {
+  let [resource, config] = args;
+  let url = (resource instanceof URL) ? resource.href : resource;
 
+  if (url.includes('/api/')) {
+    config = config || {};
+    config.headers = config.headers || {};
+    const token = localStorage.getItem('app_auth');
+    if (token) {
+      if (config.headers instanceof Headers) {
+        config.headers.set('X-App-Auth', token);
+      } else {
+        config.headers['X-App-Auth'] = token;
+      }
+    }
+  }
+
+  const response = await originalFetch(resource, config);
+  if (response.status === 401 && url.includes('/api/')) {
+    document.getElementById('login-overlay').style.display = 'flex';
+    localStorage.removeItem('app_auth');
+  }
+  return response;
+};
+
+// Handle Login UI
+const overlay = document.getElementById('login-overlay');
+const loginBtn = document.getElementById('login-submit');
+const passwordInput = document.getElementById('login-password');
+const errorMsg = document.getElementById('login-error');
+
+async function handleLogin() {
+  const pw = passwordInput.value.trim();
+  if (!pw) return;
+  loginBtn.innerHTML = 'Unlocking...';
+  
+  try {
+    const res = await originalFetch(import.meta.env.BASE_URL + 'api/verify_login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: pw })
+    });
+    
+    const data = await res.json();
+    if (data.success) {
+      localStorage.setItem('app_auth', data.token);
+      overlay.style.display = 'none';
+      errorMsg.style.display = 'none';
+      initializeSystem();
+    } else {
+      errorMsg.style.display = 'block';
+      errorMsg.textContent = data.error || 'Invalid password';
+    }
+  } catch (err) {
+    errorMsg.style.display = 'block';
+    errorMsg.textContent = 'Server connection error';
+  }
+  loginBtn.innerHTML = 'Unlock';
+}
+
+if (loginBtn) {
+  loginBtn.addEventListener('click', handleLogin);
+  passwordInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') handleLogin(); });
+}
+
+// Auto-login check
+if (localStorage.getItem('app_auth')) {
+  if (overlay) overlay.style.display = 'none';
+  initializeSystem();
+}
 // ── Persistence Hooks ───────────────────────────────────────
 let saveTimeout;
 function saveState(e) {

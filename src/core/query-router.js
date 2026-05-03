@@ -179,7 +179,8 @@ export class QueryRouter {
     const refinement = await this._refineQueryWithLLM(queryText, recentMessages);
 
     // Bypass logic for simple chat or direct answers
-    if (refinement.is_simple_chat && refinement.direct_response) {
+    // Strict word count check (<= 8 words) to prevent hallucinated bypasses on long queries
+    if (refinement.is_simple_chat && refinement.direct_response && queryText.trim().split(/\s+/).length <= 8) {
       const response = refinement.direct_response;
       this._trace('Bypass', `Simple chat detected. Direct response used.`, performance.now() - refineStart);
       bus.emit('query:step', { step: 'refine', keywords: 'N/A', timeFilter: null, bypass: true });
@@ -328,7 +329,7 @@ export class QueryRouter {
 Your task is to analyze the user's latest query and recent context.
 
 1. ONLY set "is_simple_chat" to true IF AND ONLY IF the user is making a VERY short greeting (under 5 words like "merhaba", "selam nasılsın") AND requires absolutely no context. For ANY sharing of personal information, long statements, feelings, or questions, you MUST set "is_simple_chat" to false and "direct_response" to null.
-2. If the user is sharing a long paragraph, talking about themselves, their feelings, complex topics, or anything requiring memory/DB search, set "is_simple_chat" to false and "direct_response" to null. You MUST NOT answer on behalf of the persona here.
+2. If "is_simple_chat" is true, the "direct_response" MUST be the final spoken response to the user, acting as Selin (the user's casual, street-smart AI twin sister). DO NOT output any analysis in "direct_response". If the user is sharing a long paragraph, talking about themselves, their feelings, complex topics, or anything requiring memory/DB search, set "is_simple_chat" to false and "direct_response" to null. You MUST NOT answer on behalf of the persona here.
 3. Extract core entities, keywords, and concepts from the query to optimize a knowledge graph search into "keywords". Include BOTH the original language terms (e.g., Turkish) AND their English translations in the "keywords" string, separated by spaces (e.g., "Ceren sohbet konu chat talk").
 4. Extract timestamps into "timeFilter" (start and end in ISO 8601) if ANY time-related words are used (e.g., "yesterday", "last week", "in 2025", "3 ay önce", "geçen sene"). Determine the exact start and end date of that interval relative to the current date and time. If none, set to null.
 5. Determine the expected length of the final response ("short", "medium", or "long").
@@ -457,6 +458,8 @@ If no time context is found, set timeFilter to null.`;
       } else {
         content = data.choices[0].message.content.trim();
       }
+      // Strip <think> tags for reasoning models
+      content = content.replace(new RegExp('<think>[\\\\s\\\\S]*?</think>', 'gi'), '').trim();
       let parsed;
       try {
         parsed = JSON.parse(content.replace(/^\`\`\`json\s*/, '').replace(/\s*\`\`\`$/, ''));
@@ -769,6 +772,9 @@ ${historyStr}
       } else {
         responseText = data.choices[0].message.content.trim();
       }
+
+      // Strip <think> tags for reasoning models
+      responseText = responseText.replace(new RegExp('<think>[\\\\s\\\\S]*?</think>', 'gi'), '').trim();
 
       return responseText;
     } catch (e) {

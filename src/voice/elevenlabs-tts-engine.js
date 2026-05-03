@@ -16,8 +16,11 @@ export class ElevenLabsTtsEngine {
   }
 
   async speak(text) {
-    const cleanText = text.replace(/\*/g, '').trim();
-    console.log(`[TTS] speak() called with text: "${cleanText.substring(0, 30)}..."`);
+    let cleanText = text.replace(/\*/g, '').trim();
+    if (cleanText.length > 4900) {
+      cleanText = cleanText.substring(0, 4900) + "... [Audio truncated due to length limits]";
+    }
+    console.log(`[TTS] speak() called with text: "${cleanText.substring(0, 30)}..." (Length: ${cleanText.length})`);
     if (!this.apiKey) {
       console.warn('[TTS] ElevenLabs API key missing. Please add VITE_ELEVENLABS_API_KEY to .env');
       return;
