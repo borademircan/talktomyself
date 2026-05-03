@@ -573,8 +573,8 @@ If no time context is found, set timeFilter to null.`;
       // Always fetch fresh to reflect any edits made by the user
       const timestamp = Date.now();
       const [pRes, aRes] = await Promise.all([
-        fetch(`/persona.md?t=${timestamp}`),
-        fetch(`/agent.md?t=${timestamp}`)
+        fetch(`${import.meta.env.BASE_URL}persona.md?t=${timestamp}`),
+        fetch(`${import.meta.env.BASE_URL}agent.md?t=${timestamp}`)
       ]);
       this._persona = await pRes.text();
       this._agent = await aRes.text();
