@@ -3,7 +3,6 @@ set -e
 
 # Configuration
 REPO_URL="https://github.com/borademircan/talktomyself.git"
-INSTALL_DIR="/var/www/www.selinmodel.com/talktomyself"
 
 echo "=========================================="
 echo "Installing TalkToMyself"
@@ -14,11 +13,15 @@ command -v git >/dev/null 2>&1 || { echo >&2 "Git is required but it's not insta
 command -v npm >/dev/null 2>&1 || { echo >&2 "npm is required but it's not installed. Aborting."; exit 1; }
 command -v pm2 >/dev/null 2>&1 || { echo >&2 "PM2 is required but it's not installed. Installing PM2 globally..."; npm install -g pm2; }
 
+# Ask for installation directory
+echo "=========================================="
+read -p "Where would you like to install TalkToMyself? [$HOME/talktomyself]: " INSTALL_DIR </dev/tty
+INSTALL_DIR=${INSTALL_DIR:-$HOME/talktomyself}
+
 # Create installation directory if it doesn't exist
 if [ ! -d "$INSTALL_DIR" ]; then
     echo "Cloning repository into $INSTALL_DIR..."
-    sudo mkdir -p "$INSTALL_DIR"
-    sudo chown -R $USER:$USER "$INSTALL_DIR"
+    mkdir -p "$INSTALL_DIR" || { echo "Failed to create directory. Do you need to run with sudo?"; exit 1; }
     git clone "$REPO_URL" "$INSTALL_DIR"
 else
     echo "Directory $INSTALL_DIR already exists. Pulling latest changes..."
