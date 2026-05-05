@@ -1,4 +1,5 @@
 import { bus } from './event-bus.js';
+import { apiFetch } from './api.js';
 
 export class SessionManager {
   /**
@@ -20,7 +21,7 @@ export class SessionManager {
 
   async loadSessions() {
     try {
-      const res = await fetch(import.meta.env.BASE_URL + 'api/load_sessions');
+      const res = await apiFetch('api/load_sessions');
       if (res.ok) {
         this.sessions = await res.json();
         // Ensure legacy messages have an ID
@@ -57,9 +58,8 @@ export class SessionManager {
       const sessionToSave = this.getCurrentSession();
       if (!sessionToSave) return;
       
-      await fetch(import.meta.env.BASE_URL + 'api/save_sessions', {
+      await apiFetch('api/save_sessions', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify([sessionToSave]) // API expects an array
       });
     } catch (err) {
@@ -118,9 +118,8 @@ export class SessionManager {
       
       // Delete from backend SQLite database
       try {
-        await fetch(import.meta.env.BASE_URL + 'api/delete_session', {
+        await apiFetch('api/delete_session', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ sessionId: id })
         });
       } catch (err) {
@@ -197,12 +196,27 @@ export class SessionManager {
   async processPendingSessions() {
     console.log('[SessionManager] Running scheduled brain sync...');
     const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
-    if (!apiKey) return;
+    if (!apiKey) {
+      console.log('[SessionManager] apiKey is missing!');
+      return;
+    }
 
-    for (const session of this.sessions) {
+    const currentSession = this.getCurrentSession();
+    const sessionsToProcess = currentSession ? [currentSession] : [];
+    console.log(`[SessionManager] Processing ${sessionsToProcess.length} sessions.`);
+    
+    let processedAny = false;
+
+    for (const session of sessionsToProcess) {
       // Only process if there are new messages
       const startIndex = session.lastProcessedIndex >= 0 ? session.lastProcessedIndex + 1 : 0;
-      if (startIndex >= session.messages.length) continue;
+      console.log(`[SessionManager] Session ${session.id}: startIndex=${startIndex}, messagesLength=${session.messages.length}`);
+      if (startIndex >= session.messages.length) {
+        console.log(`[SessionManager] Skipping session ${session.id} because no new messages.`);
+        continue;
+      }
+      
+      processedAny = true;
 
       // Extract memory from ONLY new messages to prevent reprocessing and graph churn
       const newMessages = session.messages.slice(startIndex);
@@ -210,7 +224,7 @@ export class SessionManager {
       
       let categoriesText = "general";
       try {
-        const catRes = await fetch(import.meta.env.BASE_URL + 'api/categories');
+        const catRes = await apiFetch('api/categories');
         if (catRes.ok) {
            const cats = await catRes.json();
            categoriesText = cats.map(c => `"${c.name}"`).join(", ");
@@ -220,7 +234,7 @@ export class SessionManager {
       }
       
       try {
-        const completion = await fetch(import.meta.env.BASE_URL + 'api/openai/v1/chat/completions', {
+        const completion = await apiFetch('api/openai/v1/chat/completions', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -271,9 +285,8 @@ export class SessionManager {
                   }
 
                   // Map entity to the raw messages
-                  fetch(import.meta.env.BASE_URL + 'api/map_entity', {
+                  apiFetch('api/map_entity', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                       nodeId: newNodeId,
                       sessionId: session.id,
@@ -296,5 +309,7 @@ export class SessionManager {
          console.error('[SessionManager] Failed to process session memory', err);
       }
     }
+    
+    return processedAny;
   }
 }

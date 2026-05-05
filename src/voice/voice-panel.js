@@ -48,6 +48,8 @@ export class VoicePanel {
               <span>Live Agent</span>
             </label>
 
+
+
             <button class="btn btn-ghost" id="replay-tts-btn" style="padding: 2px 6px; margin-left: auto; color: var(--text-secondary); opacity: 0.5; transition: opacity 0.2s;" title="Replay last AI voice">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
             </button>
@@ -107,6 +109,7 @@ export class VoicePanel {
     this.toggleStsBtn = this.el.querySelector('#toggle-sts');
     this.toggleTtsBtn = this.el.querySelector('#toggle-tts');
     this.toggleAgentBtn = this.el.querySelector('#toggle-agent');
+
     this.waveform = this.el.querySelector('#waveform');
     this.waveBars = this.el.querySelectorAll('.waveform__bar');
     this.transcriptArea = this.el.querySelector('#transcript-area');
@@ -166,6 +169,8 @@ export class VoicePanel {
       }
     });
 
+
+
     this.micBtn.addEventListener('click', () => {
       if (this.agentEnabled) {
         this.agent.toggle();
@@ -221,7 +226,7 @@ export class VoicePanel {
     bus.on('query:complete', (result) => {
       this._removeProcessing();
       if (this.ttsEnabled) {
-        let ttsText = result.response || "";
+        let ttsText = result.ttsResponse || result.response || "";
         ttsText = ttsText.replace(/<thinking>[\s\S]*?<\/thinking>/g, '').trim();
         this.tts.speak(ttsText);
       }
@@ -239,6 +244,20 @@ export class VoicePanel {
 
     bus.on('tts:stop_request', () => {
       this.tts.stop();
+    });
+
+    bus.on('agent:tts', (text) => {
+      if (this.ttsEnabled) {
+        this.tts.speak(text);
+      }
+    });
+
+    bus.on('agent:progress', (msg) => {
+      const textEl = document.getElementById('ai-processing-text');
+      if (textEl) {
+         textEl.innerHTML += `<br><span style="font-size: 11px; opacity: 0.8; font-family: 'DM Mono', monospace;">> ${msg}</span>`;
+         this.transcriptArea.scrollTop = this.transcriptArea.scrollHeight;
+      }
     });
 
     bus.on('stt:error', (msg) => {
@@ -278,7 +297,7 @@ export class VoicePanel {
     div.id = 'ai-processing-indicator';
     div.innerHTML = `
       <div class="transcript-entry__role">🧠 AI</div>
-      <div style="color: var(--text-tertiary); font-style: italic;">Thinking...</div>
+      <div id="ai-processing-text" style="color: var(--text-tertiary); font-style: italic;">Thinking...</div>
     `;
     this.transcriptArea.appendChild(div);
     this.transcriptArea.scrollTop = this.transcriptArea.scrollHeight;
@@ -303,6 +322,9 @@ export class VoicePanel {
     if (role === 'ai') {
         // Remove <thinking>...</thinking> blocks entirely
         parsedText = parsedText.replace(/<thinking>[\s\S]*?<\/thinking>/g, '').trim();
+        
+        // Remove the <tts> and </tts> tags (but keep the text inside them so the user reads what was spoken)
+        parsedText = parsedText.replace(/<\/?tts>/gi, '');
         
         // Escape HTML to prevent broken DOM
         parsedText = parsedText
@@ -356,7 +378,11 @@ export class VoicePanel {
     this.saveSessionBtn.addEventListener('click', () => {
       const btn = this.saveSessionBtn;
       btn.textContent = '⏳';
-      this.sessionManager.processPendingSessions().finally(() => {
+      this.sessionManager.processPendingSessions().then((processedAny) => {
+        if (processedAny === false) {
+           alert("Brain sync skipped: There are no new messages to extract memories from since your last sync.");
+        }
+      }).finally(() => {
         btn.textContent = '💾';
       });
     });
@@ -384,31 +410,34 @@ export class VoicePanel {
     
     bus.on('session:updated', (session) => {
        if (session.id === this.sessionManager.activeSessionId) {
-          // just re-render transcript
-          bus.emit('session:switched', session);
+          this._renderTranscript(session);
        }
     });
 
     bus.on('session:switched', (session) => {
       if (!session) return;
       renderSessions();
-      this.transcriptArea.innerHTML = '';
-      this.entries = [];
-      if (session.messages.length === 0) {
-        this.transcriptArea.innerHTML = `
-          <div class="inspector-empty" style="height:100%;">
-            <div class="inspector-empty__icon">🧠</div>
-            <div>Speak or type to begin</div>
-            <div style="font-size:11px; color:var(--text-quaternary);">Your conversation will appear here</div>
-          </div>
-        `;
-      } else {
-        session.messages.forEach(m => {
-          const isNumericStr = typeof m.timestamp === 'string' && /^\d+(\.\d+)?$/.test(m.timestamp);
-          const ts = isNumericStr ? new Date(parseFloat(m.timestamp)) : new Date(m.timestamp);
-          this._addEntry(m.role, m.content, ts);
-        });
-      }
+      this._renderTranscript(session);
     });
+  }
+
+  _renderTranscript(session) {
+    this.transcriptArea.innerHTML = '';
+    this.entries = [];
+    if (!session || !session.messages || session.messages.length === 0) {
+      this.transcriptArea.innerHTML = `
+        <div class="inspector-empty" style="height:100%;">
+          <div class="inspector-empty__icon">🧠</div>
+          <div>Speak or type to begin</div>
+          <div style="font-size:11px; color:var(--text-quaternary);">Your conversation will appear here</div>
+        </div>
+      `;
+    } else {
+      session.messages.forEach(m => {
+        const isNumericStr = typeof m.timestamp === 'string' && /^\d+(\.\d+)?$/.test(m.timestamp);
+        const ts = isNumericStr ? new Date(parseFloat(m.timestamp)) : new Date(m.timestamp);
+        this._addEntry(m.role, m.content, ts);
+      });
+    }
   }
 }

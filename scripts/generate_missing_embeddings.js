@@ -73,8 +73,8 @@ async function main() {
     if (missingNodes.length === 0) return;
 
     const insertStmt = db.prepare(`
-        INSERT INTO node_embeddings (node_id, embedding_json, model_name)
-        VALUES (?, ?, 'text-embedding-3-small')
+        INSERT INTO node_embeddings (node_id, embedding)
+        VALUES (?, ?)
     `);
 
     // Process in batches of 100
@@ -83,7 +83,7 @@ async function main() {
 
     for (let i = 0; i < missingNodes.length; i += BATCH_SIZE) {
         const batch = missingNodes.slice(i, i + BATCH_SIZE);
-        const texts = batch.map(n => n.text);
+        const texts = batch.map(n => (n.text && n.text.trim() !== '') ? n.text : ' ');
         
         console.log(`Processing batch ${i / BATCH_SIZE + 1} / ${Math.ceil(missingNodes.length / BATCH_SIZE)}...`);
         
@@ -92,7 +92,8 @@ async function main() {
             
             const transaction = db.transaction(() => {
                 for (let j = 0; j < batch.length; j++) {
-                    insertStmt.run(batch[j].id, JSON.stringify(embeddings[j]));
+                    const buffer = new Float32Array(embeddings[j]).buffer;
+                    insertStmt.run(batch[j].id, Buffer.from(buffer));
                 }
             });
             transaction();

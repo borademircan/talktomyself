@@ -1,5 +1,10 @@
 node_modules/
 dist/
+.agent/
+.agents/
+reports/
+raw-data/
+
 .env
 .env.*
 *.db
@@ -16,3 +21,11 @@ src/data-new/
 sessions.json
 sessions.json.bak
 scratch-*.cjs
+
+# Persona Definition
+public/persona.md
+
+# Multi-Agent System Documentation
+AGENTS.md
+GEMINI.md
+README.md

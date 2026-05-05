@@ -74,6 +74,17 @@
   overflow: hidden;
 }
 
+#app.playground-mode {
+  grid-template-areas:
+    "header header header"
+    "left   center center"
+    "status status status";
+}
+
+#app.playground-mode .panel-right {
+  display: none;
+}
+
 .status-bar {
   grid-area: status; display: flex; align-items: center; justify-content: space-between;
   padding: 0 var(--sp-3); background: var(--bg-primary);

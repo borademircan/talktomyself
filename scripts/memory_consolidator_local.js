@@ -8,7 +8,15 @@ env.allowLocalModels = true;
 const dbPath = path.join(process.cwd(), 'src/data-new/talk_to_myself.db');
 const db = new Database(dbPath, { verbose: null });
 
-const insertNode = db.prepare('INSERT OR REPLACE INTO nodes (id, text, category_id, type, timestamp) VALUES (?, ?, ?, ?, ?)');
+const insertNode = db.prepare(`
+  INSERT INTO nodes (id, text, category_id, type, timestamp) 
+  VALUES (?, ?, ?, ?, ?)
+  ON CONFLICT(id) DO UPDATE SET 
+    text = excluded.text,
+    category_id = excluded.category_id,
+    type = excluded.type,
+    timestamp = excluded.timestamp
+`);
 const insertEdge = db.prepare('INSERT OR REPLACE INTO edges (id, source_id, target_id, type, weight) VALUES (?, ?, ?, ?, ?)');
 const getOrInsertCategory = db.prepare('INSERT OR IGNORE INTO categories (id, name, description) VALUES (?, ?, ?)');
 

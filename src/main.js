@@ -10,6 +10,7 @@ import './styles/inspector.css';
 import './styles/animations.css';
 
 import { bus } from './core/event-bus.js';
+import { apiFetch } from './core/api.js';
 import { KnowledgeGraph, NODE_COLORS } from './core/knowledge-graph.js';
 import { VectorDBOrchestrator } from './core/vector-db-simulator.js';
 import { QueryRouter } from './core/query-router.js';
@@ -78,7 +79,8 @@ window.fetch = async function(...args) {
   }
 
   const response = await originalFetch(resource, config);
-  if (response.status === 401 && url.includes('/api/')) {
+  const isExternalApi = url.includes('/api/openai') || url.includes('/api/anthropic') || url.includes('/api/google-tts') || url.includes('/api/elevenlabs');
+  if (response.status === 401 && url.includes('/api/') && !isExternalApi) {
     document.getElementById('login-overlay').style.display = 'flex';
     localStorage.removeItem('app_auth');
   }
@@ -132,16 +134,34 @@ if (localStorage.getItem('app_auth')) {
 }
 // ── Persistence Hooks ───────────────────────────────────────
 let saveTimeout;
+let dirtyNodes = new Set();
+let dirtyEdges = new Set();
+
 function saveState(e) {
-  // Ignore visual node updates (like hover glow or physics)
+  // Ignore visual node updates
   if (e && e.type === 'node:updated') return;
+
+  if (e && e.node && e.type === 'node:added') {
+    dirtyNodes.add(e.node);
+  }
+  if (e && e.edge && e.type === 'edge:added') {
+    dirtyEdges.add(e.edge);
+  }
   
   clearTimeout(saveTimeout);
   saveTimeout = setTimeout(() => {
+    if (dirtyNodes.size === 0 && dirtyEdges.size === 0) return;
+
+    const nodesArray = Array.from(dirtyNodes).map(n => ({ id: n.id, type: n.type, label: n.label, metadata: n.metadata }));
+    const edgesArray = Array.from(dirtyEdges).map(e => ({ id: e.id, source: e.source, target: e.target, type: e.type, weight: e.weight, metadata: e.metadata }));
+    
+    dirtyNodes.clear();
+    dirtyEdges.clear();
+
     fetch(import.meta.env.BASE_URL + 'api/save', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ kg: kg.toJSON(), vdb: vdb.toJSON() })
+      body: JSON.stringify({ kg: { nodes: nodesArray, edges: edgesArray } })
     }).catch(err => console.error('[Cognitive AI] Failed to save state to workspace', err));
   }, 2000);
 }
@@ -166,12 +186,22 @@ app.innerHTML = `
       </div>
     </div>
     <div class="app-header__right">
+      <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; color: var(--text-secondary); cursor: pointer; padding: 4px 8px; border-radius: 4px; background: var(--bg-secondary); margin-right: 8px;" title="Render HTML/CSS/JS Playground">
+        <input type="checkbox" id="toggle-playground" style="accent-color: #6366f1;">
+        <span>Web Playground</span>
+      </label>
+      <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; color: var(--text-secondary); cursor: pointer; padding: 4px 8px; border-radius: 4px; background: var(--bg-secondary); margin-right: 8px;" title="5 Q&A Interview Mode">
+        <input type="checkbox" id="toggle-interview" style="accent-color: #ec4899;">
+        <span>5 Q&A</span>
+      </label>
+      <select id="playground-history" class="btn btn-secondary btn-sm" style="margin-right: 8px; max-width: 150px; display: none;" title="Playground History">
+      </select>
       <select id="model-select" class="btn btn-secondary btn-sm" style="margin-right: 8px; max-width: 150px;" title="Select Model">
         <option value="moonshot-v1-8k">moonshot-v1-8k</option>
         <option value="moonshot-v1-32k">moonshot-v1-32k</option>
         <option value="moonshot-v1-128k">moonshot-v1-128k</option>
-        <option value="gemini-2.5-flash">gemini-2.5-flash</option>
-        <option value="gemini-2.5-pro">gemini-2.5-pro</option>
+        <option value="gemini-3.0-flash">gemini-3.0-flash</option>
+        <option value="gemini-3.0-pro">gemini-3.0-pro</option>
         <option value="gpt-4o-mini">gpt-4o-mini</option>
         <option value="claude-sonnet-4-6" selected>claude-sonnet-4.6</option>
       </select>
@@ -198,6 +228,12 @@ app.innerHTML = `
 
   <div class="panel-center" id="panel-center">
     <canvas id="graph-canvas"></canvas>
+    <div id="playground-loading" style="display:none; position:absolute; inset:0; z-index:20; background:rgba(15,16,21,0.8); backdrop-filter:blur(8px); flex-direction:column; justify-content:center; align-items:center; color:#00FFD1; font-family:monospace; border-radius:8px;">
+      <div style="width:40px;height:40px;border:2px solid rgba(0,255,209,0.2);border-top-color:#00FFD1;border-radius:50%;animation:pg-spin 1s linear infinite;margin-bottom:16px;"></div>
+      <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase;">Synthesizing UI...</div>
+      <style>@keyframes pg-spin { 100% { transform: rotate(360deg); } }</style>
+    </div>
+    <iframe id="playground-iframe" style="display:none; width: 100%; height: 100%; border: none; background-color: #0f1015; background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 20px 20px; border-radius: 8px;"></iframe>
 
     <div class="graph-search" style="position: absolute; top: var(--sp-4); right: var(--sp-4); z-index: 10;">
       <input type="text" id="node-search" class="form-input" placeholder="Search nodes..." style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); border-radius: 20px; padding: 8px 16px; background: rgba(30,30,35,0.8); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1);">
@@ -353,6 +389,210 @@ bus.on('graph:node:hover', (node) => {
 // ── Query Pipeline ──────────────────────────────────
 bus.on('voice:query', async (text) => {
   await router.route(text);
+});
+
+// ── Playground Flow ─────────────────────────────────
+bus.on('playground:toggle', (enabled) => {
+  const canvas = document.getElementById('graph-canvas');
+  const iframe = document.getElementById('playground-iframe');
+  const filters = document.getElementById('graph-filters');
+  const controls = document.querySelector('.graph-controls');
+  const search = document.querySelector('.graph-search');
+  const appElement = document.getElementById('app');
+
+  if (enabled) {
+    appElement.classList.add('playground-mode');
+    canvas.style.display = 'none';
+    if(filters) filters.style.display = 'none';
+    if(controls) controls.style.display = 'none';
+    if(search) search.style.display = 'none';
+    iframe.style.display = 'block';
+  } else {
+    appElement.classList.remove('playground-mode');
+    canvas.style.display = 'block';
+    if(filters) filters.style.display = 'flex';
+    if(controls) controls.style.display = 'flex';
+    if(search) search.style.display = 'block';
+    iframe.style.display = 'none';
+  }
+});
+
+bus.on('playground:loading', (isLoading) => {
+  const loader = document.getElementById('playground-loading');
+  if (loader) loader.style.display = isLoading ? 'flex' : 'none';
+});
+
+bus.on('playground:code:generated', async (rawCode) => {
+  try {
+    const iframe = document.getElementById('playground-iframe');
+    if (iframe) {
+      // Force inject CSS to ensure scrolling works inside the playground and inject dark grid
+      let safeCode = rawCode;
+      const scrollStyles = `<style>
+        html, body { 
+          overflow-y: auto !important; 
+          margin: 0; 
+          padding: 0; 
+          min-height: 100vh; 
+        }
+      </style>`;
+      
+      if (safeCode.includes('</head>')) {
+        safeCode = safeCode.replace('</head>', scrollStyles + '</head>');
+      } else if (safeCode.includes('<style>')) {
+        safeCode = safeCode.replace('<style>', scrollStyles + '<style>');
+      } else {
+        safeCode = scrollStyles + safeCode;
+      }
+
+      iframe.srcdoc = safeCode;
+      
+      // Save generation
+      const sessionId = router.sessionManager.activeSessionId;
+      if (sessionId) {
+        await apiFetch('api/save_generation', {
+          method: 'POST',
+          body: JSON.stringify({ sessionId, htmlCode: safeCode })
+        });
+        
+        // Refresh dropdown
+        const generations = await fetchGenerations(sessionId);
+        updatePlaygroundHistoryDropdown(generations);
+      }
+    }
+  } catch (e) {
+    console.error("[Playground] Error generating or saving code:", e);
+  }
+});
+
+bus.on('playground:code:edited', async ({ edits }) => {
+  try {
+    const iframe = document.getElementById('playground-iframe');
+    if (!iframe || !iframe.contentDocument) return;
+
+    const iframeDoc = iframe.contentDocument;
+
+    let applied = 0;
+    let needsReload = false;
+    for (const edit of edits) {
+      try {
+        const els = iframeDoc.querySelectorAll(edit.selector);
+        if (els.length > 0) {
+          els.forEach(el => {
+            el.outerHTML = edit.newHtml;
+            if (edit.newHtml.toLowerCase().includes('<script') || edit.selector.toLowerCase().includes('script')) {
+              needsReload = true;
+            }
+          });
+          applied++;
+        } else {
+          console.warn("[Playground Editor] Selector not found:", edit.selector);
+        }
+      } catch (e) {
+        console.error("[Playground Editor] Invalid selector:", edit.selector);
+      }
+    }
+
+    if (applied > 0) {
+      // Serialize the live DOM to save it
+      const newSrcdoc = "<!DOCTYPE html>\n" + iframeDoc.documentElement.outerHTML;
+      
+      // If we injected a script, we must reload the iframe to execute it safely without memory conflicts
+      if (needsReload) {
+        iframe.srcdoc = newSrcdoc;
+      }
+
+      
+      // Save generation
+      const sessionId = router.sessionManager.activeSessionId;
+      if (sessionId) {
+        await apiFetch('api/save_generation', {
+          method: 'POST',
+          body: JSON.stringify({ sessionId, htmlCode: newSrcdoc })
+        });
+        
+        // Refresh dropdown without reloading iframe
+        const generations = await fetchGenerations(sessionId);
+        updatePlaygroundHistoryDropdown(generations, true);
+      }
+    } else {
+      if (edits.length > 0) {
+        bus.emit('agent:tts', `I'm sorry, I couldn't find the element "${edits[0].selector}" on the page to edit it.`);
+      } else {
+        bus.emit('agent:tts', `I'm sorry, my code generation failed formatting so I couldn't apply the edit.`);
+      }
+    }
+  } catch (e) {
+    console.error("[Playground] Error applying code edit:", e);
+  }
+});
+
+// ── Playground History & Interview Logic ─────────────────────────────
+document.getElementById('toggle-playground').addEventListener('change', (e) => {
+  bus.emit('playground:toggle', e.target.checked);
+});
+
+document.getElementById('toggle-interview').addEventListener('change', (e) => {
+  bus.emit('interview:toggle', e.target.checked);
+});
+
+bus.on('interview:completed', () => {
+  const toggle = document.getElementById('toggle-interview');
+  if (toggle) toggle.checked = false;
+});
+
+async function fetchGenerations(sessionId) {
+  try {
+    const res = await apiFetch(`api/load_generations?sessionId=${sessionId}`);
+    return await res.json();
+  } catch (e) {
+    console.error("Failed to load generations", e);
+    return [];
+  }
+}
+
+function updatePlaygroundHistoryDropdown(generations, preventReload = false) {
+  const dropdown = document.getElementById('playground-history');
+  if (!dropdown) return;
+  
+  if (generations && generations.length > 0) {
+    dropdown.style.display = 'inline-block';
+    dropdown.innerHTML = '';
+    generations.forEach((gen, index) => {
+      const opt = document.createElement('option');
+      opt.value = gen.html_content;
+      const d = new Date(gen.timestamp);
+      opt.textContent = `Gen ${generations.length - index} (${d.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})})`;
+      dropdown.appendChild(opt);
+    });
+    
+    // The most recent generation is first, load it
+    if (!preventReload) {
+      const iframe = document.getElementById('playground-iframe');
+      if (iframe) iframe.srcdoc = generations[0].html_content;
+    }
+  } else {
+    dropdown.style.display = 'none';
+    dropdown.innerHTML = '';
+    if (!preventReload) {
+      const iframe = document.getElementById('playground-iframe');
+      if (iframe) iframe.srcdoc = '';
+    }
+  }
+}
+
+document.getElementById('playground-history').addEventListener('change', (e) => {
+  const iframe = document.getElementById('playground-iframe');
+  if (iframe && e.target.value) {
+    iframe.srcdoc = e.target.value;
+  }
+});
+
+bus.on('session:switched', async (session) => {
+  if (session && session.id) {
+    const generations = await fetchGenerations(session.id);
+    updatePlaygroundHistoryDropdown(generations);
+  }
 });
 
 // ── Speech-to-Speech (STS) Flow ─────────────────────────────

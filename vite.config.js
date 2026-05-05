@@ -13,6 +13,14 @@ function localPersistencePlugin(env) {
 
         // --- AUTHENTICATION GUARD ---
         if (apiPath.startsWith('/api/')) {
+          // Allow external API proxies to bypass internal auth (they use their own auth headers/keys)
+          if (apiPath.startsWith('/api/openai') || 
+              apiPath.startsWith('/api/anthropic') || 
+              apiPath.startsWith('/api/google-tts') || 
+              apiPath.startsWith('/api/elevenlabs')) {
+             return next();
+          }
+
           const authHeader = req.headers.authorization;
           const appAuthHeader = req.headers['x-app-auth'];
           const expectedAuth = env?.VITE_APP_AUTH || 'Basic YWRtaW46YWRtaW4=';
@@ -57,13 +65,29 @@ function localPersistencePlugin(env) {
               const data = JSON.parse(body);
               
               if (data.kg) {
-                const insertNode = db.prepare('INSERT OR REPLACE INTO nodes (id, text, category_id, type, timestamp) VALUES (?, ?, ?, ?, ?)');
-                const insertEdge = db.prepare('INSERT OR REPLACE INTO edges (id, source_id, target_id, type, weight) VALUES (?, ?, ?, ?, ?)');
+                const insertNode = db.prepare(`
+                  INSERT INTO nodes (id, text, category_id, type, timestamp) 
+                  VALUES (?, ?, ?, ?, ?)
+                  ON CONFLICT(id) DO UPDATE SET 
+                    text = excluded.text,
+                    category_id = excluded.category_id,
+                    type = excluded.type,
+                    timestamp = excluded.timestamp
+                `);
+                const insertEdge = db.prepare(`
+                  INSERT INTO edges (id, source_id, target_id, type, weight) 
+                  VALUES (?, ?, ?, ?, ?)
+                  ON CONFLICT(id) DO UPDATE SET 
+                    source_id = excluded.source_id,
+                    target_id = excluded.target_id,
+                    type = excluded.type,
+                    weight = excluded.weight
+                `);
                 const getOrInsertCategory = db.prepare('INSERT OR IGNORE INTO categories (id, name, description) VALUES (?, ?, ?)');
                 const getCategoryByName = db.prepare('SELECT id FROM categories WHERE name = ?');
                 
                 const transaction = db.transaction(() => {
-                  for (const n of data.kg.nodes) {
+                  for (const n of (data.kg?.nodes || [])) {
                     let catName = n.metadata?.category || n.metadata?.domain || 'general';
                     let catRow = getCategoryByName.get(catName);
                     let catId = catRow ? catRow.id : `cat_${Math.random().toString(36).substr(2, 9)}`;
@@ -76,7 +100,7 @@ function localPersistencePlugin(env) {
                     insertNode.run(n.id, text, catId, n.type || 'concept', n.metadata?.timestamp || new Date().toISOString());
                   }
 
-                  for (const e of data.kg.edges) {
+                  for (const e of (data.kg?.edges || [])) {
                     insertEdge.run(e.id, e.source, e.target, e.type, e.weight || 1.0);
                   }
                 });
@@ -170,7 +194,11 @@ function localPersistencePlugin(env) {
                   if (session.messages) {
                     for (const msg of session.messages) {
                       const msgId = msg.id || `msg-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
-                      insertMessage.run(msgId, session.id, msg.role, msg.content, msg.timestamp);
+                      let contentToSave = msg.content;
+                      if (typeof contentToSave === 'object' && contentToSave !== null) {
+                        contentToSave = contentToSave.responseText || JSON.stringify(contentToSave);
+                      }
+                      insertMessage.run(msgId, session.id, msg.role, contentToSave, msg.timestamp);
                     }
                   }
                 }
@@ -263,11 +291,54 @@ function localPersistencePlugin(env) {
           return;
         }
 
+        if (apiPath === '/api/save_generation' && req.method === 'POST') {
+          let body = '';
+          req.on('data', chunk => { body += chunk.toString(); });
+          req.on('end', async () => {
+            try {
+              const db = await dbPromise;
+              const data = JSON.parse(body);
+              if (data.sessionId && data.htmlCode) {
+                const genId = `gen-${Date.now()}-${Math.floor(Math.random() * 10000)}`;
+                const timestamp = new Date().toISOString();
+                db.prepare('INSERT INTO playground_generations (id, session_id, html_content, timestamp) VALUES (?, ?, ?, ?)').run(genId, data.sessionId, data.htmlCode, timestamp);
+              }
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify({ success: true }));
+            } catch (e) {
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: e.message }));
+            }
+          });
+          return;
+        }
+
+        if (apiPath.startsWith('/api/load_generations') && req.method === 'GET') {
+          (async () => {
+            try {
+              const urlParts = new URL(req.url, `http://${req.headers.host}`);
+              const sessionId = urlParts.searchParams.get('sessionId');
+              if (!sessionId) throw new Error("Missing sessionId");
+              
+              const db = await dbPromise;
+              const generations = db.prepare('SELECT id, html_content, timestamp FROM playground_generations WHERE session_id = ? ORDER BY timestamp DESC').all(sessionId);
+              
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify(generations));
+            } catch (e) {
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: e.message }));
+            }
+          })();
+          return;
+        }
+
         if (apiPath === '/api/map_entity' && req.method === 'POST') {
           let body = '';
           req.on('data', chunk => { body += chunk.toString(); });
-          req.on('end', () => {
+          req.on('end', async () => {
             try {
+              const db = await dbPromise;
               const data = JSON.parse(body);
               const { nodeId, sessionId, messageIds } = data;
               if (!nodeId || !sessionId || !messageIds || !Array.isArray(messageIds)) {
@@ -319,6 +390,7 @@ function localPersistencePlugin(env) {
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', async () => {
             try {
+              const db = await dbPromise;
               const { queryText, topK = 5, timeFilter, daysAgo, domains } = JSON.parse(body);
               const envVars = loadEnv('', process.cwd());
               const apiKey = envVars.VITE_OPENAI_API_KEY;
@@ -339,36 +411,41 @@ function localPersistencePlugin(env) {
               const qvec = json.data[0].embedding;
 
 
-              function cosineSim(a, b) {
-                let dot = 0, na = 0, nb = 0;
-                for (let i = 0; i < a.length; i++) { dot += a[i] * b[i]; na += a[i] * a[i]; nb += b[i] * b[i]; }
-                return dot / (Math.sqrt(na) * Math.sqrt(nb) + 1e-8);
-              }
-
-              // Fetch all embeddings
-              const rows = db.prepare('SELECT ne.node_id, ne.embedding, n.text, n.category_id, n.timestamp FROM node_embeddings ne JOIN nodes n ON ne.node_id = n.id').all();
+              const searchVec = new Float32Array(qvec);
+              const rows = db.prepare(`
+                SELECT 
+                  v.node_id as id, 
+                  v.distance,
+                  n.text,
+                  n.category_id as domain,
+                  n.timestamp
+                FROM vec_node_embeddings v
+                JOIN nodes n ON v.node_id = n.id
+                WHERE v.embedding MATCH ? AND k = ?
+              `).all(searchVec, topK * 5); // fetch extra to account for time/domain filtering
               
               const scored = [];
               for (const row of rows) {
-                if (row.embedding) {
-                  if (timeFilter && timeFilter.start && timeFilter.end && row.timestamp) {
-                    const ts = new Date(row.timestamp).getTime();
-                    const start = new Date(timeFilter.start).getTime();
-                    const end = new Date(timeFilter.end).getTime();
-                    if (ts < start || ts > end) continue;
-                  }
-                  if (daysAgo !== undefined && row.timestamp) {
-                    const ts = new Date(row.timestamp).getTime();
-                    const cutoff = Date.now() - (daysAgo * 24 * 60 * 60 * 1000);
-                    if (ts < cutoff) continue;
-                  }
-                  // Parse the raw Buffer into a Float32Array
-                  const docVec = new Float32Array(row.embedding.buffer, row.embedding.byteOffset, row.embedding.length / 4);
-                  const score = cosineSim(qvec, docVec);
-                  if (score > 0.3) {
-                    scored.push({ id: row.node_id, text: row.text, score: Math.round(score * 1000) / 1000, domain: row.category_id, timestamp: row.timestamp });
-                  }
+                if (timeFilter && timeFilter.start && timeFilter.end && row.timestamp) {
+                  const ts = new Date(row.timestamp).getTime();
+                  const start = new Date(timeFilter.start).getTime();
+                  const end = new Date(timeFilter.end).getTime();
+                  if (ts < start || ts > end) continue;
                 }
+                if (daysAgo !== undefined && row.timestamp) {
+                  const ts = new Date(row.timestamp).getTime();
+                  const cutoff = Date.now() - (daysAgo * 24 * 60 * 60 * 1000);
+                  if (ts < cutoff) continue;
+                }
+                // Convert sqlite-vec MATCH (L2 distance) back to Cosine Similarity
+                // For normalized vectors, L2^2 = 2 * (1 - cosine_similarity)
+                // Therefore: cosine_similarity = 1 - (L2^2 / 2)
+                const cosineSim = 1 - ((row.distance * row.distance) / 2);
+                
+                // The old threshold was distance <= 0.65 (which meant cosine_sim >= 0.35)
+                if (cosineSim < 0.35) continue;
+                
+                scored.push({ id: row.id, text: row.text, score: Math.round(cosineSim * 1000) / 1000, domain: row.domain, timestamp: row.timestamp });
               }
 
               scored.sort((a, b) => b.score - a.score);
@@ -379,14 +456,35 @@ function localPersistencePlugin(env) {
                 const mapRows = db.prepare('SELECT message_id, session_id FROM entity_mappings WHERE node_id = ? LIMIT 5').all(res.id);
                 if (mapRows.length > 0) {
                   const messages = [];
+                  let addedSessions = new Set();
                   for (let mapRow of mapRows) {
-                    if (mapRow.message_id) {
-                      const msg = db.prepare('SELECT sender, content FROM messages WHERE id = ?').get(mapRow.message_id);
-                      if (msg) messages.push(`${msg.sender}: ${msg.content}`);
+                    if (mapRow.session_id && !addedSessions.has(mapRow.session_id)) {
+                      addedSessions.add(mapRow.session_id);
+                      const allMsgs = db.prepare('SELECT id, sender, content FROM messages WHERE session_id = ? ORDER BY timestamp ASC').all(mapRow.session_id);
+                      
+                      if (allMsgs.length > 0) {
+                        let start = 0, end = allMsgs.length;
+                        if (mapRow.message_id) {
+                          const idx = allMsgs.findIndex(m => m.id === mapRow.message_id);
+                          if (idx !== -1) {
+                            start = Math.max(0, idx - 2);
+                            end = Math.min(allMsgs.length, idx + 3);
+                          } else {
+                            start = Math.max(0, allMsgs.length - 5);
+                          }
+                        } else {
+                          start = Math.max(0, allMsgs.length - 5);
+                        }
+                        
+                        messages.push('--- Conversation Snippet ---');
+                        allMsgs.slice(start, end).forEach(m => {
+                          messages.push(`${m.sender.toUpperCase()}: ${m.content}`);
+                        });
+                      }
                     }
                   }
                   if (messages.length > 0) {
-                    res.text = res.text + '\\n[Raw Chat Extract]:\\n' + messages.join('\\n');
+                    res.text = res.text + '\\n\\n[Raw Chat Extract]:\\n' + messages.join('\\n');
                   }
                 }
               }
@@ -406,6 +504,7 @@ function localPersistencePlugin(env) {
           req.on('data', chunk => { body += chunk.toString(); });
           req.on('end', async () => {
             try {
+              const db = await dbPromise;
               const { id, text, type, category } = JSON.parse(body);
               
               // Check if exists
@@ -436,12 +535,17 @@ function localPersistencePlugin(env) {
               const insertStub = db.prepare('INSERT OR IGNORE INTO nodes (id, text, type) VALUES (?, ?, ?)');
               insertStub.run(id, text, type || 'concept');
 
-              const insertStmt = db.prepare(`
+              const insertVecStmt = db.prepare(`
+                  INSERT INTO vec_node_embeddings (node_id, embedding)
+                  VALUES (?, ?)
+              `);
+              insertVecStmt.run(id, new Float32Array(embedding));
+
+              const insertLegacyStmt = db.prepare(`
                   INSERT INTO node_embeddings (node_id, embedding)
                   VALUES (?, ?)
               `);
-              const buffer = new Float32Array(embedding).buffer;
-              insertStmt.run(id, Buffer.from(buffer));
+              insertLegacyStmt.run(id, Buffer.from(new Float32Array(embedding).buffer));
 
               res.setHeader('Content-Type', 'application/json');
               res.end(JSON.stringify({ success: true }));
@@ -468,10 +572,10 @@ export default defineConfig(({ mode }) => {
     plugins: [localPersistencePlugin(env)],
     server: {
       port: 3000,
-      open: 'https://www.selinmodel.com/talktomyself/',
+      open: 'http://selinmodel.com/talktomyself/',
       allowedHosts: ['www.selinmodel.com', 'selinmodel.com'],
       watch: {
-        ignored: ['**/src/data-new/*.json', '**/src/data/*.json']
+        ignored: ['**/src/data-new/**', '**/src/data/**']
       },
       proxy: {
         '/talktomyself/api/openai': {
