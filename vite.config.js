@@ -607,7 +607,7 @@ export default defineConfig(({ mode }) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
                proxyReq.removeHeader('referer');
-               const googleKey = env.VITE_GOOGLE_API_KEY || env.VITE_GEMINI_API_KEY;
+               const googleKey = env.VITE_GEMINI_API_KEY || env.VITE_GEMINI_API_KEY;
                if (googleKey) {
                  proxyReq.setHeader('X-Goog-Api-Key', googleKey.trim());
                }

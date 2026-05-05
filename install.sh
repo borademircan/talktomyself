@@ -95,11 +95,44 @@ These instructions dictate how you should process the user's query and interact 
 EOF
 
 
-# Check for .env file
+# Setup .env file
+echo "=========================================="
+echo "Environment Setup (.env)"
+echo "=========================================="
 if [ ! -f .env ]; then
-    echo "Creating .env file. Please edit it with your configuration."
-    touch .env
-    echo "WARNING: Please review and configure your .env file before running the application!"
+    echo "This application requires several API keys to function properly."
+    echo "You can enter them now, or press Enter to skip and add them later."
+    echo "An empty .env file will be created with placeholders for any skipped keys."
+    echo ""
+
+    read -p "Enter OpenAI API Key (or press Enter to skip): " VAL_OPENAI </dev/tty
+    read -p "Enter ElevenLabs API Key (or press Enter to skip): " VAL_ELEVENLABS </dev/tty
+    read -p "Enter ElevenLabs Voice ID (or press Enter to skip): " VAL_VOICE_ID </dev/tty
+    read -p "Enter ElevenLabs Agent ID (or press Enter to skip): " VAL_AGENT_ID </dev/tty
+    read -p "Enter Moonshot API Key (or press Enter to skip): " VAL_MOONSHOT </dev/tty
+    read -p "Enter Claude API Key (or press Enter to skip): " VAL_CLAUDE </dev/tty
+    read -p "Enter Gemini API Key (or press Enter to skip): " VAL_GEMINI </dev/tty
+    read -p "Enter App Password for Web UI (or press Enter to skip): " VAL_PASSWORD </dev/tty
+    read -p "Enter App Auth string (e.g. Basic xxx) (or press Enter to skip): " VAL_AUTH </dev/tty
+
+    echo "Writing to .env file..."
+    cat <<EOF > .env
+VITE_OPENAI_API_KEY=${VAL_OPENAI}
+
+VITE_ELEVENLABS_VOICE_ID=${VAL_VOICE_ID}
+VITE_ELEVENLABS_API_KEY=${VAL_ELEVENLABS}
+VITE_ELEVENLABS_AGENT_ID=${VAL_AGENT_ID}
+VITE_MOONSHOT_API_KEY=${VAL_MOONSHOT}
+VITE_CLAUDE_API_KEY=${VAL_CLAUDE}
+VITE_GEMINI_API_KEY=${VAL_GEMINI}
+
+# Authentication
+VITE_APP_PASSWORD=${VAL_PASSWORD}
+VITE_APP_AUTH=${VAL_AUTH}
+EOF
+    echo "Your .env file has been configured! You can manually edit it at any time at $INSTALL_DIR/.env"
+else
+    echo "A .env file already exists. Skipping environment setup."
 fi
 
 # Start the application using PM2
