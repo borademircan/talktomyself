@@ -13,10 +13,9 @@ command -v git >/dev/null 2>&1 || { echo >&2 "Git is required but it's not insta
 command -v npm >/dev/null 2>&1 || { echo >&2 "npm is required but it's not installed. Aborting."; exit 1; }
 command -v pm2 >/dev/null 2>&1 || { echo >&2 "PM2 is required but it's not installed. Installing PM2 globally..."; npm install -g pm2; }
 
-# Ask for installation directory
-echo "=========================================="
-read -p "Where would you like to install TalkToMyself? [$HOME/talktomyself]: " INSTALL_DIR </dev/tty
-INSTALL_DIR=${INSTALL_DIR:-$HOME/talktomyself}
+# Use the current working directory as the installation directory
+INSTALL_DIR="$PWD"
+echo "Deploying TalkToMyself into current directory: $INSTALL_DIR"
 
 # Create installation directory and enter it
 mkdir -p "$INSTALL_DIR" || { echo "Failed to create directory. Do you need to run with sudo?"; exit 1; }
