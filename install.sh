@@ -32,9 +32,13 @@ else
     
     # Try checking out main, fallback to master
     if git rev-parse --verify origin/main >/dev/null 2>&1; then
-        git checkout -t origin/main -f
+        git reset --hard origin/main
+        git branch -M main
+        git branch -u origin/main
     else
-        git checkout -t origin/master -f
+        git reset --hard origin/master
+        git branch -M master
+        git branch -u origin/master
     fi
 fi
 
