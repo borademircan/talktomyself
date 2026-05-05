@@ -122,7 +122,12 @@ if [ ! -f .env ]; then
     read -p "Enter Claude API Key (or press Enter to skip): " VAL_CLAUDE </dev/tty
     read -p "Enter Gemini API Key (or press Enter to skip): " VAL_GEMINI </dev/tty
     read -p "Enter App Password for Web UI (or press Enter to skip): " VAL_PASSWORD </dev/tty
-    read -p "Enter App Auth string (e.g. Basic xxx) (or press Enter to skip): " VAL_AUTH </dev/tty
+    
+    if [ -n "$VAL_PASSWORD" ]; then
+        VAL_AUTH="Basic $(echo -n "selin:${VAL_PASSWORD}" | base64)"
+    else
+        VAL_AUTH=""
+    fi
 
     echo "Writing to .env file..."
     cat <<EOF > .env
