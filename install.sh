@@ -24,6 +24,11 @@ cd "$INSTALL_DIR"
 if [ -d ".git" ]; then
     echo "Directory is already a git repository. Pulling latest changes..."
     git pull
+    # If working directory is somehow empty/broken from a previous failed install, force restore it
+    if [ ! -f "package.json" ]; then
+        echo "Missing package.json detected. Force restoring files..."
+        git reset --hard HEAD
+    fi
 else
     echo "Deploying into $INSTALL_DIR..."
     git init
