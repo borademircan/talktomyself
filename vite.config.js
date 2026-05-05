@@ -242,25 +242,6 @@ function localPersistencePlugin(env) {
           (async () => {
             try {
               const db = await dbPromise;
-              const filePath = path.join(process.cwd(), 'src/data-new/sessions.json');
-              const row = db.prepare('SELECT COUNT(*) as count FROM sessions').get();
-              if (row.count === 0 && fs.existsSync(filePath)) {
-                 const legacyData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-                 const insertSession = db.prepare(`INSERT OR REPLACE INTO sessions (id, name, timestamp, lastProcessedIndex) VALUES (?, ?, ?, ?)`);
-                 const insertMessage = db.prepare(`INSERT OR REPLACE INTO messages (id, session_id, sender, content, timestamp) VALUES (?, ?, ?, ?, ?)`);
-                 db.transaction(() => {
-                   for (const session of legacyData) {
-                      insertSession.run(session.id, session.name, session.timestamp, session.lastProcessedIndex || -1);
-                      if (session.messages) {
-                        for (const msg of session.messages) {
-                           const msgId = msg.id || `msg-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
-                           insertMessage.run(msgId, session.id, msg.role, msg.content, msg.timestamp);
-                        }
-                      }
-                   }
-                 })();
-                 fs.renameSync(filePath, path.join(process.cwd(), 'src/data-new/sessions.json.bak'));
-              }
 
               const sessions = db.prepare('SELECT * FROM sessions ORDER BY timestamp DESC').all();
               const getMessages = db.prepare('SELECT * FROM messages WHERE session_id = ? ORDER BY timestamp ASC');
@@ -575,7 +556,7 @@ export default defineConfig(({ mode }) => {
       open: 'http://selinmodel.com/talktomyself/',
       allowedHosts: ['www.selinmodel.com', 'selinmodel.com'],
       watch: {
-        ignored: ['**/src/data-new/**', '**/src/data/**']
+        ignored: ['**/data/**']
       },
       proxy: {
         '/talktomyself/api/openai': {

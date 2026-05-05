@@ -1,11 +1,17 @@
 import Database from 'better-sqlite3';
 import path from 'path';
 import { createRequire } from 'module';
+import fs from 'fs';
 
 const require = createRequire(import.meta.url);
 const sqliteVec = require('sqlite-vec');
 
-const dbPath = path.join(process.cwd(), 'src/data-new/talk_to_myself.db');
+const dbDir = path.join(process.cwd(), 'data');
+if (!fs.existsSync(dbDir)) {
+  fs.mkdirSync(dbDir, { recursive: true });
+}
+
+const dbPath = path.join(dbDir, 'talk_to_myself.db');
 const db = new Database(dbPath);
 
 try {

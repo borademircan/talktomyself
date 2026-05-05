@@ -16,8 +16,7 @@ raw-data/
 
 # Local application data (we don't want to upload personal memories)
 raw-data/
-src/data/
-src/data-new/
+data/
 sessions.json
 sessions.json.bak
 scratch-*.cjs

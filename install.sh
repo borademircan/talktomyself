@@ -149,19 +149,10 @@ else
     echo "A .env file already exists. Skipping environment setup."
 fi
 
-# Start the application using PM2
-echo "Starting application with PM2..."
-if [ -f ecosystem.config.cjs ]; then
-    pm2 start ecosystem.config.cjs
-    pm2 save
-else
-    echo "Warning: ecosystem.config.cjs not found. Starting with default settings..."
-    pm2 start npm --name "talktomyself" -- start
-    pm2 save
-fi
-
+# Start the application
 echo "=========================================="
 echo "Installation Complete!"
 echo "Your application has been set up at $INSTALL_DIR"
-echo "Please remember to update your .env file if necessary."
+echo "Starting development server..."
 echo "=========================================="
+npm run dev
