@@ -18,20 +18,24 @@ echo "=========================================="
 read -p "Where would you like to install TalkToMyself? [$HOME/talktomyself]: " INSTALL_DIR </dev/tty
 INSTALL_DIR=${INSTALL_DIR:-$HOME/talktomyself}
 
-# Create installation directory if it doesn't exist
-if [ ! -d "$INSTALL_DIR" ]; then
-    echo "Cloning repository into $INSTALL_DIR..."
-    mkdir -p "$INSTALL_DIR" || { echo "Failed to create directory. Do you need to run with sudo?"; exit 1; }
-    git clone "$REPO_URL" "$INSTALL_DIR"
+# Create installation directory and enter it
+mkdir -p "$INSTALL_DIR" || { echo "Failed to create directory. Do you need to run with sudo?"; exit 1; }
+cd "$INSTALL_DIR"
+
+if [ -d ".git" ]; then
+    echo "Directory is already a git repository. Pulling latest changes..."
+    git pull
 else
-    echo "Directory $INSTALL_DIR already exists. Pulling latest changes..."
-    cd "$INSTALL_DIR"
-    # Ensure it's a git repository before pulling
-    if [ -d ".git" ]; then
-        git pull
+    echo "Deploying into $INSTALL_DIR..."
+    git init
+    git remote add origin "$REPO_URL"
+    git fetch
+    
+    # Try checking out main, fallback to master
+    if git rev-parse --verify origin/main >/dev/null 2>&1; then
+        git checkout -t origin/main -f
     else
-        echo "Error: Directory exists but is not a git repository. Please clean it up first."
-        exit 1
+        git checkout -t origin/master -f
     fi
 fi
 
