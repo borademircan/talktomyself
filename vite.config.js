@@ -2,6 +2,8 @@ import { defineConfig, loadEnv } from 'vite';
 import fs from 'fs';
 import path from 'path';
 
+const appFolder = '/' + path.basename(process.cwd()) + '/';
+
 function localPersistencePlugin(env) {
   let dbPromise;
   return {
@@ -9,7 +11,7 @@ function localPersistencePlugin(env) {
     configureServer(server) {
       dbPromise = import('./server/db.js').then(m => m.default);
       server.middlewares.use((req, res, next) => {
-        const apiPath = req.url.replace(/^\/talktomyself/, '');
+        const apiPath = req.url.replace(new RegExp('^' + appFolder), '/');
 
         // --- AUTHENTICATION GUARD ---
         if (apiPath.startsWith('/api/')) {
@@ -547,22 +549,22 @@ function localPersistencePlugin(env) {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
-    base: '/talktomyself/',
+    base: appFolder,
     root: '.',
     publicDir: 'public',
     plugins: [localPersistencePlugin(env)],
     server: {
       port: 3000,
-      open: 'http://selinmodel.com/talktomyself/',
-      allowedHosts: ['www.selinmodel.com', 'selinmodel.com'],
+      open: appFolder,
+      allowedHosts: true,
       watch: {
         ignored: ['**/data/**']
       },
       proxy: {
-        '/talktomyself/api/openai': {
+        [`${appFolder}api/openai`]: {
           target: 'https://api.openai.com',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/talktomyself\/api\/openai/, ''),
+          rewrite: (path) => path.replace(new RegExp(`^${appFolder}api/openai`), ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
@@ -570,20 +572,20 @@ export default defineConfig(({ mode }) => {
             });
           }
         },
-        '/talktomyself/api/anthropic': {
+        [`${appFolder}api/anthropic`]: {
           target: 'https://api.anthropic.com',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/talktomyself\/api\/anthropic/, ''),
+          rewrite: (path) => path.replace(new RegExp(`^${appFolder}api/anthropic`), ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
             });
           }
         },
-        '/talktomyself/api/google-tts': {
+        [`${appFolder}api/google-tts`]: {
           target: 'https://texttospeech.googleapis.com',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/talktomyself\/api\/google-tts/, ''),
+          rewrite: (path) => path.replace(new RegExp(`^${appFolder}api/google-tts`), ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
@@ -595,10 +597,10 @@ export default defineConfig(({ mode }) => {
             });
           }
         },
-        '/talktomyself/api/elevenlabs': {
+        [`${appFolder}api/elevenlabs`]: {
           target: 'https://api.elevenlabs.io',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/talktomyself\/api\/elevenlabs/, ''),
+          rewrite: (path) => path.replace(new RegExp(`^${appFolder}api/elevenlabs`), ''),
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
                proxyReq.removeHeader('origin');
